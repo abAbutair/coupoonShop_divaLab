@@ -1,0 +1,14 @@
+:root {
+  --h: 1.6rem;
+}
+body {
+  font-family: $bodyFont;
+  font-weight: 400;
+  //line-height: var(--h);
+  color: $bodyFontClr;
+  font-size: $bodyFontSize;
+  word-spacing: 0.3rem;
+  text-align: $left;
+}
+.heading-primary {}
+.heading-secondary {}

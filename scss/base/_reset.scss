@@ -1,0 +1,18 @@
+*, *::after, *::before {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  direction: $isRtl;
+}
+
+html {font-size: 62.5%;}
+
+body {box-sizing: border-box;}
+
+a {
+  display: inline-block;
+  &:hover {
+    text-decoration: none;
+  }
+}

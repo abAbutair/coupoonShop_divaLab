@@ -1,0 +1,22 @@
+{
+  "name": "coupoonshop-static",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/diva-lab/coupoon-shop.git"
+  },
+  "author": "Abdulrahman Abutair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/diva-lab/coupoon-shop/issues"
+  },
+  "homepage": "https://gitlab.com/diva-lab/coupoon-shop#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

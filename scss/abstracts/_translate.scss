@@ -1,0 +1,61 @@
+/*------ Translate ------*/
+/*----- Translate Variables -----*/
+$isRtl: ltr;
+
+//directions -------
+$left: left;
+$right: right;
+$flex-direction: row;
+
+// icons -----
+$double-right: "\f101";
+$double-left: "\f100";
+$chevron-left:"\f053";
+$chevron-right:"\f054";
+
+//font family ------
+$bodyFont: 'roboto-reg';
+$boldFont: 'roboto-bold';
+$semiBoldFont: 'roboto-semi';
+$medFont: 'roboto-med';
+
+/*------ The Switch ------*/
+@if $isRtl == rtl
+{
+    //directions -------
+    $left: right;
+    $right: left;
+    $flex-direction:row-reverse;
+
+    // icons -----
+    $double-right: "\f100";
+    $double-left: "\f101";
+    $chevron-left:"\f054";
+    $chevron-right:"\f053";
+
+    //font family ------
+    $bodyFont: 'messiri-reg';
+    $boldFont: 'messiri-bold';
+    $semiBoldFont: 'messiri-semi';
+    $medFont: 'messiri-med';
+
+}
+@else {
+    //directions -------
+    $left: left;
+    $right: right;
+    $flex-direction:row;
+
+    // icons -----
+    $double-right: "\f101";
+    $double-left: "\f100";
+    $chevron-left:"\f053";
+    $chevron-right:"\f054";
+
+
+    //font family ------
+    $bodyFont: 'roboto-reg';
+    $boldFont: 'roboto-bold';
+    $semiBoldFont: 'roboto-semi';
+    $medFont: 'roboto-med';
+}
