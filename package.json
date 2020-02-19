@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass_ltr": "node-sass --output-style expanded --source-map true --source-map-contents true scss/main.scss css/style_ltr.css -w",
+    "compile:sass_rtl": "node-sass --output-style expanded --source-map true --source-map-contents true scss/main.scss css/style_rtl.css -w"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@gitlab.com/diva-lab/coupoon-shop.git"
   },
   "author": "Abdulrahman Abutair",
-  "license": "ISC",
+  "license": "DIVA-LAB",
   "bugs": {
     "url": "https://gitlab.com/diva-lab/coupoon-shop/issues"
   },
