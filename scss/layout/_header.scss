@@ -1,0 +1,23 @@
+.header {
+  &__top {
+    background-color: $mainClr;
+  }
+}
+
+.icon-link {
+  background: transparent;
+  -webkit-border-image: -webkit-linear-gradient(left, #00343C, #025F6E) 1 100%;
+  -moz-border-image: -moz-linear-gradient(left, #00343C, #025F6E) 1 100%;
+  -o-border-image: -o-linear-gradient(left, #00343C, #025F6E) 1 100%;
+  -webkit-border-image: -webkit-linear-gradient(left, #00343C, #025F6E) 1 100%;
+  border-width: 3px 3px 3px 0;
+  border-style: solid;
+  margin: 0;
+  i, a, span {
+    color: $whiteClr;
+    font-size: $smallFontSize;
+  }
+  a, span {
+    font-family: $medFont;
+  }
+}

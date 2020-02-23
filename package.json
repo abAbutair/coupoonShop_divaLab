@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass_ltr": "node-sass --output-style expanded --source-map true --source-map-contents true scss/main.scss css/style_ltr.css -w",
-    "compile:sass_rtl": "node-sass --output-style expanded --source-map true --source-map-contents true scss/main.scss css/style_rtl.css -w"
+    "compile:scss_ltr": "node-sass --output-style expanded --source-map true --source-map-contents true scss/main.scss css/style_ltr.css -w",
+    "compile:scss_rtl": "node-sass --output-style expanded --source-map true --source-map-contents true scss/main.scss css/style_rtl.css -w"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,10 @@
   },
   "homepage": "https://gitlab.com/diva-lab/coupoon-shop#readme",
   "dependencies": {
-    "node-sass": "^4.13.1"
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.13.1",
+    "popper.js": "^1.16.1"
   }
 }

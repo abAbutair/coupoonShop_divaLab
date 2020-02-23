@@ -1,27 +1,46 @@
 // colors
+$mainClr: #004C59;
+$secondClr: #F85F20;
+$dropdownClr: #F0FBFD;
 $bodyFontClr: #333;
-$burgundyFontClr: #401D15; // used in footer text
-$mainClr: #D9734E;
-$secondClr: #0072BC;
-$thirdClr: #BF9180; // footer BG & slider--sub active indicator
+
+$placeholderTxt: #9F9F9F; // inputs & offers
+
+$thirdClr: #65AA8F; // a paragraph in slider
+$fourthClr: #003162; // a paragraph in slider
+$fifthClr: #A55731; // a paragraph in slider
+$sixthClr: #A81738; // a paragraph in slider
+$seventhClr: #F75024; // a paragraph in slider
+$eighthClr: #930A10; // a paragraph in slider
+
+$footerHeadings: #D3D3D3;
+$whiteTxt: #F4F4F4;
+
 $whiteClr: #fff;
+$blackClr: #000;
 
 // spacing
 $secPadding: 2.5rem;
 
 
-// for form
-$formHeight: 4rem;
-$inputSearchHeight: 3rem;
-$borderRadius: 0.4rem;
-$inputMainPh: #BCBDC0;
-$inputScdPh: #333;
-$inputBorder: #C4C5C8;
-$inputSearchBg: #EDEDED;
+//// for form
+//$formHeight: 4rem;
+//$inputSearchHeight: 3rem;
+//$borderRadius: 0.4rem;
+//$inputMainPh: #BCBDC0;
+//$inputScdPh: #333;
+//$inputBorder: #C4C5C8;
+//$inputSearchBg: #EDEDED;
 
 // font sizes
 $bodyFontSize: 1.6rem;
-$headingPrimary: 3rem;
-$headingSecondary: 4rem;
-$medFontSize:2rem;
-$iconsFontSize: 1.6rem;
+$smallFontSize: 1.4rem;
+$headingPrimary: 7rem;
+$headingSecondary: 1.8rem;
+$medFontSize: 2rem;
+$iconsFontSize: 2rem;
+
+
+// elements sizes
+$dropdownArrow: 1rem; //header top
+$dropdownMargin: 1rem; //header top

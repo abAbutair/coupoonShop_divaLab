@@ -1,0 +1,47 @@
+.ctm-dropdown {
+  position: relative;
+  &__header {
+    &:before {
+      content: ' ';
+      border-left: $dropdownArrow solid transparent;
+      border-right: $dropdownArrow solid transparent;
+      border-bottom: $dropdownArrow solid $secondClr;
+      position: absolute;
+      top: calc(100% + #{$dropdownMargin} - #{$dropdownArrow});
+      left: 50%;
+      transform: translate(-50% , 0);
+      visibility: hidden;
+      opacity: 0;
+      @include transition(all, 0.8s);
+    }
+
+  }
+  &__menu {
+    position: absolute;
+    top: calc(100% + #{$dropdownMargin});
+    left: 0;
+    right: 0;
+    background-color: $dropdownClr;
+    border-top: 0.2rem solid $secondClr;
+    visibility: hidden;
+    opacity: 0;
+    @include transition(all, 0.8s);
+    &__option {
+      padding: 1rem 0.5rem;
+    }
+  }
+  &.show {
+    .ctm-dropdown {
+      &__header {
+        &:before {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      &__menu {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}

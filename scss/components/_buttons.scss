@@ -1,12 +1,10 @@
 button {
-  &.btn {
-    &:hover {
-    }
-    &:focus {
-      box-shadow: none;
-    }
-    &--scd-clr {
-    }
+  background-color: transparent;
+  border: none;
+  &:focus {
+    outline: 0;
+  }
+  &.ctm-btn {
   }
 }
 
