@@ -1,13 +1,19 @@
 button {
   background-color: transparent;
   border: none;
+  text-transform: capitalize;
   &:focus {
     outline: 0;
   }
-  &.ctm-btn {
-  }
 }
 
+.ctm-btn {
+  color: $whiteClr;
+  padding: $paddingTopBottom 3.5rem;
+  &--orange {
+    background-color: $secondClr;
+  }
+}
 
 
 
