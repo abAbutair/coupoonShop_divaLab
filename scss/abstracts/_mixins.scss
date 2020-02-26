@@ -5,6 +5,30 @@
 }
 
 
+@mixin optional-at-root($sel) {
+    @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+        @content;
+    }
+}
+
+@mixin placeHolder {
+    @include optional-at-root ('::-webkit-input-placeholder') {
+        @content;
+    }
+
+    @include optional-at-root (':-moz-placeholder') {
+        @content;
+    }
+
+    @include optional-at-root ('::-moz-placeholder') {
+        @content;
+    }
+
+    @include optional-at-root (':-ms-input-placeholder') {
+        @content;
+    }
+}
+
 @mixin linkColor ($link, $visit, $hover, $active) {
     a {
         color: $link;
@@ -19,7 +43,7 @@
         }
     }
 }
-@mixin text($family, $size, $lineHeight, $color) {
+@mixin text ($family, $size, $lineHeight, $color) {
     @if $family != null {
         font-family: $family;
     }
@@ -33,7 +57,7 @@
         color: $color;
     }
 }
-@mixin fontAwesome($family,$unicode,$size,$weight,$color){
+@mixin fontAwesome ($family,$unicode,$size,$weight,$color) {
     @if $family != null {
         font-family: $family;
     }

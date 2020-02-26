@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
     <link rel="stylesheet" href="css/style_ltr.css">
     <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/web-and-user-interface-27/512/338-512.png"
           type="image/x-icon">
@@ -34,7 +35,7 @@
                             <div class="dropdown-option">french</div>
                         </div>
                     </div>
-                    <nav class="ctm-nav flex-box custom-nav--small">
+                    <nav class="ctm-nav flex-box ctm-nav--small">
                         <a href="#" class="ctm-nav__link">stores</a>
                         <a href="#" class="ctm-nav__link">how it works</a>
                         <a href="#" class="ctm-nav__link">craft offers</a>
@@ -49,36 +50,68 @@
     </div>
     <div class="header__bottom">
         <div class="container">
-            <div class="flex-box">
-                <div class="logo-part flex-box">
-                    <a href="#" class="logo"><img src="images/logo.png" alt="Coupon Logo"></a>
-                    <nav class="burger-menu">
-                        <button class="open-btn" type="button" id="openBtn">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logo-part flex-box">
+                        <a href="#" class="logo"><img src="images/logo.png" alt="Coupon Logo"></a>
+                        <nav class="burger-menu">
+                            <button class="open-btn" type="button" id="openBtn">
                             <span class="align-burger">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                             </span>
-                            <span class="open-btn__header">all categories</span>
-                        </button>
-                        <!--                        <div class="close-btn" id="closeBtn">&times;</div>-->
-                        <!--                        <div class="menu-collapse" id="menuCollapse">-->
-                        <!--                            <ul class="nav-menu">-->
-                        <!--                                <li class="nav-menu__item active">-->
-                        <!--                                    <a class="nav-menu__link" href="#">Home</a>-->
-                        <!--                                </li>-->
-                        <!--                                <li class="nav-menu__item">-->
-                        <!--                                    <a class="nav-menu__link" href="#">Features</a>-->
-                        <!--                                </li>-->
-                        <!--                                <li class="nav-menu__item">-->
-                        <!--                                    <a class="nav-menu__link" href="#">Pricing</a>-->
-                        <!--                                </li>-->
-                        <!--                            </ul>-->
-                        <!--                        </div>-->
-                    </nav>
+                                <span class="open-btn__header">all categories</span>
+                            </button>
+                            <!--                        <div class="close-btn" id="closeBtn">&times;</div>-->
+                            <!--                        <div class="menu-collapse" id="menuCollapse">-->
+                            <!--                            <ul class="nav-menu">-->
+                            <!--                                <li class="nav-menu__item active">-->
+                            <!--                                    <a class="nav-menu__link" href="#">Home</a>-->
+                            <!--                                </li>-->
+                            <!--                                <li class="nav-menu__item">-->
+                            <!--                                    <a class="nav-menu__link" href="#">Features</a>-->
+                            <!--                                </li>-->
+                            <!--                                <li class="nav-menu__item">-->
+                            <!--                                    <a class="nav-menu__link" href="#">Pricing</a>-->
+                            <!--                                </li>-->
+                            <!--                            </ul>-->
+                            <!--                        </div>-->
+                        </nav>
+                    </div>
                 </div>
-                <div class="nav-part">
-                    
+                <div class="col-lg-9">
+                    <div class="nav-part">
+                        <form action="" class="form">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="form__element">
+                                        <select class="states" name="state">
+                                            <option value="dubai">Dubai</option>
+                                            <option value="abu dhabi">abu dhabi</option>
+                                            <option value="cairo">cairo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="form__element positioned-icn">
+                                        <input type="search" class="input" placeholder="search">
+                                        <span class="positioned-icn__icon"><i class="fas fa-search"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <nav class="ctm-nav flex-box ctm-nav--big">
+                            <a href="#" class="ctm-nav__link">home appliances</a>
+                            <a href="#" class="ctm-nav__link">activities</a>
+                            <a href="#" class="ctm-nav__link">food & beverages</a>
+                            <a href="#" class="ctm-nav__link">electronics</a>
+                            <a href="#" class="ctm-nav__link">health & fitness</a>
+                            <a href="#" class="ctm-nav__link">travel</a>
+                            <a href="#" class="ctm-nav__link">beauty & spa</a>
+                            <a href="#" class="ctm-nav__link">medical</a>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
@@ -91,9 +124,22 @@
 <footer>
 </footer>
 
-<!--<script src="node_modules/jquery/dist/jquery.min.js"></script>-->
-<!--<script src="node_modules/popper.js/dist/popper.js"></script>-->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/popper.js/dist/popper.js"></script>
+<script src="node_modules/select2/dist/js/select2.full.min.js"></script>
 <script src="js/dropdown.js"></script>
 <script src="js/mainScript.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.states').select2({
+            placeholder: 'state',
+            minimumResultsForSearch: -1,
+            dropdownAutoWidth:true,
+            width: '100%',
+            containerCssClass: "custom-container",
+            dropdownCssClass: "custom-dropdown",
+        });
+    });
+</script>
 </body>
 </html>

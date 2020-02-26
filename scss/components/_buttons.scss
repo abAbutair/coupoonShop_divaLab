@@ -10,6 +10,9 @@ button {
 .ctm-btn {
   color: $whiteClr;
   padding: $paddingTopBottom 3.5rem;
+  &:hover {
+    color: darken($whiteClr, 10%);
+  }
   &--orange {
     background-color: $secondClr;
   }

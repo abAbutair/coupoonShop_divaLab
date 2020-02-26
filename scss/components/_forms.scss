@@ -1,10 +1,68 @@
-.form {}
-.form-group{margin-bottom:  1.6rem}
-input{
-  &:focus {
-  }
+.form {
 }
+
+.form__element {
+
+}
+
+.input, .select2-container--default .custom-container {
+  height: $formElementHeight;
+  background-color: $inputBg;
+  border: 0.1rem solid $inputBorder;
+  padding: .3rem 1.5rem;
+  color: $bodyFontClr;
+}
+
+// input
 .input {
-  &::placeholder {
+  width: 100%;
+  @include placeHolder {
+    color: $inputFontClr;
+    font-size: $tinyFontSize;
+    text-transform: capitalize;
+  }
+
+  &[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+
+  &:focus {
+
   }
 }
+
+.positioned-icn {
+  position: relative;
+
+  &__icon {
+    position: absolute;
+    #{$right}: 1rem;
+    top: 50%;
+    @include translate(0, -50%);
+    font-size: $smallFontSize;
+  }
+}
+
+// select
+.select2-container {
+  &--default {
+    .custom-container {
+      .select2-selection__rendered {
+        height: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        color: $inputFontClr;
+        font-size: $tinyFontSize;
+        text-transform: capitalize;
+      }
+      .select2-selection__arrow {
+        height: 100%;
+        width: .8rem;
+        top: 0;
+        #{$right}: 1rem;
+      }
+    }
+  }
+}
+

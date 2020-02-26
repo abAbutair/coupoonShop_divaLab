@@ -1,7 +1,7 @@
 .header {
   &__top {
     background-color: $mainClr;
-    font-size: $smallFontSize;
+    font-size: $tinyFontSize;
   }
   &__bottom {
     .logo-part {
@@ -41,11 +41,15 @@
   &__link {
     padding: $paddingTopBottom 1rem;
     color: $whiteClr;
-    //font-size: $smallFontSize;
+    font-size: $tinyFontSize;
     text-transform: capitalize;
     &:hover {
       color: darken($whiteClr, 10%);
     }
+  }
+  &--big {
+    margin: 0;
+    justify-content: space-between;
   }
 }
 
@@ -60,6 +64,7 @@
   border-#{$right}-width: 0.3rem;
   border-style: solid;
   margin: 0;
+  font-size: $tinyFontSize;
   padding-top: $paddingTopBottom;
   padding-bottom: $paddingTopBottom;
   padding-#{$right}: 2.5rem;

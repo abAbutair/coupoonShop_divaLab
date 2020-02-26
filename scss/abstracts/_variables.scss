@@ -23,18 +23,20 @@ $blackClr: #000;
 $secPadding: 2.5rem;
 
 
-//// for form
-//$formHeight: 4rem;
+// for form
+$formElementHeight: 4rem;
 //$inputSearchHeight: 3rem;
 //$borderRadius: 0.4rem;
-//$inputMainPh: #BCBDC0;
-//$inputScdPh: #333;
-//$inputBorder: #C4C5C8;
+$inputBg: #F0FBFD;
+$inputFontClr: #9F9F9F;
+$inputScdPh: #333;
+$inputBorder: #DFF6FA;
 //$inputSearchBg: #EDEDED;
 
 // font sizes
 $bodyFontSize: 1.6rem;
 $smallFontSize: 1.4rem;
+$tinyFontSize: 1.2rem; // placeholder
 $headingPrimary: 7rem;
 $headingSecondary: 1.8rem;
 $medFontSize: 2rem;
