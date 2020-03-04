@@ -1,10 +1,7 @@
-:root {
-  --h: 1.6rem;
-}
 body {
   font-family: $bodyFont;
   font-weight: 400;
-  //line-height: var(--h);
+  line-height: var(--h);
   color: $bodyFontClr;
   font-size: $bodyFontSize;
   word-spacing: 0.3rem;
@@ -12,3 +9,36 @@ body {
 }
 .heading-primary {}
 .heading-secondary {}
+.section-heading {
+  font-size: $sectionHeading;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 4rem;
+  color: $whiteTxt;
+  &--mainClr {
+    color: $mainClr;
+  }
+  &--orange {
+    color: $secondClr;
+  }
+}
+.heading-follower {
+  font-size: $medFontSize;
+  display: block;
+  margin: 0.5rem 0;
+  &--orange {
+    color: $secondClr;
+  }
+}
+.heading-footer {
+  font-size: $medFontSize;
+  color: $footerHeadings;
+  font-family: $medFont;
+  margin-bottom: 2rem;
+}
+
+article {
+  &.white {
+    color: $whiteClr;
+  }
+}

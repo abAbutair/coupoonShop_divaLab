@@ -8,17 +8,20 @@
     background-size: cover;
     background-position: center center;
 }
-%flex-wrap{
+%display-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+}
+%flex-wrap{
     flex-wrap: wrap;
 }
 %flex-center {
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 %flex-flow {
-    display: flex;
     flex-flow: column;
     justify-content: center;
 }

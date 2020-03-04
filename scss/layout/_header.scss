@@ -4,11 +4,17 @@
     font-size: $tinyFontSize;
   }
   &__bottom {
+    padding: 3rem 0;
     .logo-part {
       flex-flow: column;
+      justify-content: space-between;
+      height: 100%;
+      .logo {
+      }
       .burger-menu {
+        padding: 0.7rem 1rem;
         .open-btn {
-          display: flex;
+          @extend %display-flex;
           align-items: center;
           .align-burger {
             display: block;
@@ -33,26 +39,15 @@
         }
       }
     }
-  }
-}
-
-.ctm-nav {
-  margin: 0 2.5rem;
-  &__link {
-    padding: $paddingTopBottom 1rem;
-    color: $whiteClr;
-    font-size: $tinyFontSize;
-    text-transform: capitalize;
-    &:hover {
-      color: darken($whiteClr, 10%);
+    .logo-part, .nav-part {
+      > * {
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
     }
   }
-  &--big {
-    margin: 0;
-    justify-content: space-between;
-  }
 }
-
 
 .icon-link {
   background: transparent;

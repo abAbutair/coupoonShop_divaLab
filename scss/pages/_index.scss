@@ -1,0 +1,14 @@
+.section {
+  &--padding {
+    padding: $secPadding 0;
+  }
+}
+.design-sec {
+  > * {
+    position: relative;
+    z-index: 1;
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+}

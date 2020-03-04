@@ -9,12 +9,23 @@ button {
 
 .ctm-btn {
   color: $whiteClr;
-  padding: $paddingTopBottom 3.5rem;
   &:hover {
     color: darken($whiteClr, 10%);
   }
+  &--small {
+    padding: $paddingTopBottom 3.5rem;
+  }
+  &--big {
+    padding: $paddingTopBottom2 4rem;
+    font-size: $smallFontSize;
+    font-family: $boldFont;
+  }
   &--orange {
     background-color: $secondClr;
+  }
+  &--white {
+    background-color: $whiteClr;
+    color: $mainClr;
   }
 }
 

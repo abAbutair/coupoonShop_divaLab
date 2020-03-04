@@ -3,5 +3,24 @@ ul {
   padding: 0;
   li {
     list-style-type: none;
+    line-height: initial;
+  }
+}
+.links {
+  li {
+    margin-bottom: 1rem;
+    a {
+      color: $whiteClr;
+      font-size: $smallFontSize;
+      font-family: $medFont;
+    }
+  }
+}
+.payment-methods, .social-links {
+  li {
+    a, i {
+      color: $footerHeadings;
+      font-size: $iconsFontSize;
+    }
   }
 }
