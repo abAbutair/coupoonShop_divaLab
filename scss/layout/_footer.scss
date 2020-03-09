@@ -31,10 +31,10 @@
       }
     }
     &__lists {
-      @extend %display-flex;
+      @extend %d-flex;
       justify-content: space-around;
       .payment-methods, .social-links {
-        @extend %display-flex;
+        @extend %d-flex;
         align-items: center;
         li {
           &:not(:last-child) {

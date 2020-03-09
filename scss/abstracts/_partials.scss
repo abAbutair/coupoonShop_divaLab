@@ -4,11 +4,10 @@
 }
 %covered_bg {
     width: 100%;
-    position: relative;
     background-size: cover;
     background-position: center center;
 }
-%display-flex {
+%d-flex {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;

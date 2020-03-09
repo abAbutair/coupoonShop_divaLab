@@ -10,6 +10,14 @@
         @content;
     }
 }
+@mixin sub-colors {
+    &--main-clr {
+        color: $mainClr;
+    }
+    &--orange {
+        color: $secondClr;
+    }
+}
 
 @mixin placeHolder {
     @include optional-at-root ('::-webkit-input-placeholder') {
