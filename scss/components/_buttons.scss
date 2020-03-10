@@ -27,6 +27,9 @@ button {
     background-color: $whiteClr;
     color: $mainClr;
   }
+  i {
+    margin-#{$right}: 1rem;
+  }
 }
 
 

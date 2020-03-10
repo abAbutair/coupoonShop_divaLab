@@ -1471,13 +1471,13 @@ template {
 /*------ Translate ------*/
 /*----- Translate Variables -----*/
 /*------ The Switch ------*/
-.background-holder, .carousel .carousel-inner .carousel-item, .latest-d__inner__bg {
+.background-holder, .carousel .carousel-inner .carousel-item, .email-sub, .latest-d__inner__bg {
   width: 100%;
   background-size: cover;
   background-position: center center;
 }
 
-.flex-box, .select2-container--default .custom-container .select2-selection__rendered, .header__bottom .logo-part .burger-menu .open-btn, .footer__bottom__lists, .footer__bottom__lists .payment-methods, .footer__bottom__lists .social-links, .latest-deal #featureSlider .carousel-caption, .latest-d__inner, .latest-d__inner__data .link-wrapper {
+.flex-box, .select2-container--default .custom-container .select2-selection__rendered, .header__bottom .logo-part .burger-menu .open-btn, .email-sub__inner form, .email-sub__inner form .ctm-btn, .footer__bottom__lists, .footer__bottom__lists .payment-methods, .footer__bottom__lists .social-links, .latest-deal #featureSlider .carousel-caption, .latest-d__inner, .latest-d__inner__data .link-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2063,6 +2063,20 @@ body {
   text-align: left;
 }
 
+.heading-primary {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "roboto-med";
+}
+
+.heading-primary--main-clr {
+  color: #004C59;
+}
+
+.heading-primary--orange {
+  color: #F85F20;
+}
+
 .heading-secondary {
   font-size: 1.8rem;
   text-transform: capitalize;
@@ -2228,6 +2242,26 @@ p {
   color: #F85F20;
 }
 
+.video-demo {
+  text-align: center;
+}
+
+.video-demo .fancy-link {
+  font-size: 2rem;
+}
+
+.video-demo .fancy-link--main-clr {
+  color: #004C59;
+}
+
+.video-demo .fancy-link--orange {
+  color: #F85F20;
+}
+
+.video-demo .fancy-link i {
+  margin-right: 1rem;
+}
+
 button {
   background-color: transparent;
   border: none;
@@ -2263,6 +2297,10 @@ button:focus {
 .ctm-btn--white {
   background-color: #fff;
   color: #004C59;
+}
+
+.ctm-btn i {
+  margin-right: 1rem;
 }
 
 .carousel {
@@ -2389,6 +2427,11 @@ button:focus {
 
 .input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
+}
+
+.input--white-bg {
+  background-color: #fff;
+  border: 0.1rem solid #D3D3D3;
 }
 
 .positioned-icn {
@@ -2632,6 +2675,28 @@ ul li {
 
 .icon-link i {
   margin-right: 0.5rem;
+}
+
+.email-sub.section--padding {
+  padding: 7rem 0;
+}
+
+.email-sub__inner {
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+  padding: 5rem 10rem;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.email-sub__inner .heading-primary {
+  margin-bottom: 2rem;
+}
+
+.email-sub__inner form .ctm-btn {
+  height: 4rem;
+  padding: 0 4rem;
+  align-items: center;
 }
 
 .footer {

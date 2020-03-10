@@ -7,6 +7,12 @@ body {
   word-spacing: 0.3rem;
   text-align: $left;
 }
+.heading-primary {
+  color: $whiteClr;
+  font-size: $medFontSize;
+  font-family: $medFont;
+  @include sub-colors;
+}
 .heading-secondary {
   font-size: $headingSecondary;
   text-transform: capitalize;

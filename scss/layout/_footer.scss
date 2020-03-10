@@ -1,3 +1,30 @@
+.email-sub {
+  &.section {
+    &--padding {
+      padding: 7rem 0;
+    }
+  }
+  @extend %covered_bg;
+  &__inner {
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+    padding: 5rem 10rem;
+    background-color: rgba(255,255,255,0.7);
+    .heading-primary {
+      margin-bottom: 2rem;
+    }
+    form {
+      @extend %d-flex;
+      .ctm-btn {
+        @extend %d-flex;
+        height: $formElementHeight;
+        padding: 0 4rem;
+        align-items: center;
+      }
+    }
+  }
+}
 .footer {
   background: linear-gradient(to top, #000F12, #004C59);
   padding: 5rem 0;

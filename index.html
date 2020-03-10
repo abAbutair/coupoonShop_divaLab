@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style_ltr.css">
     <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/web-and-user-interface-27/512/338-512.png"
           type="image/x-icon">
@@ -268,84 +269,105 @@
         </article>
         <button type="button" class="ctm-btn ctm-btn--big ctm-btn--white">Get your offer now</button>
     </section>
+    <section class="section section--padding">
+        <h2 class="section-heading section-heading--main-clr">How to enjoy offers</h2>
+        <div class="video-demo">
+            <a class="fancy-link fancy-link--orange" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                <i class="fas fa-video"></i>Play a Demo
+            </a>
+        </div>
+    </section>
 
 </main>
 
-<footer class="footer">
-    <div class="container">
-        <div class="footer__top">
-            <div class="row">
-                <div class="col-lg-3">
-                    <h5 class="heading-footer">Get to know us</h5>
-                    <ul class="links">
-                        <li><a href="#">- Career</a></li>
-                        <li><a href="#">- What we do</a></li>
-                        <li><a href="#">- We do it as family</a></li>
-                        <li><a href="#">- Business affiliates</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h5 class="heading-footer">Cash with us</h5>
-                    <ul class="links">
-                        <li><a href="#">- Part of big family</a></li>
-                        <li><a href="#">- Free time? Work with us</a></li>
-                        <li><a href="#">- Drop us a visit</a></li>
-                        <li><a href="#">- Benefits for you</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h5 class="heading-footer">Get in touch</h5>
-                    <ul class="links">
-                        <li><a href="#">- Recommendations & Remarks RnR</a></li>
-                        <li><a href="#">- Contact with our members</a></li>
-                        <li><a href="#">- Market your business for free</a></li>
-                        <li><a href="#">- Coupoonshop assistance</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h5 class="heading-footer">Coupoonshop assistance</h5>
-                    <ul class="links">
-                        <li><a href="#">- FAQ</a></li>
-                        <li><a href="#">- Privacy Policy</a></li>
-                        <li><a href="#">- Terms &. Conditions</a></li>
-                        <li><a href="#">- Help you</a></li>
-                    </ul>
-                </div>
-            </div>
+<footer>
+    <section class="section section--padding email-sub" style="background-image: url('images/email-sub.jpg')">
+        <div class="email-sub__inner">
+            <h5 class="heading-primary heading-primary--main-clr">Join 13,000+ subscribers &  get a hand picked list of best offers</h5>
+            <form action="">
+                <input type="search" class="input input--white-bg" placeholder="search">
+                <button type="button" class="ctm-btn ctm-btn--big ctm-btn--orange"><i class="fas fa-paper-plane"></i>subscribe</button>
+            </form>
         </div>
-        <div class="footer__bottom">
-            <div class="footer__bottom__copyrights">
-                <p>&copy; 2020 Coupoonshop All Rights Reserved | Powered by <a href="https://diva-lab.com/">Diva-lab</a></p>
+    </section>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h5 class="heading-footer">Get to know us</h5>
+                        <ul class="links">
+                            <li><a href="#">- Career</a></li>
+                            <li><a href="#">- What we do</a></li>
+                            <li><a href="#">- We do it as family</a></li>
+                            <li><a href="#">- Business affiliates</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 class="heading-footer">Cash with us</h5>
+                        <ul class="links">
+                            <li><a href="#">- Part of big family</a></li>
+                            <li><a href="#">- Free time? Work with us</a></li>
+                            <li><a href="#">- Drop us a visit</a></li>
+                            <li><a href="#">- Benefits for you</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 class="heading-footer">Get in touch</h5>
+                        <ul class="links">
+                            <li><a href="#">- Recommendations & Remarks RnR</a></li>
+                            <li><a href="#">- Contact with our members</a></li>
+                            <li><a href="#">- Market your business for free</a></li>
+                            <li><a href="#">- Coupoonshop assistance</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 class="heading-footer">Coupoonshop assistance</h5>
+                        <ul class="links">
+                            <li><a href="#">- FAQ</a></li>
+                            <li><a href="#">- Privacy Policy</a></li>
+                            <li><a href="#">- Terms &. Conditions</a></li>
+                            <li><a href="#">- Help you</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="footer__bottom__lists">
-                <ul class="payment-methods">
-                    <li><i class="fab fa-cc-visa"></i></li>
-                    <li><i class="fab fa-cc-mastercard"></i></li>
-                    <li><i class="fab fa-cc-paypal"></i></li>
-                </ul>
-                <ul class="social-links">
-                    <li>
-                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-twitter-square"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </li>
-                </ul>
+            <div class="footer__bottom">
+                <div class="footer__bottom__copyrights">
+                    <p>&copy; 2020 Coupoonshop All Rights Reserved | Powered by <a href="https://diva-lab.com/">Diva-lab</a></p>
+                </div>
+                <div class="footer__bottom__lists">
+                    <ul class="payment-methods">
+                        <li><i class="fab fa-cc-visa"></i></li>
+                        <li><i class="fab fa-cc-mastercard"></i></li>
+                        <li><i class="fab fa-cc-paypal"></i></li>
+                    </ul>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </footer>
 
+<!-- core scripts -->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/popper.js/dist/popper.js"></script>
+<!-- custom bootstrap scripts -->
 <script src="node_modules/bootstrap/js/dist/util.js"></script>
 <script src="node_modules/bootstrap/js/dist/carousel.js"></script>
+<!-- page plugins scripts -->
 <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
-<script src="js/dropdown.js"></script>
-<script src="js/mainScript.js"></script>
+<script src="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
 <script>
     $(document).ready(function() {
         $('.states').select2({
@@ -358,5 +380,8 @@
         });
     });
 </script>
+<!-- custom scripts -->
+<script src="js/dropdown.js"></script>
+<script src="js/mainScript.js"></script>
 </body>
 </html>

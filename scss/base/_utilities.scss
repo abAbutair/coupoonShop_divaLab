@@ -17,7 +17,6 @@ p {line-height: var(--h);}
         align-items: center;
     }
 }
-
 .background-holder {
     @extend %covered_bg;
     &--overlay1 {
@@ -61,5 +60,15 @@ p {line-height: var(--h);}
     }
     &__new {
         color: $secondClr;
+    }
+}
+.video-demo {
+    text-align: center;
+    .fancy-link {
+        font-size: $medFontSize;
+        @include sub-colors;
+        i {
+            margin-#{$right}: 1rem;
+        }
     }
 }

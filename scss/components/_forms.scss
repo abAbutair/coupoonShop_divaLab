@@ -2,7 +2,6 @@
 }
 
 .form__element {
-
 }
 
 .input, .select2-container--default .custom-container {
@@ -26,11 +25,13 @@
     -webkit-appearance: none;
   }
 
+  &--white-bg {
+    background-color: $whiteClr;
+    border: 0.1rem solid $inputBorder2;
+  }
   &:focus {
-
   }
 }
-
 .positioned-icn {
   position: relative;
 
