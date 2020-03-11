@@ -1471,7 +1471,7 @@ template {
 /*------ Translate ------*/
 /*----- Translate Variables -----*/
 /*------ The Switch ------*/
-.background-holder, .carousel .carousel-inner .carousel-item, .email-sub, .latest-d__inner__bg {
+.background-holder, .carousel .carousel-inner .carousel-item, .latest-d__inner__bg {
   width: 100%;
   background-size: cover;
   background-position: center center;
@@ -2053,6 +2053,10 @@ a:hover {
   text-decoration: none;
 }
 
+article {
+  color: #333;
+}
+
 body {
   font-family: "roboto-reg";
   font-weight: 400;
@@ -2244,6 +2248,7 @@ p {
 
 .video-demo {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .video-demo .fancy-link {
@@ -2260,6 +2265,15 @@ p {
 
 .video-demo .fancy-link i {
   margin-right: 1rem;
+}
+
+.top-divider:before {
+  content: ' ';
+  display: block;
+  background-color: #D3D3D3;
+  width: 100%;
+  height: 0.1rem;
+  margin: 4.5rem 0;
 }
 
 button {
@@ -2683,7 +2697,6 @@ ul li {
 
 .email-sub__inner {
   text-align: center;
-  width: 65%;
   margin: 0 auto;
   padding: 5rem 10rem;
   background-color: rgba(255, 255, 255, 0.7);
@@ -2702,15 +2715,6 @@ ul li {
 .footer {
   background: linear-gradient(to top, #000F12, #004C59);
   padding: 5rem 0;
-}
-
-.footer__bottom:before {
-  content: ' ';
-  display: block;
-  background-color: #D3D3D3;
-  width: 100%;
-  height: 0.1rem;
-  margin: 4.5rem 0;
 }
 
 .footer__bottom > *:not(:last-child) {
@@ -2749,6 +2753,10 @@ ul li {
   padding: 5rem 0;
 }
 
+.design-sec {
+  text-align: center;
+}
+
 .design-sec > * {
   position: relative;
   z-index: 1;
@@ -2765,11 +2773,11 @@ ul li {
 
 .latest-deal__child1 {
   position: absolute;
-  top: 3rem;
+  top: 0;
   left: 0;
   z-index: 1;
   width: 50%;
-  height: calc(100% - 3rem - 3rem);
+  height: 100%;
 }
 
 .latest-deal__child2 {
@@ -2822,8 +2830,16 @@ ul li {
   padding: 3rem 0;
 }
 
-.latest-d:hover {
-  background: linear-gradient(to right, transparent 50%, #F4F4F4 50%);
+.latest-d--bg {
+  background: linear-gradient(to right, transparent 50%, #F0FBFD 50%);
+}
+
+.latest-d:first-child {
+  padding-top: 0;
+}
+
+.latest-d:last-child {
+  padding-bottom: 0;
 }
 
 .latest-d__inner {
@@ -2855,6 +2871,52 @@ ul li {
 
 .latest-d__inner__data .link-wrapper a {
   color: #F85F20;
+}
+
+.img-bio-grid__child {
+  display: block;
+  padding-top: 60%;
+  position: relative;
+}
+
+.img-bio-grid__child__data {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: rgba(244, 244, 244, 0.8);
+}
+
+.img-bio-grid__child__data article p {
+  max-height: calc(var(--arth) * 1);
+  white-space: pre-wrap;
+}
+
+.img-bio-grid__child__data > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.offer-boxes__child {
+  background-color: #F0FBFD;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.offer-boxes__child .icon-img {
+  position: absolute;
+  right: -20%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.offer-boxes__child__data article p {
+  max-height: calc(var(--arth) * 2);
 }
 
 /*# sourceMappingURL=style_ltr.css.map */
