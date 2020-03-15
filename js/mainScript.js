@@ -22,11 +22,22 @@ let getSiblings = function (elem) {
 };
 
 (function () {
-    let z = document.querySelectorAll('.grid__column');
-    if (z.length === 2 ) {
-        z[0].classList.add('grid__column--beginner');
-        z[1].classList.add('grid__column--ending');
-    } else if(z.length === 1) {
-        z[0].classList.add('grid__column--single');
+    let z = document.querySelectorAll('.grid .grid__column');
+    for (let n = 0; n < z.length; n++) {
+        if (z.length === 2 ) {
+            z[n].classList.add('grid__column--ending6');
+        } else if(z.length === 1) {
+            z[n].classList.add('grid__column--ending12');
+        }
+
+        let y = z[n].children;
+        for (let o = 0; o < y.length; o++) {
+            if (y.length === 2 ) {
+                y[o].classList.add('grid__item--span6');
+            } else if(y.length === 3) {
+                y[o].classList.add('grid__item--span4');
+            }
+        }
+
     }
 })();

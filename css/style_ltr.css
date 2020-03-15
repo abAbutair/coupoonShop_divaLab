@@ -1471,13 +1471,13 @@ template {
 /*------ Translate ------*/
 /*----- Translate Variables -----*/
 /*------ The Switch ------*/
-.background-holder, .carousel .carousel-inner .carousel-item, .grid__item__inner, .latest-d__inner__bg {
+.background-holder, .carousel .carousel-inner .carousel-item, .grid__inner, .latest-d__inner__bg {
   width: 100%;
   background-size: cover;
   background-position: center center;
 }
 
-.flex-box, .select2-container--default .custom-container .select2-selection__rendered, .header__bottom .logo-part .burger-menu .open-btn, .email-sub__inner form, .email-sub__inner form .ctm-btn, .footer__bottom__lists, .footer__bottom__lists .payment-methods, .footer__bottom__lists .social-links, .latest-deal #featureSlider .carousel-caption, .latest-d__inner, .latest-d__inner__data .link-wrapper {
+.flex-box, .select2-container--default .custom-container .select2-selection__rendered, .grid__inner, .header__bottom .logo-part .burger-menu .open-btn, .email-sub__inner form, .email-sub__inner form .ctm-btn, .footer__bottom__lists, .footer__bottom__lists .payment-methods, .footer__bottom__lists .social-links, .latest-deal #featureSlider .carousel-caption, .latest-d__inner, .latest-d__inner__data .link-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2067,6 +2067,12 @@ body {
   text-align: left;
 }
 
+.heading-intro {
+  font-size: 2rem;
+  font-family: "roboto-med";
+  margin: 0;
+}
+
 .heading-primary {
   color: #fff;
   font-size: 2rem;
@@ -2515,31 +2521,17 @@ ul li {
   grid-template-columns: repeat(12, 1fr);
 }
 
-.grid__column--beginner {
-  grid-column-start: 1 !important;
+.grid__column {
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-end: span 12;
+}
+
+.grid__column--ending6 {
   grid-column-end: span 6 !important;
 }
 
-.grid__column--ending {
-  grid-column-start: 7 !important;
-  grid-column-end: span 6 !important;
-}
-
-.grid__column--single {
-  grid-column-start: 1 !important;
+.grid__column--ending12 {
   grid-column-end: span 12 !important;
-}
-
-.grid__column--s1 {
-  grid-column-start: 1;
-}
-
-.grid__column--s2 {
-  grid-column-start: 7;
-}
-
-.grid__column--s3 {
-  grid-column-start: 11;
 }
 
 .grid__column--e1 {
@@ -2556,11 +2548,123 @@ ul li {
 
 .grid__item {
   height: 100%;
+  grid-row-end: span 12;
 }
 
-.grid__item__inner {
-  display: block;
+.grid__item--span4 {
+  grid-row-end: span 4;
+}
+
+.grid__item--span6 {
+  grid-row-end: span 6;
+}
+
+.grid__inner {
   height: 100%;
+}
+
+.grid__inner--data-c {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.grid__inner--data-c .heading-intro {
+  width: 50%;
+  text-align: center;
+  padding: 2rem;
+  margin-right: 2rem;
+}
+
+.grid__inner--data-c .heading-intro--fst-clr {
+  color: #65AA8F;
+}
+
+.grid__inner--data-c .heading-intro--scd-clr {
+  color: #930A10;
+}
+
+.grid__inner--data-c .heading-intro--third-clr {
+  color: #A55731;
+}
+
+.grid__inner--data-c .heading-intro--fourth-clr {
+  color: #F75024;
+}
+
+.grid__inner--data-c .heading-intro--fifth-clr {
+  color: #A81738;
+}
+
+.grid__inner--data-c .heading-intro--sixth-clr {
+  color: #003162;
+}
+
+.grid__inner--data-c .heading-intro span {
+  font-size: calc(2.4rem + .6rem);
+  display: block;
+}
+
+.grid__inner--data-bg {
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.grid__inner--data-bg .heading-intro {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+}
+
+.grid__inner--data-bg .heading-intro--fst-clr {
+  color: #65AA8F;
+}
+
+.grid__inner--data-bg .heading-intro--scd-clr {
+  color: #930A10;
+}
+
+.grid__inner--data-bg .heading-intro--third-clr {
+  color: #A55731;
+}
+
+.grid__inner--data-bg .heading-intro--fourth-clr {
+  color: #F75024;
+}
+
+.grid__inner--data-bg .heading-intro--fifth-clr {
+  color: #A81738;
+}
+
+.grid__inner--data-bg .heading-intro--sixth-clr {
+  color: #003162;
+}
+
+.grid__inner--data-a {
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.grid__inner--data-a .heading-intro--fst-clr {
+  color: #65AA8F;
+}
+
+.grid__inner--data-a .heading-intro--scd-clr {
+  color: #930A10;
+}
+
+.grid__inner--data-a .heading-intro--third-clr {
+  color: #A55731;
+}
+
+.grid__inner--data-a .heading-intro--fourth-clr {
+  color: #F75024;
+}
+
+.grid__inner--data-a .heading-intro--fifth-clr {
+  color: #A81738;
+}
+
+.grid__inner--data-a .heading-intro--sixth-clr {
+  color: #003162;
 }
 
 .ctm-nav {

@@ -7,6 +7,12 @@ body {
   word-spacing: 0.3rem;
   text-align: $left;
 }
+.heading-intro {
+  font-size: $medFontSize;
+  font-family: $medFont;
+  margin: 0;
+}
+
 .heading-primary {
   color: $whiteClr;
   font-size: $medFontSize;
