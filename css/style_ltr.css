@@ -1471,7 +1471,7 @@ template {
 /*------ Translate ------*/
 /*----- Translate Variables -----*/
 /*------ The Switch ------*/
-.background-holder, .carousel .carousel-inner .carousel-item, .latest-d__inner__bg {
+.background-holder, .carousel .carousel-inner .carousel-item, .grid__item__inner, .latest-d__inner__bg {
   width: 100%;
   background-size: cover;
   background-position: center center;
@@ -2021,7 +2021,7 @@ template {
 }
 
 :root {
-  --h: 1;
+  --h: 1.6;
   --arth: 2rem;
 }
 
@@ -2505,45 +2505,62 @@ ul li {
   font-size: 2.4rem;
 }
 
-.grid {
-  position: relative;
-  height: 100%;
+.grid, .grid__column {
+  display: grid;
+  grid-gap: 15px;
 }
 
-.grid--600 {
-  height: 60rem;
+.grid {
+  height: 600px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.grid__column--beginner {
+  grid-column-start: 1 !important;
+  grid-column-end: span 6 !important;
+}
+
+.grid__column--ending {
+  grid-column-start: 7 !important;
+  grid-column-end: span 6 !important;
+}
+
+.grid__column--single {
+  grid-column-start: 1 !important;
+  grid-column-end: span 12 !important;
+}
+
+.grid__column--s1 {
+  grid-column-start: 1;
+}
+
+.grid__column--s2 {
+  grid-column-start: 7;
+}
+
+.grid__column--s3 {
+  grid-column-start: 11;
+}
+
+.grid__column--e1 {
+  grid-column-end: span 6;
+}
+
+.grid__column--e2 {
+  grid-column-end: span 4;
+}
+
+.grid__column--e3 {
+  grid-column-end: span 2;
 }
 
 .grid__item {
-  position: absolute;
-}
-
-.grid__item--width50 {
-  width: 50%;
-}
-
-.grid__item--width40 {
-  width: 40%;
-}
-
-.grid__item--width35 {
-  width: 35%;
-}
-
-.grid__item--width25 {
-  width: 25%;
-}
-
-.grid__item--height100 {
   height: 100%;
 }
 
-.grid__item--height50 {
-  height: 50%;
-}
-
-.grid__item--height33 {
-  height: 33.333333%;
+.grid__item__inner {
+  display: block;
+  height: 100%;
 }
 
 .ctm-nav {

@@ -1,32 +1,81 @@
+.grid, .grid__column {
+  display: grid;
+  grid-gap: 15px;
+}
 .grid {
-  position: relative;
-  height: 100%;
-  &--600 {
-    height: 60rem;
+  height: 600px;
+  grid-template-columns: repeat(12, 1fr);
+  &__column {
+    &--beginner {
+      grid-column-start: 1 !important;
+      grid-column-end: span 6 !important;
+    }
+    &--ending {
+      grid-column-start: 7 !important;
+      grid-column-end: span 6 !important;
+    }
+    &--single {
+      grid-column-start: 1 !important;
+      grid-column-end: span 12 !important;
+    }
+    &--s1 {
+      grid-column-start: 1;
+    }
+    &--s2 {
+      grid-column-start: 7;
+    }
+    &--s3 {
+      grid-column-start: 11;
+    }
+    &--e1 {
+      grid-column-end: span 6;
+    }
+    &--e2 {
+      grid-column-end: span 4;
+    }
+    &--e3 {
+      grid-column-end: span 2;
+    }
   }
   &__item {
-    position: absolute;
-    &--width50 {
-      width: 50%;
-    }
-    &--width40 {
-      width: 40%;
-    }
-    &--width35 {
-      width: 35%;
-    }
-    &--width25 {
-      width: 25%;
-    }
-
-    &--height100 {
+    height: 100%;
+    &__inner {
+      display: block;
       height: 100%;
-    }
-    &--height50 {
-      height: 50%;
-    }
-    &--height33 {
-      height: 33.333333%;
+      @extend %covered_bg;
     }
   }
 }
+
+//.grid {
+//  position: relative;
+//  height: 100%;
+//  &--600 {
+//    height: 60rem;
+//  }
+//  &__item {
+//    position: absolute;
+//    &--width50 {
+//      width: 50%;
+//    }
+//    &--width40 {
+//      width: 40%;
+//    }
+//    &--width35 {
+//      width: 35%;
+//    }
+//    &--width25 {
+//      width: 25%;
+//    }
+//
+//    &--height100 {
+//      height: 100%;
+//    }
+//    &--height50 {
+//      height: 50%;
+//    }
+//    &--height33 {
+//      height: 33.333333%;
+//    }
+//  }
+//}

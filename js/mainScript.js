@@ -21,4 +21,12 @@ let getSiblings = function (elem) {
     return siblings;
 };
 
-//
+(function () {
+    let z = document.querySelectorAll('.grid__column');
+    if (z.length === 2 ) {
+        z[0].classList.add('grid__column--beginner');
+        z[1].classList.add('grid__column--ending');
+    } else if(z.length === 1) {
+        z[0].classList.add('grid__column--single');
+    }
+})();
