@@ -2988,32 +2988,57 @@ button:focus {
   opacity: 1;
 }
 
-.header__bottom [class^="col-"] {
-  position: static;
-}
-
-.header__bottom .container {
-  position: relative;
-}
-
-.header__bottom .ctm-dropdown__header:before {
-  top: calc(100% + 3rem - 1rem);
-}
-
-.header__bottom .ctm-dropdown__menu {
-  top: calc(100% + 3rem);
-  width: 130%;
+.hover-dropdown:hover .hover-dropdown__header:before {
+  visibility: visible;
+  opacity: 1;
 }
 
 .hover-dropdown:hover .hover-dropdown__menu {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.hover-dropdown__header {
+  position: relative;
+}
+
+.hover-dropdown__header:before {
+  content: ' ';
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-bottom: 1rem solid #F85F20;
+  position: absolute;
+  top: calc(100% + 3rem + 0.7rem - 1rem);
+  left: 50%;
+  transform: translate(-50%, 0);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 .hover-dropdown__menu {
-  display: none;
   position: absolute;
   top: calc(100% + 3rem);
   left: 0;
+  width: 100%;
+  margin: 0 1.5rem;
+  background-color: #F0FBFD;
+  border-top: 0.2rem solid #F85F20;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.hover-dropdown__menu__option {
+  padding: 1rem 0.5rem;
 }
 
 .input, .select2-container--default .custom-container {
@@ -3412,6 +3437,23 @@ ul li {
 
 .header__bottom .logo-part > *:not(:last-child), .header__bottom .nav-part > *:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.header__bottom [class^="col-"] {
+  position: static;
+}
+
+.header__bottom .container {
+  position: relative;
+}
+
+.header__bottom .ctm-dropdown__header:before {
+  top: calc(100% + 3rem - 1rem);
+}
+
+.header__bottom .ctm-dropdown__menu {
+  top: calc(100% + 3rem);
+  width: 130%;
 }
 
 .icon-link {

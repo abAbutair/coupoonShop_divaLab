@@ -68,7 +68,84 @@
                             </div>
                             <div class="menu-collapse ctm-dropdown__menu" id="menuCollapse" aria-labelledby="openBtn">
                                 <div class="close-btn" id="closeBtn">&times;</div>
-                                <div class="for-now"></div>
+                                <div class="accordion" id="accordionMenu">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h2 role="button" data-toggle="collapse" data-target="#collapseOne"
+                                                aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                Food & Beverages
+                                            </h2>
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionMenu">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li><a href="#">seafood</a></li>
+                                                    <li><a href="#">Breakfast</a></li>
+                                                    <li><a href="#">Coffee</a></li>
+                                                    <li><a href="#">Lunch</a></li>
+                                                    <li><a href="#">Dinner</a></li>
+                                                    <li><a href="#">Bars</a></li>
+                                                    <li><a href="#">Romantic Dinner</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h2 role="button" data-toggle="collapse" data-target="#collapseTwo"
+                                                aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                SPA & Beauty
+                                            </h2>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionMenu">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li><a href="#">Sub Category Name</a></li>
+                                                    <li><a href="#">Sub Category Name</a></li>
+                                                    <li><a href="#">Sub Category Name</a></li>
+                                                    <li><a href="#">Sub Category Name</a></li>
+                                                    <li><a href="#">Sub Category Name</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h2 role="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                                Activities
+                                            </h2>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionMenu">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li><a href="#">Sub Category Name</a></li>
+                                                    <li><a href="#">Sub Category Name</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                            <h2 role="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                                aria-controls="collapseFour">
+                                                Health & Fitness
+                                            </h2>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                             data-parent="#accordionMenu">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li><a href="#">Sub Category Name</a></li>
+                                                    <li><a href="#">Sub Category Name</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </nav>
                     </div>
@@ -567,8 +644,9 @@
 <script src="node_modules/popper.js/dist/popper.js"></script>
 <!-- custom bootstrap scripts -->
 <script src="node_modules/bootstrap/js/dist/util.js"></script>
-<script src="node_modules/bootstrap/js/dist/carousel.js"></script>
 <script src="node_modules/bootstrap/js/dist/collapse.js"></script>
+<script src="node_modules/bootstrap/js/dist/carousel.js"></script>
+
 <!-- page plugins scripts -->
 <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
 <script src="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>

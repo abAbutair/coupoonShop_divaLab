@@ -44,6 +44,26 @@
         }
       }
     }
+
+    // for dropdown
+    [class^="col-"] {
+      position: static;
+    }
+    .container {
+      position: relative;
+    }
+    .ctm-dropdown {
+      &__header {
+        &:before {
+          top: calc(100% + #{$dropdownMargin2} - #{$dropdownArrow}); // - 1rem is for arrow height
+        }
+      }
+
+      &__menu {
+        top: calc(100% + #{$dropdownMargin2});
+        width: 130%;
+      }
+    }
   }
 }
 
