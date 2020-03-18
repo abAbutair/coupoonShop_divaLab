@@ -1,9 +1,9 @@
 .grid, .grid__column {
   display: grid;
-  grid-gap: 15px;
+  grid-gap: .3rem;
 }
 .grid {
-  height: 600px;
+  height: 60rem;
   grid-template-columns: repeat(12, 1fr);
   &__column {
     grid-template-rows: repeat(12, 1fr);
@@ -73,36 +73,3 @@
     }
   }
 }
-
-//.grid {
-//  position: relative;
-//  height: 100%;
-//  &--600 {
-//    height: 60rem;
-//  }
-//  &__item {
-//    position: absolute;
-//    &--width50 {
-//      width: 50%;
-//    }
-//    &--width40 {
-//      width: 40%;
-//    }
-//    &--width35 {
-//      width: 35%;
-//    }
-//    &--width25 {
-//      width: 25%;
-//    }
-//
-//    &--height100 {
-//      height: 100%;
-//    }
-//    &--height50 {
-//      height: 50%;
-//    }
-//    &--height33 {
-//      height: 33.333333%;
-//    }
-//  }
-//}

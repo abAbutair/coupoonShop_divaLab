@@ -16,7 +16,7 @@
 //@import "../node_modules/bootstrap/scss/breadcrumb";
 //@import "../node_modules/bootstrap/scss/button-group";
 //@import "../node_modules/bootstrap/scss/buttons";
-//@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/card";
 @import "../node_modules/bootstrap/scss/carousel";
 //@import "../node_modules/bootstrap/scss/close";
 //@import "../node_modules/bootstrap/scss/code";
@@ -65,6 +65,7 @@
 
 
 // Base
+@import "base/animation";
 @import "base/fonts";
 @import "base/reset";
 @import "base/typography";
@@ -74,6 +75,7 @@
 @import "themes/default";
 
 // Components
+@import "components/accordion";
 @import "components/buttons";
 @import "components/carousels";
 @import "components/dropdowns";

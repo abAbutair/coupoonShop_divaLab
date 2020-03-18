@@ -70,3 +70,11 @@ article {
     }
   }
 }
+.text-line-through{
+  text-decoration: line-through;
+}
+article{
+  p{
+    margin-bottom: 1rem; // plz remove margin bottom property
+  }
+}

@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="css/style_ltr.css">
+    <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/web-and-user-interface-27/512/338-512.png"
+          type="image/x-icon">
+    <title>Coupoon Shop</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__top t-capitalize">
+        <div class="container">
+            <div class="flex-box justify-content--space-between align-items--center">
+                <div class="flex-box__child flex-box align-items--center">
+                    <div class="icon-link">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <a href="#">login</a>
+                    </div>
+                    <div class="ctm-dropdown" id="dropdown">
+                        <div class="ctm-dropdown__header">
+                            <button class="ctm-btn icon-link dropdown-button" type="button" id="dropdownButton">
+                                <i class="fas fa-language"></i>
+                                <span>language</span>
+                            </button>
+                        </div>
+                        <div class="ctm-dropdown__menu" aria-labelledby="dropdownButton">
+                            <div class="dropdown-option">العربية</div>
+                            <div class="dropdown-option">english</div>
+                            <div class="dropdown-option">french</div>
+                        </div>
+                    </div>
+                    <nav class="ctm-nav flex-box ctm-nav--small">
+                        <a href="#" class="ctm-nav__link">stores</a>
+                        <a href="#" class="ctm-nav__link">how it works</a>
+                        <a href="#" class="ctm-nav__link">craft offers</a>
+                        <a href="#" class="ctm-nav__link">sell with us</a>
+                    </nav>
+                </div>
+                <div class="flex-box__child">
+                    <a href="#" class="ctm-btn ctm-btn--small ctm-btn--orange">subscribe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logo-part flex-box">
+                        <a href="#" class="logo"><img src="images/logo.png" alt="Coupon Logo"></a>
+                        <nav class="burger-menu">
+                            <button class="open-btn" type="button" id="openBtn">
+                            <span class="align-burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                                <span class="open-btn__header">all categories</span>
+                            </button>
+                            <!--                        <div class="close-btn" id="closeBtn">&times;</div>-->
+                            <!--                        <div class="menu-collapse" id="menuCollapse">-->
+                            <!--                            <ul class="nav-menu">-->
+                            <!--                                <li class="nav-menu__item active">-->
+                            <!--                                    <a class="nav-menu__link" href="#">Home</a>-->
+                            <!--                                </li>-->
+                            <!--                                <li class="nav-menu__item">-->
+                            <!--                                    <a class="nav-menu__link" href="#">Features</a>-->
+                            <!--                                </li>-->
+                            <!--                                <li class="nav-menu__item">-->
+                            <!--                                    <a class="nav-menu__link" href="#">Pricing</a>-->
+                            <!--                                </li>-->
+                            <!--                            </ul>-->
+                            <!--                        </div>-->
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="nav-part">
+                        <form action="" class="form">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="form__element">
+                                        <select class="states" name="state">
+                                            <option value="dubai">Dubai</option>
+                                            <option value="abu dhabi">abu dhabi</option>
+                                            <option value="cairo">cairo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="form__element positioned-icn">
+                                        <input type="search" class="input" placeholder="search">
+                                        <span class="positioned-icn__icon"><i class="fas fa-search"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <nav class="ctm-nav flex-box ctm-nav--big">
+                            <a href="#" class="ctm-nav__link">home appliances</a>
+                            <a href="#" class="ctm-nav__link">activities</a>
+                            <a href="#" class="ctm-nav__link">food & beverages</a>
+                            <a href="#" class="ctm-nav__link">electronics</a>
+                            <a href="#" class="ctm-nav__link">health & fitness</a>
+                            <a href="#" class="ctm-nav__link">travel</a>
+                            <a href="#" class="ctm-nav__link">beauty & spa</a>
+                            <a href="#" class="ctm-nav__link">medical</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- page header -->
+    <div class="page-header">
+        <h1 class="page-heading">profile</h1>
+        <nav>
+            <ul class="breadcrumb">
+                <li><a href="index.html">home</a></li>
+                <li class="active">profile</li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- start page content -->
+    <section class="section--padding ">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 col-lg-3">
+                    <div class="profile-pic"><img src="media/recent-req.jpg" alt=""></div>
+                    <p class="username-4mob">John Doe</p>
+                    <label class="upload-pic" for="uploadPic">
+                        <input type="file" name="" id="uploadPic" class="file-upload">
+                        <span>Change Photo</span>
+                    </label>
+                </div>
+                <div class="col-xl-10 col-lg-9">
+                    <p class="username-4desktop heading-follower heading-follower--main-clr">John Doe</p>
+                    <nav>
+                        <div class="nav" id="nav-tab" role="tablist">
+                            <a class="tab-link active" id="nav-home-tab" data-toggle="tab" href="#nav-info"
+                               role="tab">Contact Information</a>
+                            <a class="tab-link" id="nav-profile-tab" data-toggle="tab" href="#nav-saving"
+                               role="tab">My Saving</a>
+                            <a class="tab-link" id="nav-contact-tab" data-toggle="tab"
+                               href="#nav-subscription"
+                               role="tab">Subscription</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-info" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="input" type="text" placeholder="FName">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="input" type="text" placeholder="LName">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="input" type="email" placeholder="E-mail">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="input" type="password" placeholder="password">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input class="input" type="text" placeholder="Address">
+                                            <a href="#">Locate Me</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="form-group" for="interests">
+                                            <select class="js-example-basic-multiple js-states input"
+                                                    id="interests" multiple="multiple">
+                                                <option>travel</option>
+                                                <option>hotels</option>
+                                                <option>sports</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="ctm-btn ctm-btn--small ctm-btn--orange">save</button>
+                                <button type="button" class="ctm-btn ctm-btn--small ctm-btn--mainclr">cancel</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="nav-saving" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th>offer name</th>
+                                        <th>Actual Price</th>
+                                        <th>save</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>5* Theme Night Buffet + Unlimited Beverages</td>
+                                        <td>500 ED</td>
+                                        <td>200 ED</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5* Theme Night Buffet + Unlimited Beverages</td>
+                                        <td>500 ED</td>
+                                        <td>200 ED</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5* Theme Night Buffet + Unlimited Beverages</td>
+                                        <td>500 ED</td>
+                                        <td>200 ED</td>
+                                    </tr>
+                                    <tr class="tfooter">
+                                        <td colspan="3">Total Save: 880 ED</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-subscription" role="tabpanel" aria-labelledby="nav-contact-tab">
+`                           <div class="subscribtion-info">
+                                <img src="media/Image84.png" alt="">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <i class="fas fa-info-circle"></i>
+                                        <span>active till <strong>22/11/2020</strong></span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="">
+                                            <i class="fas fa-eye"></i>
+                                            <span>Scan QR Code</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="">
+                                            <i class="fas fa-file-pdf"></i>
+                                            <span>Download PDF </span>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="">
+                                            <i class="fas fa-envelope"></i>
+                                            <span>Resend QR Code to mail</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="">
+                                            <i class="fas fa-image"></i>
+                                            <span>Download Image</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <button type="button" class="ctm-btn ctm-btn--small ctm-btn--orange">change plane</button>
+                                        <button type="button" class="ctm-btn ctm-btn--small ctm-btn--mainclr">end subscribtion</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <section class="section section--padding email-sub background-holder" style="background-image: url('images/email-sub.jpg')">
+        <div class="container">
+            <div class="email-sub__inner">
+                <h5 class="heading-primary heading-primary--main-clr">Join 13,000+ subscribers &  get a hand picked list of best offers</h5>
+                <form action="">
+                    <input type="search" class="input input--white-bg" placeholder="search">
+                    <button type="button" class="ctm-btn ctm-btn--big ctm-btn--orange"><i class="fas fa-paper-plane"></i>subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h5 class="heading-footer">Get to know us</h5>
+                        <ul class="links">
+                            <li><a href="#">- Career</a></li>
+                            <li><a href="#">- What we do</a></li>
+                            <li><a href="#">- We do it as family</a></li>
+                            <li><a href="#">- Business affiliates</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 class="heading-footer">Cash with us</h5>
+                        <ul class="links">
+                            <li><a href="#">- Part of big family</a></li>
+                            <li><a href="#">- Free time? Work with us</a></li>
+                            <li><a href="#">- Drop us a visit</a></li>
+                            <li><a href="#">- Benefits for you</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 class="heading-footer">Get in touch</h5>
+                        <ul class="links">
+                            <li><a href="#">- Recommendations & Remarks RnR</a></li>
+                            <li><a href="#">- Contact with our members</a></li>
+                            <li><a href="#">- Market your business for free</a></li>
+                            <li><a href="#">- Coupoonshop assistance</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 class="heading-footer">Coupoonshop assistance</h5>
+                        <ul class="links">
+                            <li><a href="#">- FAQ</a></li>
+                            <li><a href="#">- Privacy Policy</a></li>
+                            <li><a href="#">- Terms &. Conditions</a></li>
+                            <li><a href="#">- Help you</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom top-divider">
+                <div class="footer__bottom__copyrights">
+                    <p>&copy; 2020 Coupoonshop All Rights Reserved | Powered by <a href="https://diva-lab.com/">Diva-lab</a></p>
+                </div>
+                <div class="footer__bottom__lists">
+                    <ul class="payment-methods">
+                        <li><i class="fab fa-cc-visa"></i></li>
+                        <li><i class="fab fa-cc-mastercard"></i></li>
+                        <li><i class="fab fa-cc-paypal"></i></li>
+                    </ul>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- core scripts -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/popper.js/dist/popper.js"></script>
+<!-- custom bootstrap scripts -->
+<script src="node_modules/bootstrap/js/dist/util.js"></script>
+<script src="node_modules/bootstrap/js/dist/tab.js"></script>
+
+<!-- page plugins scripts -->
+<script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.states').select2({
+            placeholder: 'state',
+            minimumResultsForSearch: -1,
+            dropdownAutoWidth:true,
+            width: '100%',
+            containerCssClass: "custom-container",
+            dropdownCssClass: "custom-dropdown",
+        });
+    });
+
+    $('#interests').select2({
+        placeholder: 'Interests',
+        width: '100%',
+    })
+</script>
+<!-- custom scripts -->
+<script src="js/dropdown.js"></script>
+<script src="js/mainScript.js"></script>
+</body>
+</html>

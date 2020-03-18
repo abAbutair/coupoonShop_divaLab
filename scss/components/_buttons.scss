@@ -9,6 +9,7 @@ button {
 
 .ctm-btn {
   color: $whiteClr;
+  text-transform: capitalize;
   &:hover {
     color: darken($whiteClr, 10%);
   }
@@ -30,8 +31,8 @@ button {
   i {
     margin-#{$right}: 1rem;
   }
+  &--mainclr{
+    background-color:$mainClr ;
+    color:$whiteClr;
+  }
 }
-
-
-
-

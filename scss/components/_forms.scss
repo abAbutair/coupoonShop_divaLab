@@ -67,3 +67,28 @@
   }
 }
 
+.checkbox{
+  color: $mainClr;
+  position: relative;
+  cursor: pointer;
+  span{
+    &:before{
+      margin-#{$right}:1.2rem;
+      transition: all 250ms cubic-bezier(.4,.0,.23,1);
+      @include fontAwesome("Font Awesome 5 Free",'\f0c8',1.8rem,400,$mainClr);
+    }
+  }
+
+  input{
+    display: none;
+    &:checked{
+      + span{
+        animation: shrink-bounce 200ms cubic-bezier(.4,.0,.23,1);
+        &:before{
+          animation: checkbox-check 125ms 250ms cubic-bezier(.4,.0,.23,1) forwards;;
+          @include fontAwesome("Font Awesome 5 Free",'\f14a',null,900,null);
+        }
+      }
+    }
+  }
+}

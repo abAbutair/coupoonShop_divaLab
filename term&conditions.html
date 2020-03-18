@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="css/style_ltr.css">
+    <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/web-and-user-interface-27/512/338-512.png"
+          type="image/x-icon">
+    <title>Coupoon Shop</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__top t-capitalize">
+        <div class="container">
+            <div class="flex-box justify-content--space-between align-items--center">
+                <div class="flex-box__child flex-box align-items--center">
+                    <div class="icon-link">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <a href="#">login</a>
+                    </div>
+                    <div class="ctm-dropdown" id="dropdown">
+                        <div class="ctm-dropdown__header">
+                            <button class="ctm-btn icon-link dropdown-button" type="button" id="dropdownButton">
+                                <i class="fas fa-language"></i>
+                                <span>language</span>
+                            </button>
+                        </div>
+                        <div class="ctm-dropdown__menu" aria-labelledby="dropdownButton">
+                            <div class="dropdown-option">العربية</div>
+                            <div class="dropdown-option">english</div>
+                            <div class="dropdown-option">french</div>
+                        </div>
+                    </div>
+                    <nav class="ctm-nav flex-box ctm-nav--small">
+                        <a href="#" class="ctm-nav__link">stores</a>
+                        <a href="#" class="ctm-nav__link">how it works</a>
+                        <a href="#" class="ctm-nav__link">craft offers</a>
+                        <a href="#" class="ctm-nav__link">sell with us</a>
+                    </nav>
+                </div>
+                <div class="flex-box__child">
+                    <a href="#" class="ctm-btn ctm-btn--small ctm-btn--orange">subscribe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logo-part flex-box">
+                        <a href="#" class="logo"><img src="images/logo.png" alt="Coupon Logo"></a>
+                        <nav class="burger-menu">
+                            <button class="open-btn" type="button" id="openBtn">
+                            <span class="align-burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                                <span class="open-btn__header">all categories</span>
+                            </button>
+                            <!--                        <div class="close-btn" id="closeBtn">&times;</div>-->
+                            <!--                        <div class="menu-collapse" id="menuCollapse">-->
+                            <!--                            <ul class="nav-menu">-->
+                            <!--                                <li class="nav-menu__item active">-->
+                            <!--                                    <a class="nav-menu__link" href="#">Home</a>-->
+                            <!--                                </li>-->
+                            <!--                                <li class="nav-menu__item">-->
+                            <!--                                    <a class="nav-menu__link" href="#">Features</a>-->
+                            <!--                                </li>-->
+                            <!--                                <li class="nav-menu__item">-->
+                            <!--                                    <a class="nav-menu__link" href="#">Pricing</a>-->
+                            <!--                                </li>-->
+                            <!--                            </ul>-->
+                            <!--                        </div>-->
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="nav-part">
+                        <form action="" class="form">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="form__element">
+                                        <select class="states" name="state">
+                                            <option value="dubai">Dubai</option>
+                                            <option value="abu dhabi">abu dhabi</option>
+                                            <option value="cairo">cairo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="form__element positioned-icn">
+                                        <input type="search" class="input" placeholder="search">
+                                        <span class="positioned-icn__icon"><i class="fas fa-search"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <nav class="ctm-nav flex-box ctm-nav--big">
+                            <a href="#" class="ctm-nav__link">home appliances</a>
+                            <a href="#" class="ctm-nav__link">activities</a>
+                            <a href="#" class="ctm-nav__link">food & beverages</a>
+                            <a href="#" class="ctm-nav__link">electronics</a>
+                            <a href="#" class="ctm-nav__link">health & fitness</a>
+                            <a href="#" class="ctm-nav__link">travel</a>
+                            <a href="#" class="ctm-nav__link">beauty & spa</a>
+                            <a href="#" class="ctm-nav__link">medical</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- page header -->
+    <div class="page-header">
+        <h1 class="page-heading">Terms & Conditions</h1>
+        <nav>
+            <ul class="breadcrumb">
+                <li><a href="index.html">home</a></li>
+                <li class="active">Terms & Conditions</li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- start page content -->
+    <section class="section--padding ">
+        <div class="container">
+            <form>
+                <h3 class="heading-follower heading-follower--main-clr">Terms & Conditions</h3>
+                <article>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>
+                    <ul class="two-col-list">
+                        <li>Prior booking is required (Subject to availability)</li>
+                        <li>Prior booking is required (Subject to availability)</li>
+                        <li>Prior booking is required (Subject to availability)</li>
+                        <li>Prior booking is required (Subject to availability)</li>
+                        <li>Prior booking is required (Subject to availability)</li>
+                        <li>Prior booking is required (Subject to availability)</li>
+                        <li>Prior booking is required (Subject to availability)</li>
+                        <li>Prior booking is required (Subject to availability)</li>
+                        <li>For bookings, please call +97144234170 or WhatsApp +971505612122 or send an email to fbreservations.gmhd@millenniumhotels.com with your Cobone voucher code
+                        </li>
+                    </ul>
+                    </p>
+                </article>
+                <label class="checkbox agree" for="agree">
+                    <input type="checkbox" id="agree">
+                    <span>I agree to terms and conditions</span>
+                </label>
+                <button class="ctm-btn ctm-btn--small ctm-btn--orange" type="submit">
+                    <i class="fas fa-paper-plane"></i> Proceed
+                </button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <section class="section section--padding email-sub background-holder" style="background-image: url('images/email-sub.jpg')">
+        <div class="container">
+            <div class="email-sub__inner">
+                <h5 class="heading-primary heading-primary--main-clr">Join 13,000+ subscribers &  get a hand picked list of best offers</h5>
+                <form action="">
+                    <input type="search" class="input input--white-bg" placeholder="search">
+                    <button type="button" class="ctm-btn ctm-btn--big ctm-btn--orange"><i class="fas fa-paper-plane"></i>subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h5 class="heading-footer">Get to know us</h5>
+                        <ul class="links">
+                            <li><a href="#">- Career</a></li>
+                            <li><a href="#">- What we do</a></li>
+                            <li><a href="#">- We do it as family</a></li>
+                            <li><a href="#">- Business affiliates</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 class="heading-footer">Cash with us</h5>
+                        <ul class="links">
+                            <li><a href="#">- Part of big family</a></li>
+                            <li><a href="#">- Free time? Work with us</a></li>
+                            <li><a href="#">- Drop us a visit</a></li>
+                            <li><a href="#">- Benefits for you</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 class="heading-footer">Get in touch</h5>
+                        <ul class="links">
+                            <li><a href="#">- Recommendations & Remarks RnR</a></li>
+                            <li><a href="#">- Contact with our members</a></li>
+                            <li><a href="#">- Market your business for free</a></li>
+                            <li><a href="#">- Coupoonshop assistance</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 class="heading-footer">Coupoonshop assistance</h5>
+                        <ul class="links">
+                            <li><a href="#">- FAQ</a></li>
+                            <li><a href="#">- Privacy Policy</a></li>
+                            <li><a href="#">- Terms &. Conditions</a></li>
+                            <li><a href="#">- Help you</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom top-divider">
+                <div class="footer__bottom__copyrights">
+                    <p>&copy; 2020 Coupoonshop All Rights Reserved | Powered by <a href="https://diva-lab.com/">Diva-lab</a></p>
+                </div>
+                <div class="footer__bottom__lists">
+                    <ul class="payment-methods">
+                        <li><i class="fab fa-cc-visa"></i></li>
+                        <li><i class="fab fa-cc-mastercard"></i></li>
+                        <li><i class="fab fa-cc-paypal"></i></li>
+                    </ul>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- core scripts -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/popper.js/dist/popper.js"></script>
+<!-- custom bootstrap scripts -->
+<script src="node_modules/bootstrap/js/dist/util.js"></script>
+<script src="node_modules/bootstrap/js/dist/collapse.js"></script>
+
+<!-- page plugins scripts -->
+<script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.states').select2({
+            placeholder: 'state',
+            minimumResultsForSearch: -1,
+            dropdownAutoWidth:true,
+            width: '100%',
+            containerCssClass: "custom-container",
+            dropdownCssClass: "custom-dropdown",
+        });
+    });
+</script>
+<!-- custom scripts -->
+<script src="js/dropdown.js"></script>
+<script src="js/mainScript.js"></script>
+</body>
+</html>

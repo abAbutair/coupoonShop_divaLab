@@ -55,29 +55,21 @@
                 <div class="col-lg-3">
                     <div class="logo-part flex-box">
                         <a href="#" class="logo"><img src="images/logo.png" alt="Coupon Logo"></a>
-                        <nav class="burger-menu">
-                            <button class="open-btn" type="button" id="openBtn">
-                            <span class="align-burger">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </span>
-                                <span class="open-btn__header">all categories</span>
-                            </button>
-                            <!--                        <div class="close-btn" id="closeBtn">&times;</div>-->
-                            <!--                        <div class="menu-collapse" id="menuCollapse">-->
-                            <!--                            <ul class="nav-menu">-->
-                            <!--                                <li class="nav-menu__item active">-->
-                            <!--                                    <a class="nav-menu__link" href="#">Home</a>-->
-                            <!--                                </li>-->
-                            <!--                                <li class="nav-menu__item">-->
-                            <!--                                    <a class="nav-menu__link" href="#">Features</a>-->
-                            <!--                                </li>-->
-                            <!--                                <li class="nav-menu__item">-->
-                            <!--                                    <a class="nav-menu__link" href="#">Pricing</a>-->
-                            <!--                                </li>-->
-                            <!--                            </ul>-->
-                            <!--                        </div>-->
+                        <nav class="burger-menu ctm-dropdown"  id="dropdown1">
+                            <div class="ctm-dropdown__header">
+                                <button class="open-btn dropdown-button" type="button" id="openBtn">
+                                <span class="align-burger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                                    <span class="open-btn__header">all categories</span>
+                                </button>
+                            </div>
+                            <div class="menu-collapse ctm-dropdown__menu" id="menuCollapse" aria-labelledby="openBtn">
+                                <div class="close-btn" id="closeBtn">&times;</div>
+                                <div class="for-now"></div>
+                            </div>
                         </nav>
                     </div>
                 </div>
@@ -102,15 +94,87 @@
                                 </div>
                             </div>
                         </form>
-                        <nav class="ctm-nav flex-box ctm-nav--big">
-                            <a href="#" class="ctm-nav__link">home appliances</a>
-                            <a href="#" class="ctm-nav__link">activities</a>
-                            <a href="#" class="ctm-nav__link">food & beverages</a>
-                            <a href="#" class="ctm-nav__link">electronics</a>
-                            <a href="#" class="ctm-nav__link">health & fitness</a>
-                            <a href="#" class="ctm-nav__link">travel</a>
-                            <a href="#" class="ctm-nav__link">beauty & spa</a>
-                            <a href="#" class="ctm-nav__link">medical</a>
+                        <nav class="ctm-nav ctm-nav--big flex-box">
+                            <div class="ctm-nav__link hover-dropdown">
+                                <div class="hover-dropdown__header">
+                                    <span>home appliances</span>
+                                </div>
+                                <div class="hover-dropdown__menu">
+                                    <div class="hover-dropdown__option">العربية</div>
+                                    <div class="hover-dropdown__option">english</div>
+                                    <div class="hover-dropdown__option">french</div>
+                                </div>
+                            </div>
+                            <div class="ctm-nav__link hover-dropdown">
+                                <div class="hover-dropdown__header">
+                                    <span>activities</span>
+                                </div>
+                                <div class="hover-dropdown__menu">
+                                    <div class="hover-dropdown__option">العربية</div>
+                                    <div class="hover-dropdown__option">english</div>
+                                    <div class="hover-dropdown__option">french</div>
+                                </div>
+                            </div>
+                            <div class="ctm-nav__link hover-dropdown">
+                                <div class="hover-dropdown__header">
+                                    <span>food & beverages</span>
+                                </div>
+                                <div class="hover-dropdown__menu">
+                                    <div class="hover-dropdown__option">العربية</div>
+                                    <div class="hover-dropdown__option">english</div>
+                                    <div class="hover-dropdown__option">french</div>
+                                </div>
+                            </div>
+                            <div class="ctm-nav__link hover-dropdown">
+                                <div class="hover-dropdown__header">
+                                    <span>electronics</span>
+                                </div>
+                                <div class="hover-dropdown__menu">
+                                    <div class="hover-dropdown__option">العربية</div>
+                                    <div class="hover-dropdown__option">english</div>
+                                    <div class="hover-dropdown__option">french</div>
+                                </div>
+                            </div>
+                            <div class="ctm-nav__link hover-dropdown">
+                                <div class="hover-dropdown__header">
+                                    <span>health & fitness</span>
+                                </div>
+                                <div class="hover-dropdown__menu">
+                                    <div class="hover-dropdown__option">العربية</div>
+                                    <div class="hover-dropdown__option">english</div>
+                                    <div class="hover-dropdown__option">french</div>
+                                </div>
+                            </div>
+                            <div class="ctm-nav__link hover-dropdown">
+                                <div class="hover-dropdown__header">
+                                    <span>travel</span>
+                                </div>
+                                <div class="hover-dropdown__menu">
+                                    <div class="hover-dropdown__option">العربية</div>
+                                    <div class="hover-dropdown__option">english</div>
+                                    <div class="hover-dropdown__option">french</div>
+                                </div>
+                            </div>
+                            <div class="ctm-nav__link hover-dropdown">
+                                <div class="hover-dropdown__header">
+                                    <span>beauty & spa</span>
+                                </div>
+                                <div class="hover-dropdown__menu">
+                                    <div class="hover-dropdown__option">العربية</div>
+                                    <div class="hover-dropdown__option">english</div>
+                                    <div class="hover-dropdown__option">french</div>
+                                </div>
+                            </div>
+                            <div class="ctm-nav__link hover-dropdown">
+                                <div class="hover-dropdown__header">
+                                    <span>medical</span>
+                                </div>
+                                <div class="hover-dropdown__menu">
+                                    <div class="hover-dropdown__option">العربية</div>
+                                    <div class="hover-dropdown__option">english</div>
+                                    <div class="hover-dropdown__option">french</div>
+                                </div>
+                            </div>
                         </nav>
                     </div>
                 </div>
@@ -124,44 +188,57 @@
         <div class="grid">
             <div class="grid__column grid__column--e1">
                 <div class="grid__item">
-                    <a href="#" class="grid__inner grid__inner--data-c" style="background-image: url('media/dummy-2.jpg')">
-                        <h5 class="heading-intro heading-intro--fst-clr">Gelish Mani-Pedi and Nail Extensions Packages <span>50 % off</span></h5>
+                    <a href="#" class="grid__inner grid__inner--data-c"
+                       style="background-image: url('media/dummy-2.jpg')">
+                        <h5 class="heading-intro heading-intro--fst-clr">Gelish Mani-Pedi and Nail Extensions Packages
+                            <span>50 % off</span></h5>
                     </a>
                 </div>
                 <div class="grid__item">
-                    <a href="#" class="grid__inner grid__inner--data-bg" style="background-image: url('media/dummy-2.jpg')">
-                        <h5 class="heading-intro heading-intro--scd-clr">Gelish Mani-Pedi and Nail Extensions Packages <span>50 % off</span></h5>
+                    <a href="#" class="grid__inner grid__inner--data-bg"
+                       style="background-image: url('media/dummy-2.jpg')">
+                        <h5 class="heading-intro heading-intro--scd-clr">Gelish Mani-Pedi and Nail Extensions Packages
+                            <span>50 % off</span></h5>
                     </a>
                 </div>
             </div>
             <div class="grid__column grid__column--e2">
                 <div class="grid__item">
-                    <a href="#" class="grid__inner grid__inner--data-a" style="background-image: url('media/dummy-2.jpg')">
-                        <h5 class="heading-intro heading-intro--third-clr">Gelish Mani-Pedi and Nail Extensions Packages <span>50 % off</span></h5>
+                    <a href="#" class="grid__inner grid__inner--data-a"
+                       style="background-image: url('media/dummy-2.jpg')">
+                        <h5 class="heading-intro heading-intro--third-clr">Gelish Mani-Pedi and Nail Extensions Packages
+                            <span>50 % off</span></h5>
                     </a>
                 </div>
             </div>
             <div class="grid__column grid__column--e3">
                 <div class="grid__item">
-                    <a href="#" class="grid__inner grid__inner--data-bg" style="background-image: url('media/dummy-2.jpg')">
-                        <h5 class="heading-intro heading-intro--fourth-clr">Gelish Mani-Pedi and Nail Extensions Packages <span>50 % off</span></h5>
+                    <a href="#" class="grid__inner grid__inner--data-bg"
+                       style="background-image: url('media/dummy-2.jpg')">
+                        <h5 class="heading-intro heading-intro--fourth-clr">Gelish Mani-Pedi and Nail Extensions
+                            Packages <span>50 % off</span></h5>
                     </a>
                 </div>
                 <div class="grid__item">
-                    <a href="#" class="grid__inner grid__inner--data-a" style="background-image: url('media/dummy-2.jpg')">
-                        <h5 class="heading-intro heading-intro--fifth-clr">Gelish Mani-Pedi and Nail Extensions Packages <span>50 % off</span></h5>
+                    <a href="#" class="grid__inner grid__inner--data-a"
+                       style="background-image: url('media/dummy-2.jpg')">
+                        <h5 class="heading-intro heading-intro--fifth-clr">Gelish Mani-Pedi and Nail Extensions Packages
+                            <span>50 % off</span></h5>
                     </a>
                 </div>
                 <div class="grid__item">
-                    <a href="#" class="grid__inner grid__inner--data-bg" style="background-image: url('media/dummy-2.jpg')">
-                        <h5 class="heading-intro heading-intro--sixth-clr">Gelish Mani-Pedi and Nail Extensions Packages <span>50 % off</span></h5>
+                    <a href="#" class="grid__inner grid__inner--data-bg"
+                       style="background-image: url('media/dummy-2.jpg')">
+                        <h5 class="heading-intro heading-intro--sixth-clr">Gelish Mani-Pedi and Nail Extensions Packages
+                            <span>50 % off</span></h5>
                     </a>
                 </div>
             </div>
         </div>
     </section>
     <section class="section section--padding">
-        <h2 class="section-heading section-heading--main-clr"><span class="heading-follower heading-follower--orange">best seller</span>latest deal</h2>
+        <h2 class="section-heading section-heading--main-clr"><span class="heading-follower heading-follower--orange">best seller</span>latest
+            deal</h2>
         <div class="latest-deal">
             <div class="latest-deal__child1">
                 <div id="featureSlider" class="carousel slide" data-ride="carousel">
@@ -194,16 +271,20 @@
                         <div class="row">
                             <div class="col-lg-6 offset-6">
                                 <div class="latest-d__inner">
-                                    <div class="latest-d__inner__bg" style="background-image: url('media/dummy-1.jpg')"></div>
+                                    <div class="latest-d__inner__bg"
+                                         style="background-image: url('media/dummy-1.jpg')"></div>
                                     <div class="latest-d__inner__data">
-                                        <h5 class="heading-secondary heading-secondary--main-clr">Barracuda Beach Resort Half board Stay</h5>
+                                        <h5 class="heading-secondary heading-secondary--main-clr">Barracuda Beach Resort
+                                            Half board Stay</h5>
                                         <div class="pricing">
                                             <span class="pricing__offer">60%off</span>
                                             <span class="pricing__old">500ed</span>
                                             <span class="pricing__new">240ed</span>
                                         </div>
                                         <article>
-                                            <p>Relax and recharge while having fun at Barracuda Beach Resort. 1 or 2-Night weekday and weekend half board stay with room options are available from AED 409</p>
+                                            <p>Relax and recharge while having fun at Barracuda Beach Resort. 1 or
+                                                2-Night weekday and weekend half board stay with room options are
+                                                available from AED 409</p>
                                         </article>
                                         <div class="link-wrapper">
                                             <a href="#" class="view-more">View Deal</a>
@@ -219,16 +300,20 @@
                         <div class="row">
                             <div class="col-lg-6 offset-6">
                                 <div class="latest-d__inner">
-                                    <div class="latest-d__inner__bg" style="background-image: url('media/dummy-2.jpg')"></div>
+                                    <div class="latest-d__inner__bg"
+                                         style="background-image: url('media/dummy-2.jpg')"></div>
                                     <div class="latest-d__inner__data">
-                                        <h5 class="heading-secondary heading-secondary--main-clr">Barracuda Beach Resort Half board Stay</h5>
+                                        <h5 class="heading-secondary heading-secondary--main-clr">Barracuda Beach Resort
+                                            Half board Stay</h5>
                                         <div class="pricing">
                                             <span class="pricing__offer">60%off</span>
                                             <span class="pricing__old">500ed</span>
                                             <span class="pricing__new">240ed</span>
                                         </div>
                                         <article>
-                                            <p>Relax and recharge while having fun at Barracuda Beach Resort. 1 or 2-Night weekday and weekend half board stay with room options are available from AED 409</p>
+                                            <p>Relax and recharge while having fun at Barracuda Beach Resort. 1 or
+                                                2-Night weekday and weekend half board stay with room options are
+                                                available from AED 409</p>
                                         </article>
                                         <div class="link-wrapper">
                                             <a href="#" class="view-more">View Deal</a>
@@ -244,16 +329,20 @@
                         <div class="row">
                             <div class="col-lg-6 offset-6">
                                 <div class="latest-d__inner">
-                                    <div class="latest-d__inner__bg" style="background-image: url('media/dummy-3.jpg')"></div>
+                                    <div class="latest-d__inner__bg"
+                                         style="background-image: url('media/dummy-3.jpg')"></div>
                                     <div class="latest-d__inner__data">
-                                        <h5 class="heading-secondary heading-secondary--main-clr">Barracuda Beach Resort Half board Stay</h5>
+                                        <h5 class="heading-secondary heading-secondary--main-clr">Barracuda Beach Resort
+                                            Half board Stay</h5>
                                         <div class="pricing">
                                             <span class="pricing__offer">60%off</span>
                                             <span class="pricing__old">500ed</span>
                                             <span class="pricing__new">240ed</span>
                                         </div>
                                         <article>
-                                            <p>Relax and recharge while having fun at Barracuda Beach Resort. 1 or 2-Night weekday and weekend half board stay with room options are available from AED 409</p>
+                                            <p>Relax and recharge while having fun at Barracuda Beach Resort. 1 or
+                                                2-Night weekday and weekend half board stay with room options are
+                                                available from AED 409</p>
                                         </article>
                                         <div class="link-wrapper">
                                             <a href="#" class="view-more">View Deal</a>
@@ -267,7 +356,8 @@
             </div>
         </div>
     </section>
-    <section class="section section--padding design-sec background-holder background-holder--overlay1" style="background-image: url('images/design-sec.jpg')">
+    <section class="section section--padding design-sec background-holder background-holder--overlay1"
+             style="background-image: url('images/design-sec.jpg')">
         <h2 class="section-heading">Design your Offer</h2>
         <article class="white">
             <p>We know you are special, ask your preferred merchant for a one</p>
@@ -286,7 +376,8 @@
                 <div class="img-bio-grid">
                     <div class="row">
                         <div class="col-lg-4">
-                            <a href="#" class="img-bio-grid__child background-holder" style="background-image: url('media/gif-1.jpg')">
+                            <a href="#" class="img-bio-grid__child background-holder"
+                               style="background-image: url('media/gif-1.jpg')">
                                 <div class="img-bio-grid__child__data">
                                     <h5 class="heading-secondary heading-secondary--main-clr">subscribe</h5>
                                     <article>
@@ -296,7 +387,8 @@
                             </a>
                         </div>
                         <div class="col-lg-4">
-                            <a href="#" class="img-bio-grid__child background-holder" style="background-image: url('media/gif-2.jpg')">
+                            <a href="#" class="img-bio-grid__child background-holder"
+                               style="background-image: url('media/gif-2.jpg')">
                                 <div class="img-bio-grid__child__data">
                                     <h5 class="heading-secondary heading-secondary--main-clr">Select Offer</h5>
                                     <article>
@@ -306,9 +398,11 @@
                             </a>
                         </div>
                         <div class="col-lg-4">
-                            <a href="#" class="img-bio-grid__child background-holder" style="background-image: url('media/gif-3.jpg')">
+                            <a href="#" class="img-bio-grid__child background-holder"
+                               style="background-image: url('media/gif-3.jpg')">
                                 <div class="img-bio-grid__child__data">
-                                    <h5 class="heading-secondary heading-secondary--main-clr">Verify QR Code & Enjoy</h5>
+                                    <h5 class="heading-secondary heading-secondary--main-clr">Verify QR Code &
+                                        Enjoy</h5>
                                     <article>
                                         <p>Relax and recharge while having fun at Barracuda Beach Resort.</p>
                                     </article>
@@ -327,7 +421,8 @@
                                 <div class="offer-boxes__child__data">
                                     <h5 class="heading-secondary heading-secondary--main-clr">New offers weekly</h5>
                                     <article>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry.</p>
                                     </article>
                                 </div>
                             </div>
@@ -340,7 +435,8 @@
                                 <div class="offer-boxes__child__data">
                                     <h5 class="heading-secondary heading-secondary--main-clr">New offers weekly</h5>
                                     <article>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry.</p>
                                     </article>
                                 </div>
                             </div>
@@ -353,7 +449,8 @@
                                 <div class="offer-boxes__child__data">
                                     <h5 class="heading-secondary heading-secondary--main-clr">New offers weekly</h5>
                                     <article>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry.</p>
                                     </article>
                                 </div>
                             </div>
@@ -366,7 +463,8 @@
                                 <div class="offer-boxes__child__data">
                                     <h5 class="heading-secondary heading-secondary--main-clr">New offers weekly</h5>
                                     <article>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry.</p>
                                     </article>
                                 </div>
                             </div>
@@ -379,13 +477,17 @@
 </main>
 
 <footer>
-    <section class="section section--padding email-sub background-holder" style="background-image: url('images/email-sub.jpg')">
+    <section class="section section--padding email-sub background-holder"
+             style="background-image: url('images/email-sub.jpg')">
         <div class="container">
             <div class="email-sub__inner">
-                <h5 class="heading-primary heading-primary--main-clr">Join 13,000+ subscribers &  get a hand picked list of best offers</h5>
+                <h5 class="heading-primary heading-primary--main-clr">Join 13,000+ subscribers & get a hand picked list
+                    of best offers</h5>
                 <form action="">
                     <input type="search" class="input input--white-bg" placeholder="search">
-                    <button type="button" class="ctm-btn ctm-btn--big ctm-btn--orange"><i class="fas fa-paper-plane"></i>subscribe</button>
+                    <button type="button" class="ctm-btn ctm-btn--big ctm-btn--orange"><i
+                            class="fas fa-paper-plane"></i>subscribe
+                    </button>
                 </form>
             </div>
         </div>
@@ -434,7 +536,8 @@
             </div>
             <div class="footer__bottom top-divider">
                 <div class="footer__bottom__copyrights">
-                    <p>&copy; 2020 Coupoonshop All Rights Reserved | Powered by <a href="https://diva-lab.com/">Diva-lab</a></p>
+                    <p>&copy; 2020 Coupoonshop All Rights Reserved | Powered by <a
+                            href="https://diva-lab.com/">Diva-lab</a></p>
                 </div>
                 <div class="footer__bottom__lists">
                     <ul class="payment-methods">
@@ -465,21 +568,24 @@
 <!-- custom bootstrap scripts -->
 <script src="node_modules/bootstrap/js/dist/util.js"></script>
 <script src="node_modules/bootstrap/js/dist/carousel.js"></script>
+<script src="node_modules/bootstrap/js/dist/collapse.js"></script>
 <!-- page plugins scripts -->
 <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
 <script src="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('.states').select2({
             placeholder: 'state',
             minimumResultsForSearch: -1,
-            dropdownAutoWidth:true,
+            dropdownAutoWidth: true,
             width: '100%',
             containerCssClass: "custom-container",
             dropdownCssClass: "custom-dropdown",
         });
     });
 </script>
+
 <!-- custom scripts -->
 <script src="js/dropdown.js"></script>
 <script src="js/mainScript.js"></script>

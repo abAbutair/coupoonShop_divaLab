@@ -38,3 +38,6 @@ for (let i = 0; i < dropdownOpt.length; i++) {
         this.closest('.ctm-dropdown').classList.remove('show');
     });
 }
+
+// hover dropdown
+
