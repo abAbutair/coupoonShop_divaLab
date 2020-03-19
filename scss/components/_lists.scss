@@ -8,11 +8,18 @@ ul {
 }
 .links {
   li {
-    margin-bottom: 1rem;
+    &:not(:last-of-type){
+      margin-bottom: 1rem;
+    }
+  }
+  a {
+    color: $whiteClr;
+    font-size: $smallFontSize;
+    font-family: $medFont;
+  }
+  &--main-clr {
     a {
-      color: $whiteClr;
-      font-size: $smallFontSize;
-      font-family: $medFont;
+      color: $bodyFontClr;
     }
   }
 }
@@ -22,5 +29,15 @@ ul {
       color: $footerHeadings;
       font-size: $iconsFontSize;
     }
+  }
+}
+
+// divide one list to multi columns
+.columns{
+  float: left;
+  position: relative;
+  width: calc(50% - 1.5rem);
+  &:not(:last-of-type){
+    margin-right: 3rem;
   }
 }

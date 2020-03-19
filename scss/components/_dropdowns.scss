@@ -1,7 +1,7 @@
 .ctm-dropdown {
   position: relative;
-
   &__header {
+    position: relative;
     &:before {
       content: ' ';
       border-left: $dropdownArrow solid transparent;
@@ -15,9 +15,7 @@
       opacity: 0;
       @include transition(all, 0.8s);
     }
-
   }
-
   &__menu {
     position: absolute;
     top: calc(100% + #{$dropdownMargin});
@@ -28,12 +26,8 @@
     visibility: hidden;
     opacity: 0;
     @include transition(all, 0.8s);
-
-    &__option {
-      padding: 1rem 0.5rem;
-    }
+    z-index: 555;
   }
-
   &.show {
     .ctm-dropdown {
       &__header {
@@ -42,7 +36,6 @@
           opacity: 1;
         }
       }
-
       &__menu {
         visibility: visible;
         opacity: 1;
@@ -51,24 +44,28 @@
   }
 }
 
+.ctm-dropdown__opt {
+  padding: 1rem 0.5rem;
+  cursor: pointer;
+}
+// main nav hover drop down
 .hover-dropdown {
-
+  
   &:hover {
     .hover-dropdown {
       &__header {
+        cursor: pointer;
         &:before {
           visibility: visible;
           opacity: 1;
         }
       }
-
       &__menu {
         visibility: visible;
         opacity: 1;
       }
     }
   }
-
   &__header {
     position: relative;
     &:before {
@@ -84,9 +81,7 @@
       opacity: 0;
       @include transition(all, 0.8s);
     }
-
   }
-
   &__menu {
     position: absolute;
     top: calc(100% + #{$dropdownMargin2});
@@ -98,11 +93,8 @@
     visibility: hidden;
     opacity: 0;
     @include transition(all, 0.8s);
-
-    &__option {
-      padding: 1rem 0.5rem;
-    }
-
+    z-index: 555;
   }
 }
+
 

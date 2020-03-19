@@ -78,12 +78,22 @@
       strong{
         color: $orange;
       }
+      &--flex{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 1.5rem;
+      }
     }
   }
   &-footer{
     color: $offerClr;
     display: flex;
     justify-content: flex-end;
+  }
+}
+.block{
+  &:not(:last-of-type){
+    margin-bottom: 3rem;
   }
 }
 .text-block{
@@ -101,6 +111,26 @@
   th,td{
     padding: 1.2rem 2rem;
     border-bottom: 1px $offerClr solid;
+  }
+}
+.list{
+  margin: 2rem 0;
+  li{
+    padding-top: 1rem ;
+    padding-bottom: 1rem;
+    padding-#{$left}:2rem;
+    position: relative;
+    &:before{
+      position: absolute;
+      top: 1rem;
+      #{$left}:0;
+      @extend %double-angel;
+    }
+    &.lh{
+      color: $orange;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
   }
 }
 .star-rating {
@@ -175,8 +205,6 @@
       @include transition(all,.4s);
     }
   }
-
-
 }
 @media only screen and (max-width: 767.98px) {
   aside{

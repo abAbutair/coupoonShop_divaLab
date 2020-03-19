@@ -83,3 +83,12 @@ p {line-height: var(--h);}
         margin: 4.5rem 0;
     }
 }
+
+.link-wrapper {
+    @extend %d-flex;
+    justify-content: flex-end;
+
+    a {
+        color: $secondClr;
+    }
+}

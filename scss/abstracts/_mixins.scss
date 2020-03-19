@@ -18,27 +18,6 @@
         color: $secondClr;
     }
 }
-@mixin intro-sec {
-    &--fst-clr {
-        color: $fstClr;
-    }
-    &--scd-clr {
-        color: $scdClr;
-    }
-    &--third-clr {
-        color: $thirdClr;
-    }
-    &--fourth-clr {
-        color: $fourthClr;
-    }
-    &--fifth-clr {
-        color: $fifthClr;
-    }
-    &--sixth-clr {
-        color: $sixthClr;
-    }
-}
-
 @mixin placeHolder {
     @include optional-at-root ('::-webkit-input-placeholder') {
         @content;

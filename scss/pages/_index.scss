@@ -122,15 +122,6 @@
           margin-bottom: 1rem;
         }
       }
-
-      .link-wrapper {
-        @extend %d-flex;
-        justify-content: flex-end;
-
-        a {
-          color: $secondClr;
-        }
-      }
     }
   }
 }

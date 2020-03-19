@@ -10,6 +10,7 @@
   border: 0.1rem solid $inputBorder;
   padding: .3rem 1.5rem;
   color: $bodyFontClr;
+  @include border-radius(0)
 }
 
 // input

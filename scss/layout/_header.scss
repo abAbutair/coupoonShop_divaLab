@@ -9,59 +9,143 @@
       flex-flow: column;
       justify-content: space-between;
       height: 100%;
-      .burger-menu {
-        padding: 0.7rem 0;
-        .open-btn {
-          @extend %d-flex;
-          align-items: center;
-          .align-burger {
-            display: block;
-            width: 2.5rem;
-            margin-#{$right}: 1.5rem;
-            span {
-              display: block;
-              width: 100%;
-              height: 0.2rem;
-              margin-bottom: 0.8rem;
-              background-color: $bodyFontClr;
-              &:last-child {
-                margin-bottom: 0;
-              }
-            }
-          }
-          &__header {
-            color: $bodyFontClr;
-            font-size: $smallFontSize;
-            font-family: $medFont;
-          }
-        }
-      }
     }
     .logo-part, .nav-part {
       > * {
         &:not(:last-child) {
-          margin-bottom: 30px;
+          margin-bottom: 3rem;
         }
       }
     }
-
     // for dropdown
+    .ctm-dropdown {
+      &__header {
+        display: table;
+        &:before {
+          top: calc(100% + #{$dropdownMargin2} - #{$dropdownArrow}); // - 1rem is for arrow height
+        }
+      }
+      &__menu {
+        > * {
+          &:not(:last-child) {
+            margin-bottom: 1.5rem;
+          }
+        }
+        .link-wrapper {
+          a {
+            font-size: $smallFontSize;
+          }
+        }
+        top: calc(100% + #{$dropdownMargin2});
+        width: 130%;
+        padding: 1.5rem;
+        .close-btn {
+          @extend %d-flex;
+          justify-content: flex-end;
+          margin-bottom: 1.5rem;
+          button {
+            line-height: 2rem;
+            color: $mainClr;
+            font-size: 3.5rem;
+            font-weight: bold;
+            padding: .5rem;
+          }
+        }
+        .accordion {
+          .card {
+            border: none;
+            background-color: $whiteClr;
+          }
+          .card-header {
+            border: none;
+            background-color: transparent;
+            h2 {
+              font-size: $medFontSize;
+              margin: 0;
+            }
+          }
+          .card-body {
+            padding: 0 2rem 2rem;
+          }
+          a {
+            margin-top: 1rem;
+            margin-bottom: .8rem;
+            font-size: $smallFontSize;
+          }
+        }
+
+      }
+    }
+    // end for dropdown
+
+    // for hover dropdown
     [class^="col-"] {
       position: static;
     }
     .container {
       position: relative;
     }
-    .ctm-dropdown {
-      &__header {
-        &:before {
-          top: calc(100% + #{$dropdownMargin2} - #{$dropdownArrow}); // - 1rem is for arrow height
+    .hover-dropdown {
+      &__menu {
+        padding: 3rem 8rem;
+      }
+      .links {
+        li {
+          &:not(:last-of-type) {
+            margin-bottom: 20%;
+          }
+          a {
+            @include transition(color,.4s);
+            &:hover{
+              color: $orange;
+            }
+          }
         }
       }
 
-      &__menu {
-        top: calc(100% + #{$dropdownMargin2});
-        width: 130%;
+    }
+    // end for hover dropdown
+
+    .grid {
+      height: 100%;
+      h5 {
+        font-size: 1.2rem;
+        span {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .main-nav{
+    background-color: #fff;
+    padding: 3rem 0 0;
+  }
+
+  .burger-menu {
+    .open-btn {
+      padding: 0.7rem 0;
+      @extend %d-flex;
+      align-items: center;
+      .align-burger {
+        display: block;
+        width: 2.5rem;
+        margin-#{$right}: 1.5rem;
+        span {
+          display: block;
+          width: 100%;
+          height: 0.2rem;
+          margin-bottom: 0.5rem;
+          background-color: $bodyFontClr;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      &__header {
+        color: $bodyFontClr;
+        font-size: $smallFontSize;
+        font-family: $medFont;
       }
     }
   }
@@ -91,7 +175,6 @@
   }
   i, a, span {
     color: $whiteClr;
-    //font-size: $smallFontSize;
   }
   a, span {
     font-family: $medFont;
