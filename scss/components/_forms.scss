@@ -33,6 +33,16 @@
   &:focus {
   }
 }
+textarea{
+  width: 100%;
+  padding: .3rem 1.5rem;
+  border: 0.1rem solid $inputBorder;
+  @include placeHolder {
+    color: $inputFontClr;
+    font-size: $tinyFontSize;
+    text-transform: capitalize;
+  }
+}
 .positioned-icn {
   position: relative;
 

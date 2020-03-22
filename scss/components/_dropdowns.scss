@@ -50,7 +50,7 @@
 }
 // main nav hover drop down
 .hover-dropdown {
-  
+
   &:hover {
     .hover-dropdown {
       &__header {
@@ -74,7 +74,7 @@
       border-right: $dropdownArrow solid transparent;
       border-bottom: $dropdownArrow solid $secondClr;
       position: absolute;
-      top: calc(100% + #{$dropdownMargin2} + 0.7rem - #{$dropdownArrow}); // - 1rem is for arrow height
+      top: calc(100% + #{$dropdownMargin2} - #{$dropdownArrow}); // - 1rem is for arrow height
       left: 50%;
       transform: translate(-50%, 0);
       visibility: hidden;
@@ -96,5 +96,3 @@
     z-index: 555;
   }
 }
-
-

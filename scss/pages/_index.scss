@@ -122,6 +122,15 @@
           margin-bottom: 1rem;
         }
       }
+
+      .link-wrapper {
+        @extend %d-flex;
+        justify-content: flex-end;
+
+        a {
+          color: $secondClr;
+        }
+      }
     }
   }
 }
@@ -161,7 +170,7 @@
     overflow: hidden;
     .icon-img {
       position: absolute;
-      #{$right}: -20%;
+      #{$right}: -10%;
       top: 50%;
       @include translate(0, -50%);
     }

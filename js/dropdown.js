@@ -1,6 +1,6 @@
 /**************************
-* dropdown
-*/
+ * dropdown
+ */
 (function () {
     let dropdownOpt = document.querySelectorAll('.ctm-dropdown__opt');
     let dropdownClass = document.querySelectorAll('.ctm-dropdown');

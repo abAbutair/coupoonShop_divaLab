@@ -20,8 +20,10 @@
                 <div class="flex-box__child flex-box align-items--center">
                     <div class="icon-link">
                         <i class="fas fa-sign-in-alt"></i>
-                        <a href="#">login</a>
+                        <a href="login.html">login</a>
                     </div>
+                    <button type="button" class="lang-btn"><i class="fas fa-language"></i> Arabic</button>
+                    <!--
                     <div class="ctm-dropdown" id="dropdown">
                         <div class="ctm-dropdown__header">
                             <button class="ctm-btn icon-link dropdown-button" type="button" id="dropdownButton">
@@ -30,20 +32,21 @@
                             </button>
                         </div>
                         <div class="ctm-dropdown__menu" aria-labelledby="dropdownButton">
-                            <div class="dropdown-option">العربية</div>
-                            <div class="dropdown-option">english</div>
-                            <div class="dropdown-option">french</div>
+                            <div class="ctm-dropdown__opt">العربية</div>
+                            <div class="ctm-dropdown__opt">english</div>
+                            <div class="ctm-dropdown__opt">french</div>
                         </div>
                     </div>
+                    -->
                     <nav class="ctm-nav flex-box ctm-nav--small">
-                        <a href="#" class="ctm-nav__link">stores</a>
-                        <a href="#" class="ctm-nav__link">how it works</a>
+                        <a href="merchants-list.html" class="ctm-nav__link">stores</a>
+                        <a href="how-it-works.html" class="ctm-nav__link">how it works</a>
                         <a href="#" class="ctm-nav__link">craft offers</a>
-                        <a href="#" class="ctm-nav__link">sell with us</a>
+                        <a href="sell-with-us.html" class="ctm-nav__link">sell with us</a>
                     </nav>
                 </div>
                 <div class="flex-box__child">
-                    <a href="#" class="ctm-btn ctm-btn--small ctm-btn--orange"><strong>subscribe</strong></a>
+                    <a href="plans.html" class="ctm-btn ctm-btn--small ctm-btn--orange"><strong>subscribe</strong></a>
                 </div>
             </div>
         </div>
@@ -52,8 +55,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="logo-part flex-box">
-                        <a href="#" class="logo"><img src="images/logo.png" alt="Coupon Logo"></a>
+                    <div class="logo-part">
+                        <a href="index.html" class="logo"><img src="images/logo.png" alt="Coupon Logo"></a>
                     </div>
                 </div>
                 <div class="col-lg-9">
@@ -85,7 +88,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
-                        <nav class="burger-menu ctm-dropdown"  id="dropdown1">
+                        <nav class="burger-menu ctm-dropdown" id="dropdown1">
                             <div class="ctm-dropdown__header">
                                 <button class="open-btn dropdown-button" type="button" id="openBtn">
                                 <span class="align-burger">
@@ -97,8 +100,95 @@
                                 </button>
                             </div>
                             <div class="menu-collapse ctm-dropdown__menu" id="menuCollapse" aria-labelledby="openBtn">
-                                <div class="close-btn" id="closeBtn">&times;</div>
-                                <div class="for-now"></div>
+                                <div class="close-btn">
+                                    <button type="button">&times;</button>
+                                </div>
+                                <div class="accordion" id="accordionNav">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h2 role="button" data-toggle="collapse" data-target="#collapseOne"
+                                                aria-expanded="false"
+                                                aria-controls="collapseOne">
+                                                Food & Beverages
+                                            </h2>
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                             data-parent="#accordionNav">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li><a href="category.html">seafood</a></li>
+                                                    <li><a href="category.html">Breakfast</a></li>
+                                                    <li><a href="category.html">Coffee</a></li>
+                                                    <li><a href="category.html">Lunch</a></li>
+                                                    <li><a href="category.html">Dinner</a></li>
+                                                    <li><a href="category.html">Bars</a></li>
+                                                    <li><a href="category.html">Romantic Dinner</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h2 role="button" data-toggle="collapse" data-target="#collapseTwo"
+                                                aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                SPA & Beauty
+                                            </h2>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                             data-parent="#accordionNav">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li><a href="category.html">Sub Category Name</a></li>
+                                                    <li><a href="category.html">Sub Category Name</a></li>
+                                                    <li><a href="category.html">Sub Category Name</a></li>
+                                                    <li><a href="category.html">Sub Category Name</a></li>
+                                                    <li><a href="category.html">Sub Category Name</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h2 role="button" data-toggle="collapse" data-target="#collapseThree"
+                                                aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                                Activities
+                                            </h2>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                             data-parent="#accordionNav">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li><a href="category.html">Sub Category Name</a></li>
+                                                    <li><a href="category.html">Sub Category Name</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                            <h2 role="button" data-toggle="collapse" data-target="#collapseFour"
+                                                aria-expanded="false"
+                                                aria-controls="collapseFour">
+                                                Health & Fitness
+                                            </h2>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                             data-parent="#accordionNav">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li><a href="category.html">Sub Category Name</a></li>
+                                                    <li><a href="category.html">Sub Category Name</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="link-wrapper">
+                                    <a href="categories.html" class="view-more">View all categories</a>
+                                </div>
                             </div>
                         </nav>
                     </div>
@@ -109,9 +199,52 @@
                                     <span>home appliances</span>
                                 </div>
                                 <div class="hover-dropdown__menu">
-                                    <div class="hover-dropdown__option">العربية</div>
-                                    <div class="hover-dropdown__option">english</div>
-                                    <div class="hover-dropdown__option">french</div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="columns-wrapper">
+                                                <ul class="links links--main-clr columns" data-columns="2">
+                                                    <li><a href="category.html">- Part of big family</a></li>
+                                                    <li><a href="category.html">- Free time? Work with us</a></li>
+                                                    <li><a href="category.html">- Drop us a visit</a></li>
+                                                    <li><a href="category.html">- Benefits for you</a></li>
+                                                    <li><a href="category.html">- Part of big family</a></li>
+                                                    <li><a href="category.html">- Free time? Work with us</a></li>
+                                                    <li><a href="category.html">- Drop us a visit</a></li>
+                                                    <li><a href="category.html">- Benefits for you</a></li>
+                                                    <li><a href="category.html">- Part of big family</a></li>
+                                                    <li><a href="category.html">- Free time? Work with us</a></li>
+                                                    <li><a href="category.html">- Drop us a visit</a></li>
+                                                    <li><a href="category.html">- Benefits for you</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="grid">
+                                                <div class="grid__column grid__column--e1">
+                                                    <div class="grid__item">
+                                                        <a href="offer-details.html"
+                                                           class="grid__inner grid__inner--data-c"
+                                                           style="background-image: url('media/dummy-2.jpg');color: #65AA8F;">
+                                                        </a>
+                                                    </div>
+                                                    <div class="grid__item">
+                                                        <a href="offer-details.html"
+                                                           class="grid__inner grid__inner--data-bg"
+                                                           style="background-image: url('media/dummy-2.jpg'); color: #930A10">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid__column grid__column--e2">
+                                                    <div class="grid__item">
+                                                        <a href="offer-details.html"
+                                                           class="grid__inner grid__inner--data-a"
+                                                           style="background-image: url('media/dummy-2.jpg');color:#A55731">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="ctm-nav__link hover-dropdown">
@@ -119,9 +252,6 @@
                                     <span>activities</span>
                                 </div>
                                 <div class="hover-dropdown__menu">
-                                    <div class="hover-dropdown__option">العربية</div>
-                                    <div class="hover-dropdown__option">english</div>
-                                    <div class="hover-dropdown__option">french</div>
                                 </div>
                             </div>
                             <div class="ctm-nav__link hover-dropdown">
@@ -129,9 +259,6 @@
                                     <span>food & beverages</span>
                                 </div>
                                 <div class="hover-dropdown__menu">
-                                    <div class="hover-dropdown__option">العربية</div>
-                                    <div class="hover-dropdown__option">english</div>
-                                    <div class="hover-dropdown__option">french</div>
                                 </div>
                             </div>
                             <div class="ctm-nav__link hover-dropdown">
@@ -139,9 +266,6 @@
                                     <span>electronics</span>
                                 </div>
                                 <div class="hover-dropdown__menu">
-                                    <div class="hover-dropdown__option">العربية</div>
-                                    <div class="hover-dropdown__option">english</div>
-                                    <div class="hover-dropdown__option">french</div>
                                 </div>
                             </div>
                             <div class="ctm-nav__link hover-dropdown">
@@ -149,9 +273,6 @@
                                     <span>health & fitness</span>
                                 </div>
                                 <div class="hover-dropdown__menu">
-                                    <div class="hover-dropdown__option">العربية</div>
-                                    <div class="hover-dropdown__option">english</div>
-                                    <div class="hover-dropdown__option">french</div>
                                 </div>
                             </div>
                             <div class="ctm-nav__link hover-dropdown">
@@ -159,9 +280,6 @@
                                     <span>travel</span>
                                 </div>
                                 <div class="hover-dropdown__menu">
-                                    <div class="hover-dropdown__option">العربية</div>
-                                    <div class="hover-dropdown__option">english</div>
-                                    <div class="hover-dropdown__option">french</div>
                                 </div>
                             </div>
                             <div class="ctm-nav__link hover-dropdown">
@@ -169,9 +287,6 @@
                                     <span>beauty & spa</span>
                                 </div>
                                 <div class="hover-dropdown__menu">
-                                    <div class="hover-dropdown__option">العربية</div>
-                                    <div class="hover-dropdown__option">english</div>
-                                    <div class="hover-dropdown__option">french</div>
                                 </div>
                             </div>
                             <div class="ctm-nav__link hover-dropdown">
@@ -179,9 +294,6 @@
                                     <span>medical</span>
                                 </div>
                                 <div class="hover-dropdown__menu">
-                                    <div class="hover-dropdown__option">العربية</div>
-                                    <div class="hover-dropdown__option">english</div>
-                                    <div class="hover-dropdown__option">french</div>
                                 </div>
                             </div>
                         </nav>
@@ -218,7 +330,7 @@
             </div>
             <div class="features">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="offer-boxes__child">
                             <div class="icon-img">
                                 <img src="images/offers-1.png" alt="">
@@ -231,7 +343,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="offer-boxes__child">
                             <div class="icon-img">
                                 <img src="images/offers-2.png" alt="">
@@ -244,7 +356,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="offer-boxes__child">
                             <div class="icon-img">
                                 <img src="images/offers-3.png" alt="">
@@ -257,7 +369,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="offer-boxes__child">
                             <div class="icon-img">
                                 <img src="images/offers-4.png" alt="">

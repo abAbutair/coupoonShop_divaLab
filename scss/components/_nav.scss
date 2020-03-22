@@ -1,12 +1,17 @@
 .ctm-nav {
-  margin: 0 2.5rem;
-
   &__link {
     padding: $paddingTopBottom 1rem;
     color: $whiteClr;
     font-size: $tinyFontSize;
     text-transform: capitalize;
     font-family: $medFont;
+
+    &:last-child {
+      padding-#{$right}: 0;
+    }
+    &:first-child {
+      padding-#{$left}: 0;
+    }
 
     &:hover {
       color: darken($whiteClr, 10%);
@@ -21,12 +26,6 @@
       &__link {
         color: $bodyFontClr;
         font-size: $smallFontSize;
-        &:last-child {
-          padding-#{$right}: 0;
-        }
-        &:first-child {
-          padding-#{$left}: 0;
-        }
       }
     }
 

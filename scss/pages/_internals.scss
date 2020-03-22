@@ -296,6 +296,7 @@
   }
 }
 .offer-header{
+    margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
     span{
@@ -457,9 +458,6 @@
   >.tab-pane{display: none}
   >.active{display: block}
   .form-group{
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
     a{
       min-width: 10rem;
       padding-#{$left}:1.5rem;
@@ -487,6 +485,52 @@
     }
     a{color: $bodyFontClr}
   }
+}
+
+// sell with us
+.add-new{
+  color: $offerClr;
+  button{
+    color: $mainClr;
+    font-weight: bold;
+  }
+}
+.about-business{
+  width: 100%;
+  height: calc(100% - 1.5rem);
+  padding: .3rem 1.5rem;
+  background-color: $dropdownClr;
+  border: 1px $inputBorder solid;
+}
+
+// feedback
+.feedback{
+  max-width: 80%;
+  margin: 0 auto;
+  [type='radio']{
+    display: none;
+    &:checked{
+      + i{
+        color: $orange;
+      }
+    }
+  }
+  h3{
+    margin-bottom: 2rem;
+  }
+  textarea{
+    background-color: $dropdownClr;
+  }
+  button{width: 100%}
+}
+.emojis{
+  display: flex;
+  justify-content: space-around;
+  font-size: 12rem;
+  color: $offerClr;
+  padding-bottom: 4rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px $footerHeadings solid;
 }
 
 // full screen pages (login, registeration, 404 ...)

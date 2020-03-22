@@ -36,6 +36,7 @@ body {
   @include sub-colors;
 }
 .heading-follower {
+  text-transform: capitalize;
   font-size: $medFontSize;
   display: block;
   margin: 0.5rem 0;

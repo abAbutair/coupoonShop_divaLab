@@ -45,19 +45,14 @@ $medFontSize: 2rem;
 $iconsFontSize: 2.4rem;
 
 
-
 // elements sizes
-$dropdownArrow: 1rem; //header top
+$dropdownArrow: 1rem; //header top & bottom
+
 $dropdownMargin: 1rem; //header top
-$dropdownMargin2: 3rem; //header top
-$paddingTopBottom: 0.7rem;
+
+$dropdownMargin2: 2rem; //header bottom
+
+$paddingTopBottom: 1rem; //header top
+$paddingLeftRight: 1.5rem; //header top
+
 $paddingTopBottom2: 2rem;
-
-// intro sec  grid columns
-$s-1: 1;
-$s-2: 6;
-$s-3: 10;
-
-$e-1: 6;
-$e-2: 10;
-$e-3: 12;
