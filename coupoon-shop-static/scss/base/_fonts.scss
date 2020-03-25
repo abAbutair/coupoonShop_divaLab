@@ -1,0 +1,44 @@
+// LTR fonts - EN
+@font-face {
+  font-family: 'roboto-bold';
+  src: url('../fonts/ltr/Roboto-Black.ttf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto-semi';
+  src: url('../fonts/ltr/Roboto-Bold.ttf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto-med';
+  src: url('../fonts/ltr/Roboto-Medium.ttf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto-reg';
+  src: url('../fonts/ltr/Roboto-Regular.ttf');
+  font-style: normal;
+}
+
+////////////////////////////////////////////////////////////
+// RTL fonts - AR
+@font-face {
+  font-family: 'messiri-bold';
+  src: url('../fonts/rtl/ElMessiri-Bold.ttf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'messiri-med';
+  src: url('../fonts/rtl/ElMessiri-Medium.ttf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'messiri-reg';
+  src: url('../fonts/rtl/ElMessiri-Regular.ttf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'messiri-semi';
+  src: url('../fonts/rtl/ElMessiri-SemiBold.ttf');
+  font-style: normal;
+}

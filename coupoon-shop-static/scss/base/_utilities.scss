@@ -1,0 +1,93 @@
+p {line-height: var(--h);}
+.u-center-text {text-align: center}
+.t-capitalize {text-transform: capitalize!important;}
+.t-uppercase {text-transform: uppercase!important;}
+.clearfix { &:after {content:' ';display: table;clear: both;} }
+.flex-box {@extend %d-flex}
+.justify-content {
+    &--center {
+        justify-content: center;
+    }
+    &--space-between {
+        justify-content: space-between;
+    }
+}
+.align-items {
+    &--center {
+        align-items: center;
+    }
+}
+.background-holder {
+    @extend %covered_bg;
+    &--overlay1 {
+        position: relative;
+        &:before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0,15,18,0.9), rgba(0,76,89,0.9));
+        }
+    }
+}
+.pricing {
+    > * {
+        font-size: $smallFontSize;
+        font-family: $medFont;
+        text-transform: uppercase;
+        &:not(:last-child) {
+            margin-#{$right}: 2rem;
+        }
+    }
+    &__offer {
+        color: $offerClr;
+    }
+    &__old {
+        color: $secondClr;
+        position: relative;
+        &:after {
+            content: ' ';
+            background-color: $secondClr;
+            width: 100%;
+            height: 0.1rem;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            @include translate(0, -50%);
+        }
+    }
+    &__new {
+        color: $secondClr;
+    }
+}
+.video-demo {
+    text-align: center;
+    margin-bottom: 4rem;
+    .fancy-link {
+        font-size: $medFontSize;
+        @include sub-colors;
+        i {
+            margin-#{$right}: 1rem;
+        }
+    }
+}
+.top-divider {
+    &:before {
+        content: ' ';
+        display: block;
+        background-color:$footerHeadings;
+        width: 100%;
+        height: 0.1rem;
+        margin: 4.5rem 0;
+    }
+}
+
+.link-wrapper {
+    @extend %d-flex;
+    justify-content: flex-end;
+    a {
+        color: $secondClr;
+    }
+}

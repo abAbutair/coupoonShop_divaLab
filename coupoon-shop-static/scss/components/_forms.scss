@@ -1,0 +1,108 @@
+.form {
+}
+
+.form__element {
+}
+
+.input, .select2-container--default .custom-container , .select2-container--default .select2-selection--multiple{
+  height: $formElementHeight;
+  background-color: $inputBg;
+  border: 0.1rem solid $inputBorder;
+  padding: .3rem 1.5rem;
+  color: $bodyFontClr;
+  @include border-radius(0);
+}
+.select2-container--default .select2-selection--multiple{
+  background-color: #fff;
+}
+
+// input
+.input {
+  width: 100%;
+  @include placeHolder {
+    color: $inputFontClr;
+    font-size: $tinyFontSize;
+    text-transform: capitalize;
+  }
+
+  &[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+
+  &--white-bg {
+    background-color: $whiteClr;
+    border: 0.1rem solid $inputBorder2;
+  }
+  &:focus {
+  }
+}
+textarea{
+  width: 100%;
+  padding: .3rem 1.5rem;
+  border: 0.1rem solid $inputBorder;
+  @include placeHolder {
+    color: $inputFontClr;
+    font-size: $tinyFontSize;
+    text-transform: capitalize;
+  }
+}
+.positioned-icn {
+  position: relative;
+
+  &__icon {
+    position: absolute;
+    #{$right}: 1rem;
+    top: 50%;
+    @include translate(0, -50%);
+    font-size: $smallFontSize;
+  }
+}
+
+// select
+.select2-container {
+  &--default {
+    .custom-container {
+      .select2-selection__rendered {
+        height: 100%;
+        padding: 0;
+        @extend %d-flex;
+        align-items: center;
+        color: $inputFontClr;
+        font-size: $tinyFontSize;
+        text-transform: capitalize;
+      }
+      .select2-selection__arrow {
+        height: 100%;
+        width: .8rem;
+        top: 0;
+        #{$right}: 1rem;
+      }
+    }
+  }
+}
+
+.checkbox{
+  color: $mainClr;
+  position: relative;
+  cursor: pointer;
+  span{
+    &:before{
+      margin-#{$right}:1.2rem;
+      transition: all 250ms cubic-bezier(.4,.0,.23,1);
+      @include fontAwesome("Font Awesome 5 Free",'\f0c8',1.8rem,400,$mainClr);
+    }
+  }
+
+  input{
+    display: none;
+    &:checked{
+      + span{
+        animation: shrink-bounce 200ms cubic-bezier(.4,.0,.23,1);
+        &:before{
+          animation: checkbox-check 125ms 250ms cubic-bezier(.4,.0,.23,1) forwards;;
+          @include fontAwesome("Font Awesome 5 Free",'\f14a',null,900,null);
+        }
+      }
+    }
+  }
+}

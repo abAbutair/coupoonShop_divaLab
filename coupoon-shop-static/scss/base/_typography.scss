@@ -1,0 +1,90 @@
+::-moz-selection { /* Code for Firefox */
+  background-color: lighten($mainClr, 20%);
+  color: #fff;
+}
+
+::selection {
+  background-color: lighten($mainClr, 20%);
+  color: #fff;
+}
+body {
+  font-family: $bodyFont;
+  font-weight: 400;
+  line-height: var(--h);
+  color: $bodyFontClr;
+  font-size: $bodyFontSize;
+  word-spacing: 0.3rem;
+  text-align: $left;
+}
+.heading-intro {
+  font-size: $medFontSize;
+  font-family: $medFont;
+  margin: 0;
+}
+
+.heading-primary {
+  color: $whiteClr;
+  font-size: $medFontSize;
+  font-family: $medFont;
+  @include sub-colors;
+}
+.heading-secondary {
+  font-size: $headingSecondary;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  color: $whiteClr;
+  font-family: $boldFont;
+  @include sub-colors;
+}
+.section-heading {
+  font-size: $sectionHeading;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 4rem;
+  color: $whiteTxt;
+  @include sub-colors;
+}
+.heading-follower {
+  text-transform: capitalize;
+  font-size: $medFontSize;
+  display: block;
+  margin: 0.5rem 0;
+  @include sub-colors;
+}
+.heading-footer {
+  font-size: $medFontSize;
+  color: $footerHeadings;
+  font-family: $medFont;
+  margin-bottom: 2rem;
+}
+article {
+  font-size: $smallFontSize;
+  p {
+    line-height: var(--arth);
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+  &.white {
+    color: $whiteClr;
+  }
+}
+.link-wrapper {
+  a, .view-more{
+    font-size: $tinyFontSize;
+    font-family: $boldFont;
+    &:after {
+      content: '\f101';
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      margin-#{$left}: 0.25rem;
+    }
+  }
+}
+.text-line-through{
+  text-decoration: line-through;
+}
+article{
+  p{
+    margin-bottom: 1rem; // plz remove margin bottom property
+  }
+}

@@ -1,0 +1,641 @@
+/* PAGES */
+// internals
+// plans page
+.plans{
+  text-align: center;
+  .card{
+    height: calc(100% - 2.5rem);
+    background-color: $dropdownClr;
+    padding: 3rem 2.5rem 7.5rem;
+    margin-top: 2.5rem;
+    @include transition(all,.4s);
+    > p{
+      margin-bottom: 3rem;
+      margin-top: 2rem;
+    }
+    >button{
+      position: absolute;
+      bottom: 3.5rem;
+      left: 50%;
+      @include translate(-50%,0)
+    }
+    &:hover{
+      @extend %box-hover
+    }
+  }
+}
+.subscription-fees{
+  display: block;
+  font-size: $sectionHeading;
+  text-transform: uppercase;
+  line-height: normal;
+  @include sub-colors;
+}
+//all categories page
+.masonry-grid-item{
+  display: block;
+  float: $left;
+  padding: 8px;
+  width: 33.33%;
+  .category-bg{
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    position: relative;
+    &:before{
+      @extend %fullSize;
+      content: '';
+      opacity: .8;
+      background-color: $dropdownClr;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    > *{
+      position: relative;
+    }
+  }
+  a {
+    @extend %content-nav
+  }
+}
+//selected category page
+.offers-container{margin-bottom: -3rem}
+.offer{
+  position: relative;
+  margin-bottom: 3rem;
+  &-summary{
+    padding-top: 1.5rem ;
+  }
+  &:before{
+    @extend %fullSize;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include transition(all,.25s)
+  }
+  &:hover{
+    &:before{
+      background-color: $dropdownClr;
+      width: calc(100% + 3rem);
+      height: calc(100% + 3rem);
+      top: -1.5rem;
+      left: -1.5rem;
+      box-shadow:0 3px 10px -2px rgba($offerClr,.7);
+    }
+    .preview{
+      filter: saturate(1.4);
+    }
+    a{width: 100%}
+  }
+  .preview{
+    filter: saturate(1);
+    @include transition(all,.3s)
+  }
+  h4{
+    height: 5rem;
+    color:$mainClr;
+    overflow: hidden;
+  }
+  h5{
+    color: $orange;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    span{
+      margin-#{$right}:7px;
+      &:first-child{color: $offerClr}
+    }
+  }
+  p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  a{
+    width: 14.5rem;
+    text-align: center;
+    @include transition(width,.3s)
+  }
+  >*{position: relative}
+}
+// how it works page
+.how-it-works{
+  &:nth-child(odd){
+    background-color: $dropdownClr;
+  }
+  .heading-follower{text-align: center}
+}
+// merchans list page
+.filtration{
+  .checkbox{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    background-color: $dropdownClr;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+.merchant{
+  width: 100%;
+  border: 1px $dropdownClr solid;
+  position: relative;
+  margin-top: 3rem;
+  .brand-logo{
+    background-color: #fff;
+  }
+  &:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: $dropdownClr;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    @include transition(all,.25s)
+  }
+  &:hover{
+    &:not(.merchant-details){
+      &:before{
+        width: calc(100% + 2rem);
+        height: calc(100% + 2rem);
+        top: -1rem;
+        left: -1rem;
+        box-shadow:0 3px 10px -2px rgba($offerClr,.7);
+      }
+    }
+  }
+}
+.brand-logo{
+  padding: 2rem 1.5rem;
+  img{
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.brand-info{
+  text-align: center;
+  padding: 2rem 1.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  h3{color: $mainClr}
+  h5{color: $offerClr}
+}
+
+// offer details
+.offer-main-info{
+  background-color: $dropdownClr;
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+  h3{text-align: center}
+}
+.call-to-action{
+  button{width: 100%}
+}
+.price-info{
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  >*{
+    display: flex;
+    flex-flow: column;
+  }
+  strong{
+    color: $orange;
+    font-size: 1.6rem;
+  }
+  span{
+    font-size: 2rem;
+    color: $mainClr;
+    font-family: $medFont;
+  }
+}
+.share-offer{
+  padding-top: 2rem;
+  border-top: 1px #D3D3D3 solid;
+  display: flex;
+  justify-content: space-between;
+  span{
+    color: $orange;
+    font-family: $medFont;
+    font-size: 1.8rem;
+  }
+  a{
+    color: $mainClr;
+    font-size: 2.4rem;
+    margin-#{$left}:1rem
+  }
+}
+.tags{
+  margin-top: 2rem;
+  a{
+    background-color: #fff;
+    margin-#{$right}:.3rem;
+    margin-bottom: .5rem;
+    padding: .2rem .6rem;
+    color: $bodyFontClr;
+    font-size: 1.4rem;
+  }
+}
+.related{
+  >a {
+    display: flex;
+    margin-top: 1.5rem;
+    &:not(:last-child){
+      padding-bottom: 1.5rem;
+      border-bottom: 1px #D3D3D3 solid;
+    }
+  }
+  .offer-summary{
+    width: calc(60% - 1rem );
+    padding-top: 0;
+  }
+  h4{
+    color: $mainClr;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  h5{
+    color: $orange;
+    display: flex;
+    justify-content: space-between;
+    span{
+      &:first-child{color: $offerClr}
+    }
+  }
+}
+.preview-sm{
+  width: 30%;
+  margin-#{$right}:1rem
+}
+.offer-gallery{
+    height: auto !important;
+    .carousel-inner,.carousel-item{
+    height: auto !important;
+  }
+    .carousel-item{
+        padding-top: 50%;
+        @extend %covered_bg;
+    }
+  .carousel-indicators{
+      justify-content: space-between;
+    position: relative;
+    margin: 0;
+    padding:1.5rem 0;
+    li{
+      width: 30%;
+        height: auto;
+    }
+  }
+}
+.offer-header{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    span{
+        color: $offerClr;
+        font-family: $medFont;
+        text-transform: capitalize;
+    }
+    strong{
+        color: $orange;
+    }
+}
+.comments{
+    padding:2rem;
+    background-color: $dropdownClr;
+    textarea{
+        background-color: #fff;
+        width: 100%;
+        border: 1px $inputBorder solid;
+        padding:.8rem 1.5rem;
+    }
+    form{
+        &:not(:last-child){
+            margin-bottom: 3rem;
+        }
+    }
+}
+.review{
+    display: flex;
+    padding: 1.5rem 0;
+    &:not(:last-child){
+        border-bottom: 1px #D3D3D3 solid;
+    }
+    .pic{
+        width: 7.5rem;
+        height: 7.5rem;
+        overflow: hidden;
+        margin-#{$right}:1.5rem;
+        @include border-radius(50%);
+        img{
+            max-width: 100%;
+        }
+    }
+    .comment{
+        width: calc(100% - 9rem);
+    }
+    h4{
+        color: $orange;
+        margin-bottom: 0;
+    }
+    span{
+        color: $offerClr;
+        margin-bottom: 1.5rem;
+    }
+}
+
+// merchant details
+.merchant-details{
+  background-color: $dropdownClr;
+  padding: 3rem 2rem 0;
+  margin: 0;
+  font-size: 1.4rem;
+  .brand-logo{background-color: transparent}
+  .star-rating{
+    margin-bottom: 2.5rem;
+  }
+  .map{
+    padding-top: 2rem;
+    border-top: 1px #D3D3D3 solid;
+  }
+}
+.merchant-contacts{
+  padding-top: 2rem;
+  >*{
+    position: relative;
+    padding-#{$left}:2.5rem;
+    margin-bottom: 1.2rem;
+    color: $bodyFontClr;
+    line-height: 2.4rem;
+    display: block;
+  }
+  i{
+    line-height: 2.4rem;
+    position: absolute;
+    #{$left}:0
+  }
+}
+
+// FAQs page
+.question{
+  position: relative;
+  margin-#{$left}:7rem;
+  &:not(:last-child){margin-bottom: 4rem}
+  .q{
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+    position: absolute;
+    #{$left}:-7rem;
+    background-color: $mainClr;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .helpful-or-not{
+    color: $orange;
+    font-weight: bold;
+    margin-#{$left}: 1.5rem;
+    input{display: none}
+
+  }
+}
+
+// about page
+.features{
+  margin: 5rem 0;
+  &:last-child{margin-bottom: 0}
+}
+//Terms & Conditions
+.two-col-list{
+  column-count: 2;
+}
+.agree{
+  display: block;
+  margin: 3rem 0;
+  color: $offerClr;
+}
+
+// profile
+.profile-pic{
+  margin-bottom: 3rem;
+  img{width: 100%;}
+}
+.upload-pic{
+  font-weight: bold;
+  color: $mainClr;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  @include translate(-50%, 0);
+  input{display: none}
+}
+.username-4mob{display: none}
+.username-4desktop{
+  font-weight: bold;
+}
+.tab-link{
+  padding: 1.2rem 2rem;
+  background-color: $mainClr;
+  color: #fff;
+  &:hover{color: #fff}
+  &.active{
+    background-color: $dropdownClr;
+    color: $orange;
+  }
+}
+.tab-content{
+  padding: 3rem;
+  background-color: $dropdownClr;
+  >.tab-pane{display: none}
+  >.active{display: block}
+  .form-group{
+    a{
+      min-width: 10rem;
+      padding-#{$left}:1.5rem;
+      color:$mainClr;
+      font-weight: bold;
+    }
+  }
+  .input{background-color: #fff}
+  thead{
+    background-color: $mainClr;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  .tfooter{
+    background-color: $orange;
+    color: #fff;
+    text-align: center;
+  }
+  .subscribtion-info{
+    display: flex;
+    > img{margin-#{$right}:2.5rem}
+    i{
+      color: $orange;
+      font-size: 2rem;
+    }
+    a{color: $bodyFontClr}
+  }
+}
+
+// sell with us
+.add-new{
+  color: $offerClr;
+  button{
+    color: $mainClr;
+    font-weight: bold;
+  }
+}
+.about-business{
+  width: 100%;
+  height: calc(100% - 1.5rem);
+  padding: .3rem 1.5rem;
+  background-color: $dropdownClr;
+  border: 1px $inputBorder solid;
+}
+
+// feedback
+.feedback{
+  max-width: 80%;
+  margin: 0 auto;
+  [type='radio']{
+    display: none;
+    &:checked{
+      + i{
+        color: $orange;
+      }
+    }
+  }
+  h3{
+    margin-bottom: 2rem;
+  }
+  textarea{
+    background-color: $dropdownClr;
+  }
+  button{width: 100%}
+}
+.emojis{
+  display: flex;
+  justify-content: space-around;
+  font-size: 12rem;
+  color: $offerClr;
+  padding-bottom: 4rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px $footerHeadings solid;
+  label{cursor: pointer}
+}
+
+// thanks
+.thanks{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  > span{
+    font-size: 8rem;
+    color: #009812;
+    margin-bottom: 3rem;
+  }
+  > .heading-follower{margin-bottom: 3rem}
+}
+
+// full screen pages (login, registeration, 404 ...)
+.fullPage{
+  position: relative;
+  @extend %covered_bg;
+  &:before{
+    content: '';
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    background-color: $dropdownClr;
+  }
+  .content{
+    min-height: 75vh;
+    background-color: $dropdownClr;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-#{$right}:5rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    >span{
+      color: $offerClr;
+      font-size: 1.4rem;
+      a{
+        color: $mainClr;
+        font-weight: bold;
+      }
+    }
+  }
+  .logo{
+    display: flex;
+    align-self: center;
+  }
+  form{color: $offerClr;}
+  .form-group{
+    margin-bottom: 1.5rem;
+    position: relative;
+    &:first-of-type{margin-top: 3.5rem}
+    &.name{
+      display: block;
+      .input{width: calc(50% - 4px)}
+    }
+    i{
+      color: $offerClr;
+      font-size: 1.8rem;
+      line-height: 4rem;
+      position: absolute;
+      #{$right}:1.5rem
+    }
+  }
+  .input{
+    background-color: #fff;
+    padding-#{$right}:4rem;
+    &::placeholder{
+      color: $offerClr;
+    }
+  }
+  .form-options{
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    label{
+      font-size: 1.4rem;
+      color: $offerClr;
+    }
+    a{color: $mainClr}
+  }
+  button{width: 100%}
+  .social-login{
+    text-align: center;
+    color: $offerClr;
+    font-size: 1.4rem;
+    > div{
+      display: flex;
+      justify-content: center;
+      a{
+        margin: 0 1rem;
+        color: $bodyFontClr;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+.error-page{
+  background-color: #272041;
+  background-size: auto;
+  background-position: center $right;
+  background-repeat: no-repeat;
+  .content{height: 100vh}
+}

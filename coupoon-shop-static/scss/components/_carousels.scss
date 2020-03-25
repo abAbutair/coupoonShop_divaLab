@@ -1,0 +1,31 @@
+.carousel {
+  height: 100%;
+
+  .carousel-inner {
+    height: 100%;
+
+    .carousel-item {
+      height: 100%;
+      @extend %covered_bg;
+    }
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    font-size: 4rem;
+  }
+
+}
+
+.slider-name {
+  font-size: $medFontSize;
+  color: $whiteClr;
+  font-family: $bodyFont;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  @include translate(-50%, 0);
+  background-color: $secondClr;
+  z-index: 5;
+  padding: 1.5rem 3rem;
+  margin: 0;
+}

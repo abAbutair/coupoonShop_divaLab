@@ -1,0 +1,64 @@
+.email-sub {
+  &.section {
+    &--padding {
+      padding: 7rem 0;
+    }
+  }
+  &__inner {
+    text-align: center;
+    margin: 0 auto;
+    padding: 5rem 10rem;
+    background-color: rgba(255,255,255,0.7);
+    .heading-primary {
+      margin-bottom: 2rem;
+    }
+    form {
+      @extend %d-flex;
+      .ctm-btn {
+        @extend %d-flex;
+        height: $formElementHeight;
+        padding: 0 4rem;
+        align-items: center;
+      }
+    }
+  }
+}
+.footer {
+  background: linear-gradient(to top, #000F12, #004C59);
+  padding: 5rem 0;
+  &__bottom {
+    > * {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+    &__copyrights {
+      p {
+        color: $footerHeadings;
+        margin: 0;
+        font-size: $smallFontSize;
+        font-family: $medFont;
+        text-align: center;
+        a {
+          color: $footerHeadings;
+          &:hover {
+            color: lighten($footerHeadings, 20%);
+          }
+        }
+      }
+    }
+    &__lists {
+      @extend %d-flex;
+      justify-content: space-around;
+      .payment-methods, .social-links {
+        @extend %d-flex;
+        align-items: center;
+        li {
+          &:not(:last-child) {
+            margin-#{$right}: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

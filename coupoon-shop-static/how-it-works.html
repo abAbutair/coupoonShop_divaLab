@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style_ltr.css">
+    <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/web-and-user-interface-27/512/338-512.png"
+          type="image/x-icon">
+    <title>Coupoon Shop</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__top t-capitalize">
+        <div class="container">
+            <div class="flex-box justify-content--space-between align-items--center">
+                <div class="flex-box__child flex-box align-items--center">
+                    <div class="icon-link">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <a href="login.html">login</a>
+                    </div>
+                    <button type="button" class="lang-btn"><i class="fas fa-language"></i> Arabic</button>
+                    <!--
+                    <div class="ctm-dropdown" id="dropdown">
+                        <div class="ctm-dropdown__header">
+                            <button class="ctm-btn icon-link dropdown-button" type="button" id="dropdownButton">
+                                <i class="fas fa-language"></i>
+                                <span>language</span>
+                            </button>
+                        </div>
+                        <div class="ctm-dropdown__menu" aria-labelledby="dropdownButton">
+                            <div class="ctm-dropdown__opt">العربية</div>
+                            <div class="ctm-dropdown__opt">english</div>
+                            <div class="ctm-dropdown__opt">french</div>
+                        </div>
+                    </div>
+                    -->
+                    <nav class="ctm-nav flex-box ctm-nav--small">
+                        <a href="merchants-list.html" class="ctm-nav__link">stores</a>
+                        <a href="how-it-works.html" class="ctm-nav__link">how it works</a>
+                        <a href="#" class="ctm-nav__link">craft offers</a>
+                        <a href="sell-with-us.html" class="ctm-nav__link">sell with us</a>
+                    </nav>
+                </div>
+                <div class="flex-box__child">
+                    <a href="plans.html" class="ctm-btn ctm-btn--small ctm-btn--orange"><strong>subscribe</strong></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__bottom">
+        <div class="container med">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logo-part">
+                        <a href="index.html" class="logo"><img src="images/logo.png" alt="Coupon Logo"></a>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="nav-part">
+                        <form action="" class="form">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="form__element">
+                                        <select class="states" name="state">
+                                            <option value="dubai">Dubai</option>
+                                            <option value="abu dhabi">abu dhabi</option>
+                                            <option value="cairo">cairo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="form__element positioned-icn">
+                                        <input type="search" class="input" placeholder="search">
+                                        <span class="positioned-icn__icon"><i class="fas fa-search"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <nav class="burger-menu ctm-dropdown" id="dropdown1">
+                            <div class="ctm-dropdown__header">
+                                <button class="open-btn dropdown-button" type="button" id="openBtn">
+                                <span class="align-burger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                                    <span class="open-btn__header">all categories</span>
+                                </button>
+                            </div>
+                            <div class="menu-collapse ctm-dropdown__menu" id="menuCollapse" aria-labelledby="openBtn">
+                                <div class="close-btn">
+                                    <button type="button">&times;</button>
+                                </div>
+                                <div class="accordion" id="h-accordionNav">
+                                    <div class="card">
+                                        <div class="card-header" id="h-headingOne">
+                                            <h2 role="button" data-toggle="collapse" data-target="#h-collapseOne"
+                                                aria-expanded="false"
+                                                aria-controls="h-collapseOne">
+                                                Food & Beverages
+                                            </h2>
+                                        </div>
+
+                                        <div id="h-collapseOne" class="collapse" aria-labelledby="headingOne"
+                                             data-parent="#h-accordionNav">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li><a href="category.html">seafood</a></li>
+                                                    <li><a href="category.html">Breakfast</a></li>
+                                                    <li><a href="category.html">Coffee</a></li>
+                                                    <li><a href="category.html">Lunch</a></li>
+                                                    <li><a href="category.html">Dinner</a></li>
+                                                    <li><a href="category.html">Bars</a></li>
+                                                    <li><a href="category.html">Romantic Dinner</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="h-headingTwo">
+                                            <h2 role="button" data-toggle="collapse" data-target="#h-collapseTwo"
+                                                aria-expanded="false"
+                                                aria-controls="h-collapseTwo">
+                                                SPA & Beauty
+                                            </h2>
+                                        </div>
+                                        <div id="h-collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                             data-parent="#h-accordionNav">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li><a href="category.html">Sub Category Name</a></li>
+                                                    <li><a href="category.html">Sub Category Name</a></li>
+                                                    <li><a href="category.html">Sub Category Name</a></li>
+                                                    <li><a href="category.html">Sub Category Name</a></li>
+                                                    <li><a href="category.html">Sub Category Name</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="h-headingThree">
+                                            <h2 role="button" data-toggle="collapse" data-target="#h-collapseThree"
+                                                aria-expanded="false"
+                                                aria-controls="h-collapseThree">
+                                                Activities
+                                            </h2>
+                                        </div>
+                                        <div id="h-collapseThree" class="collapse" aria-labelledby="headingThree"
+                                             data-parent="#h-accordionNav">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li><a href="category.html">Sub Category Name</a></li>
+                                                    <li><a href="category.html">Sub Category Name</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="h-headingFour">
+                                            <h2 role="button" data-toggle="collapse" data-target="#h-collapseFour"
+                                                aria-expanded="false"
+                                                aria-controls="h-collapseFour">
+                                                Health & Fitness
+                                            </h2>
+                                        </div>
+                                        <div id="h-collapseFour" class="collapse" aria-labelledby="headingFour"
+                                             data-parent="#h-accordionNav">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li><a href="category.html">Sub Category Name</a></li>
+                                                    <li><a href="category.html">Sub Category Name</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="link-wrapper">
+                                    <a href="categories.html" class="view-more">View all categories</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-lg-9">
+                        <nav class="ctm-nav ctm-nav--big flex-box">
+                            <div class="ctm-nav__link hover-dropdown">
+                                <div class="hover-dropdown__header">
+                                    <span>home appliances</span>
+                                </div>
+                                <div class="hover-dropdown__menu">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="columns-wrapper">
+                                                <ul class="links links--main-clr columns" data-columns="2">
+                                                    <li><a href="category.html">- Part of big family</a></li>
+                                                    <li><a href="category.html">- Free time? Work with us</a></li>
+                                                    <li><a href="category.html">- Drop us a visit</a></li>
+                                                    <li><a href="category.html">- Benefits for you</a></li>
+                                                    <li><a href="category.html">- Part of big family</a></li>
+                                                    <li><a href="category.html">- Free time? Work with us</a></li>
+                                                    <li><a href="category.html">- Drop us a visit</a></li>
+                                                    <li><a href="category.html">- Benefits for you</a></li>
+                                                    <li><a href="category.html">- Part of big family</a></li>
+                                                    <li><a href="category.html">- Free time? Work with us</a></li>
+                                                    <li><a href="category.html">- Drop us a visit</a></li>
+                                                    <li><a href="category.html">- Benefits for you</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="grid">
+                                                <div class="grid__column grid__column--e1">
+                                                    <div class="grid__item">
+                                                        <a href="offer-details.html"
+                                                           class="grid__inner grid__inner--data-c"
+                                                           style="background-image: url('media/Microwave-Oven.jpg');color: #65AA8F;">
+                                                        </a>
+                                                    </div>
+                                                    <div class="grid__item">
+                                                        <a href="offer-details.html"
+                                                           class="grid__inner grid__inner--data-bg"
+                                                           style="background-image: url('media/coffee-maker-brand-electric-teapot.jpg'); color: #930A10">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid__column grid__column--e2">
+                                                    <div class="grid__item">
+                                                        <a href="offer-details.html"
+                                                           class="grid__inner grid__inner--data-a"
+                                                           style="background-image: url('media/Gas-Room-Heater.jpg');color:#A55731">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ctm-nav__link hover-dropdown">
+                                <div class="hover-dropdown__header">
+                                    <span>activities</span>
+                                </div>
+                                <div class="hover-dropdown__menu">
+                                </div>
+                            </div>
+                            <div class="ctm-nav__link hover-dropdown">
+                                <div class="hover-dropdown__header">
+                                    <span>food & beverages</span>
+                                </div>
+                                <div class="hover-dropdown__menu">
+                                </div>
+                            </div>
+                            <div class="ctm-nav__link hover-dropdown">
+                                <div class="hover-dropdown__header">
+                                    <span>electronics</span>
+                                </div>
+                                <div class="hover-dropdown__menu">
+                                </div>
+                            </div>
+                            <div class="ctm-nav__link hover-dropdown">
+                                <div class="hover-dropdown__header">
+                                    <span>health & fitness</span>
+                                </div>
+                                <div class="hover-dropdown__menu">
+                                </div>
+                            </div>
+                            <div class="ctm-nav__link hover-dropdown">
+                                <div class="hover-dropdown__header">
+                                    <span>travel</span>
+                                </div>
+                                <div class="hover-dropdown__menu">
+                                </div>
+                            </div>
+                            <div class="ctm-nav__link hover-dropdown">
+                                <div class="hover-dropdown__header">
+                                    <span>beauty & spa</span>
+                                </div>
+                                <div class="hover-dropdown__menu">
+                                </div>
+                            </div>
+                            <div class="ctm-nav__link hover-dropdown">
+                                <div class="hover-dropdown__header">
+                                    <span>medical</span>
+                                </div>
+                                <div class="hover-dropdown__menu">
+                                </div>
+                            </div>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- page header -->
+    <div class="page-header">
+        <h1 class="page-heading">how it works</h1>
+        <nav>
+            <ul class="breadcrumb">
+                <li><a href="index.html">home</a></li>
+                <li class="active">how it works</li>
+            </ul>
+
+        </nav>
+    </div>
+
+
+    <!-- start page content -->
+    <section class="section section--padding how-it-works">
+        <div class="container">
+            <h3 class="heading-follower heading-follower--main-clr">Website Concept</h3>
+            <p class="section-intro"> Dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry’s standard dummy text ever since, when an unknown. Dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry’s standard dummy text ever .</p>
+            <div class="video-demo">
+                <a class="fancy-link fancy-link--orange" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                    <i class="fas fa-video"></i>Play a Demo
+                </a>
+            </div>
+            <div class="offers-sec">
+
+                <div class="img-bio-grid">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="img-bio-grid__child background-holder" style="background-image:
+                            url('media/gif-1.jpg')">
+                                <div class="img-bio-grid__child__data">
+                                    <h5 class="heading-secondary heading-secondary--main-clr">subscribe</h5>
+                                    <article>
+                                        <p>Relax and recharge while having fun at Barracuda Beach Resort.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="img-bio-grid__child background-holder" style="background-image:
+                            url('media/gif-2.jpg')">
+                                <div class="img-bio-grid__child__data">
+                                    <h5 class="heading-secondary heading-secondary--main-clr">Select Offer</h5>
+                                    <article>
+                                        <p>Relax and recharge while having fun at Barracuda Beach Resort.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="img-bio-grid__child background-holder" style="background-image:
+                            url('media/gif-3.jpg')">
+                                <div class="img-bio-grid__child__data">
+                                    <h5 class="heading-secondary heading-secondary--main-clr">Verify QR Code & Enjoy</h5>
+                                    <article>
+                                        <p>Relax and recharge while having fun at Barracuda Beach Resort.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section--padding how-it-works">
+        <div class="container">
+            <h3 class="heading-follower heading-follower--main-clr">Find Best Offer</h3>
+            <p class="section-intro"> Dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry’s standard dummy text ever since, when an unknown. Dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry’s standard dummy text ever .</p>
+            <div class="video-demo">
+                <a class="fancy-link fancy-link--orange" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                    <i class="fas fa-video"></i>Play a Demo
+                </a>
+            </div>
+            <div class="offers-sec">
+
+                <div class="img-bio-grid">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="img-bio-grid__child background-holder" style="background-image:
+                            url('media/gif-1.jpg')">
+                                <div class="img-bio-grid__child__data">
+                                    <h5 class="heading-secondary heading-secondary--main-clr">subscribe</h5>
+                                    <article>
+                                        <p>Relax and recharge while having fun at Barracuda Beach Resort.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="img-bio-grid__child background-holder" style="background-image:
+                            url('media/gif-2.jpg')">
+                                <div class="img-bio-grid__child__data">
+                                    <h5 class="heading-secondary heading-secondary--main-clr">Select Offer</h5>
+                                    <article>
+                                        <p>Relax and recharge while having fun at Barracuda Beach Resort.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="img-bio-grid__child background-holder" style="background-image:
+                            url('media/gif-3.jpg')">
+                                <div class="img-bio-grid__child__data">
+                                    <h5 class="heading-secondary heading-secondary--main-clr">Verify QR Code & Enjoy</h5>
+                                    <article>
+                                        <p>Relax and recharge while having fun at Barracuda Beach Resort.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section--padding how-it-works">
+        <div class="container">
+            <h3 class="heading-follower heading-follower--main-clr">Use Offer</h3>
+            <p class="section-intro"> Dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry’s standard dummy text ever since, when an unknown. Dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry’s standard dummy text ever .</p>
+            <div class="video-demo">
+                <a class="fancy-link fancy-link--orange" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                    <i class="fas fa-video"></i>Play a Demo
+                </a>
+            </div>
+            <div class="offers-sec">
+
+                <div class="img-bio-grid">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="img-bio-grid__child background-holder" style="background-image:
+                            url('media/gif-1.jpg')">
+                                <div class="img-bio-grid__child__data">
+                                    <h5 class="heading-secondary heading-secondary--main-clr">subscribe</h5>
+                                    <article>
+                                        <p>Relax and recharge while having fun at Barracuda Beach Resort.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="img-bio-grid__child background-holder" style="background-image:
+                            url('media/gif-2.jpg')">
+                                <div class="img-bio-grid__child__data">
+                                    <h5 class="heading-secondary heading-secondary--main-clr">Select Offer</h5>
+                                    <article>
+                                        <p>Relax and recharge while having fun at Barracuda Beach Resort.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="img-bio-grid__child background-holder" style="background-image:
+                            url('media/gif-3.jpg')">
+                                <div class="img-bio-grid__child__data">
+                                    <h5 class="heading-secondary heading-secondary--main-clr">Verify QR Code & Enjoy</h5>
+                                    <article>
+                                        <p>Relax and recharge while having fun at Barracuda Beach Resort.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <section class="section section--padding email-sub background-holder" style="background-image: url('images/email-sub.jpg')">
+        <div class="container">
+            <div class="email-sub__inner">
+                <h5 class="heading-primary heading-primary--main-clr">Join 13,000+ subscribers &  get a hand picked list of best offers</h5>
+                <form action="">
+                    <input type="search" class="input input--white-bg" placeholder="search">
+                    <button type="button" class="ctm-btn ctm-btn--big ctm-btn--orange"><i class="fas fa-paper-plane"></i>subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h5 class="heading-footer">Get to know us</h5>
+                        <ul class="links">
+                            <li><a href="#">- Career</a></li>
+                            <li><a href="#">- What we do</a></li>
+                            <li><a href="#">- We do it as family</a></li>
+                            <li><a href="#">- Business affiliates</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 class="heading-footer">Cash with us</h5>
+                        <ul class="links">
+                            <li><a href="#">- Part of big family</a></li>
+                            <li><a href="#">- Free time? Work with us</a></li>
+                            <li><a href="#">- Drop us a visit</a></li>
+                            <li><a href="#">- Benefits for you</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 class="heading-footer">Get in touch</h5>
+                        <ul class="links">
+                            <li><a href="#">- Recommendations & Remarks RnR</a></li>
+                            <li><a href="#">- Contact with our members</a></li>
+                            <li><a href="#">- Market your business for free</a></li>
+                            <li><a href="#">- Coupoonshop assistance</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 class="heading-footer">Coupoonshop assistance</h5>
+                        <ul class="links">
+                            <li><a href="#">- FAQ</a></li>
+                            <li><a href="#">- Privacy Policy</a></li>
+                            <li><a href="#">- Terms &. Conditions</a></li>
+                            <li><a href="#">- Help you</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom top-divider">
+                <div class="footer__bottom__copyrights">
+                    <p>&copy; 2020 Coupoonshop All Rights Reserved | Powered by <a href="https://diva-lab.com/">Diva-lab</a></p>
+                </div>
+                <div class="footer__bottom__lists">
+                    <ul class="payment-methods">
+                        <li><i class="fab fa-cc-visa"></i></li>
+                        <li><i class="fab fa-cc-mastercard"></i></li>
+                        <li><i class="fab fa-cc-paypal"></i></li>
+                    </ul>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- core scripts -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/popper.js/dist/popper.js"></script>
+
+<script src="node_modules/bootstrap/js/dist/util.js"></script>
+<script src="node_modules/bootstrap/js/dist/collapse.js"></script>
+
+<script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.states').select2({
+            placeholder: 'state',
+            minimumResultsForSearch: -1,
+            dropdownAutoWidth: true,
+            width: '100%',
+            containerCssClass: "custom-container",
+            dropdownCssClass: "custom-dropdown",
+        });
+    });
+</script>
+
+<script src="js/dropdown.js"></script>
+<script src="js/mainScript.js"></script>
+
+
+<!-- page plugins scripts -->
+<script src="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+
+</body>
+</html>
