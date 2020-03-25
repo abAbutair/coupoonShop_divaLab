@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:scss_ltr": "node-sass --output-style expanded --source-map true --source-map-contents true scss/main.scss css/style_ltr.css -w",
-    "compile:scss_rtl": "node-sass --output-style expanded --source-map true --source-map-contents true scss/main.scss css/style_rtl.css -w"
+    "compile:scss_ltr": "node-sass --output-style compressed --source-map true --source-map-contents true scss/main.scss css/style_ltr.css -w",
+    "compile:scss_rtl": "node-sass --output-style compressed --source-map true --source-map-contents true scss/main.scss css/style_rtl.css -w"
   },
   "repository": {
     "type": "git",

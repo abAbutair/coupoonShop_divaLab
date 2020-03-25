@@ -1,3 +1,19 @@
+.header__top{
+  .ctm-nav__link{
+    &:first-child {
+      padding-#{$left}: 1rem;
+    }
+    &:last-child {
+      padding-#{$right}: 1rem;
+    }
+
+    @include transition(all, .4s);
+    &:hover {
+      background-color: lighten($mainClr, 5%);
+      color: $whiteClr;
+    }
+  }
+}
 .ctm-nav {
   &__link {
     padding: $paddingTopBottom 1rem;
@@ -5,19 +21,13 @@
     font-size: $tinyFontSize;
     text-transform: capitalize;
     font-family: $medFont;
-
-    &:last-child {
-      padding-#{$right}: 0;
-    }
     &:first-child {
       padding-#{$left}: 0;
     }
-
-    &:hover {
-      color: darken($whiteClr, 10%);
+    &:last-child {
+      padding-#{$right}: 0;
     }
   }
-
   &--big {
     margin: 0;
     justify-content: space-between;
@@ -28,7 +38,6 @@
         font-size: $smallFontSize;
       }
     }
-
   }
 }
 

@@ -4,13 +4,16 @@
 .form__element {
 }
 
-.input, .select2-container--default .custom-container {
+.input, .select2-container--default .custom-container , .select2-container--default .select2-selection--multiple{
   height: $formElementHeight;
   background-color: $inputBg;
   border: 0.1rem solid $inputBorder;
   padding: .3rem 1.5rem;
   color: $bodyFontClr;
-  @include border-radius(0)
+  @include border-radius(0);
+}
+.select2-container--default .select2-selection--multiple{
+  background-color: #fff;
 }
 
 // input

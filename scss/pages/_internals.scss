@@ -447,6 +447,7 @@
   padding: 1.2rem 2rem;
   background-color: $mainClr;
   color: #fff;
+  &:hover{color: #fff}
   &.active{
     background-color: $dropdownClr;
     color: $orange;
@@ -531,6 +532,20 @@
   padding-bottom: 4rem;
   margin-bottom: 3rem;
   border-bottom: 1px $footerHeadings solid;
+  label{cursor: pointer}
+}
+
+// thanks
+.thanks{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  > span{
+    font-size: 8rem;
+    color: #009812;
+    margin-bottom: 3rem;
+  }
+  > .heading-follower{margin-bottom: 3rem}
 }
 
 // full screen pages (login, registeration, 404 ...)
@@ -616,4 +631,11 @@
       }
     }
   }
+}
+.error-page{
+  background-color: #272041;
+  background-size: auto;
+  background-position: center $right;
+  background-repeat: no-repeat;
+  .content{height: 100vh}
 }

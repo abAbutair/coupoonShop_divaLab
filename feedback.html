@@ -17,11 +17,26 @@
 <header class="header">
     <div class="header__top t-capitalize">
         <div class="container">
-            <div class="flex-box justify-content--space-between align-items--center">
-                <div class="flex-box__child flex-box align-items--center">
+            <div class="header__top__inner">
+                <div class="header__top__left">
+                    <div class="ctm-dropdown profile-drop" id="dropdown">
+                        <div class="ctm-dropdown__header">
+                            <button class="ctm-btn icon-link dropdown-button" type="button" id="dropdownButton">
+                                <span class="profile-avatar">
+                                    <img src="images/Profile_avatar.png" alt="profile avatar">
+                                </span>
+                                <span>welcome john</span>
+                            </button>
+                        </div>
+                        <div class="ctm-dropdown__menu" aria-labelledby="dropdownButton">
+                            <div class="ctm-dropdown__opt">my profile</div>
+                            <div class="ctm-dropdown__opt">settings</div>
+                            <div class="ctm-dropdown__opt">log out</div>
+                        </div>
+                    </div>
                     <div class="icon-link">
-                        <i class="fas fa-sign-in-alt"></i>
-                        <a href="login.html">login</a>
+                        <i class="fas fa-qrcode"></i>
+                        <a href="login.html">QW-Code</a>
                     </div>
                     <button type="button" class="lang-btn"><i class="fas fa-language"></i> Arabic</button>
                     <!--
@@ -46,14 +61,15 @@
                         <a href="sell-with-us.html" class="ctm-nav__link">sell with us</a>
                     </nav>
                 </div>
-                <div class="flex-box__child">
-                    <a href="plans.html" class="ctm-btn ctm-btn--small ctm-btn--orange"><strong>subscribe</strong></a>
+                <div class="header__top__right ">
+                    <a href="plans.html"
+                       class="ctm-btn ctm-btn--small ctm-btn--orange"><strong>change plan</strong></a>
                 </div>
             </div>
         </div>
     </div>
     <div class="header__bottom">
-        <div class="container">
+        <div class="container med">
             <div class="row">
                 <div class="col-lg-3">
                     <div class="logo-part">
@@ -104,18 +120,18 @@
                                 <div class="close-btn">
                                     <button type="button">&times;</button>
                                 </div>
-                                <div class="accordion" id="accordionNav">
+                                <div class="accordion" id="h-accordionNav">
                                     <div class="card">
-                                        <div class="card-header" id="headingOne">
-                                            <h2 role="button" data-toggle="collapse" data-target="#collapseOne"
+                                        <div class="card-header" id="h-headingOne">
+                                            <h2 role="button" data-toggle="collapse" data-target="#h-collapseOne"
                                                 aria-expanded="false"
-                                                aria-controls="collapseOne">
+                                                aria-controls="h-collapseOne">
                                                 Food & Beverages
                                             </h2>
                                         </div>
 
-                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                             data-parent="#accordionNav">
+                                        <div id="h-collapseOne" class="collapse" aria-labelledby="headingOne"
+                                             data-parent="#h-accordionNav">
                                             <div class="card-body">
                                                 <ul>
                                                     <li><a href="category.html">seafood</a></li>
@@ -130,15 +146,15 @@
                                         </div>
                                     </div>
                                     <div class="card">
-                                        <div class="card-header" id="headingTwo">
-                                            <h2 role="button" data-toggle="collapse" data-target="#collapseTwo"
+                                        <div class="card-header" id="h-headingTwo">
+                                            <h2 role="button" data-toggle="collapse" data-target="#h-collapseTwo"
                                                 aria-expanded="false"
-                                                aria-controls="collapseTwo">
+                                                aria-controls="h-collapseTwo">
                                                 SPA & Beauty
                                             </h2>
                                         </div>
-                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                             data-parent="#accordionNav">
+                                        <div id="h-collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                             data-parent="#h-accordionNav">
                                             <div class="card-body">
                                                 <ul>
                                                     <li><a href="category.html">Sub Category Name</a></li>
@@ -151,15 +167,15 @@
                                         </div>
                                     </div>
                                     <div class="card">
-                                        <div class="card-header" id="headingThree">
-                                            <h2 role="button" data-toggle="collapse" data-target="#collapseThree"
+                                        <div class="card-header" id="h-headingThree">
+                                            <h2 role="button" data-toggle="collapse" data-target="#h-collapseThree"
                                                 aria-expanded="false"
-                                                aria-controls="collapseThree">
+                                                aria-controls="h-collapseThree">
                                                 Activities
                                             </h2>
                                         </div>
-                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                             data-parent="#accordionNav">
+                                        <div id="h-collapseThree" class="collapse" aria-labelledby="headingThree"
+                                             data-parent="#h-accordionNav">
                                             <div class="card-body">
                                                 <ul>
                                                     <li><a href="category.html">Sub Category Name</a></li>
@@ -169,15 +185,15 @@
                                         </div>
                                     </div>
                                     <div class="card">
-                                        <div class="card-header" id="headingFour">
-                                            <h2 role="button" data-toggle="collapse" data-target="#collapseFour"
+                                        <div class="card-header" id="h-headingFour">
+                                            <h2 role="button" data-toggle="collapse" data-target="#h-collapseFour"
                                                 aria-expanded="false"
-                                                aria-controls="collapseFour">
+                                                aria-controls="h-collapseFour">
                                                 Health & Fitness
                                             </h2>
                                         </div>
-                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                                             data-parent="#accordionNav">
+                                        <div id="h-collapseFour" class="collapse" aria-labelledby="headingFour"
+                                             data-parent="#h-accordionNav">
                                             <div class="card-body">
                                                 <ul>
                                                     <li><a href="category.html">Sub Category Name</a></li>
@@ -408,9 +424,9 @@
                     <div class="col-lg-3">
                         <h5 class="heading-footer">Coupoonshop assistance</h5>
                         <ul class="links">
-                            <li><a href="#">- FAQ</a></li>
+                            <li><a href="faq.html">- FAQ</a></li>
                             <li><a href="#">- Privacy Policy</a></li>
-                            <li><a href="#">- Terms &. Conditions</a></li>
+                            <li><a href="term&conditions.html">- Terms &. Conditions</a></li>
                             <li><a href="#">- Help you</a></li>
                         </ul>
                     </div>
@@ -446,22 +462,26 @@
 <!-- core scripts -->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/popper.js/dist/popper.js"></script>
-<!-- page plugins scripts -->
+
+<script src="node_modules/bootstrap/js/dist/util.js"></script>
+<script src="node_modules/bootstrap/js/dist/collapse.js"></script>
+
 <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('.states').select2({
             placeholder: 'state',
             minimumResultsForSearch: -1,
-            dropdownAutoWidth:true,
+            dropdownAutoWidth: true,
             width: '100%',
             containerCssClass: "custom-container",
             dropdownCssClass: "custom-dropdown",
         });
     });
 </script>
-<!-- custom scripts -->
+
 <script src="js/dropdown.js"></script>
 <script src="js/mainScript.js"></script>
+
 </body>
 </html>

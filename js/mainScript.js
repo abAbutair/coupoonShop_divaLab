@@ -89,3 +89,27 @@ $('.side-toggle').on('click', function () {
         updateColumns();
     });
 })(jQuery);
+
+
+
+
+/* *****************************************************************
+                        sticky nav script
+****************************************************************** */
+$(function () {
+
+    var  mainNavTopPosition = $('.main-nav').position().top;
+
+    $(window).scroll(function() {
+        if( $(this).scrollTop() >= mainNavTopPosition ) {
+            $(".header ").addClass('fixed');
+
+            var  headerHeight = $('.header').height();
+
+            $('main').css('margin-top',headerHeight * 2 )
+        } else {
+            $(".header").removeClass('fixed');
+            $('main').css('margin-top', 0 )
+        }
+    });
+})

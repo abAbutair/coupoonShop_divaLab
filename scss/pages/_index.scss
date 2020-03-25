@@ -127,7 +127,7 @@
         @extend %d-flex;
         justify-content: flex-end;
 
-        a {
+        .view-more {
           color: $secondClr;
         }
       }

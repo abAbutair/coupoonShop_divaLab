@@ -1,4 +1,15 @@
 .header {
+    &.fixed{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        box-shadow:0 3px 10px -2px rgba($offerClr,.1);
+
+        .med{
+            display: none;
+        }
+    }
   &__top {
     background-color: $mainClr;
     font-size: $tinyFontSize;
@@ -48,8 +59,9 @@
     }
   }
   &__bottom {
-    padding: $dropdownMargin2 0;
-
+      .med{
+          padding-top: 2rem;
+      }
     // for dropdown
     .ctm-dropdown {
       &__header {
@@ -128,11 +140,12 @@
       }
       &__menu {
         padding: 3rem 5rem;
+        box-shadow:0 3px 10px -2px rgba($offerClr,.7);
       }
       .links {
         li {
           &:not(:last-of-type) {
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
           }
           a {
             @include transition(color,.4s);
@@ -159,7 +172,11 @@
 
   .main-nav{
     background-color: #fff;
-    padding-top: 1.5rem;
+    padding: 1.5rem 0;
+      &.fixed{
+          width: 100%;
+          position: fixed;
+      }
   }
 
   .burger-menu {
@@ -200,8 +217,7 @@
 
 .lang-btn{
   color: #fff;
-  padding-top: $paddingTopBottom;
-  padding-bottom: $paddingTopBottom;
+  padding: $paddingTopBottom $paddingLeftRight;
   -webkit-border-image: -webkit-linear-gradient(left, #00343C, #025F6E) 1 100%;
   -moz-border-image: -moz-linear-gradient(left, #00343C, #025F6E) 1 100%;
   -o-border-image: -o-linear-gradient(left, #00343C, #025F6E) 1 100%;
@@ -216,8 +232,14 @@
   background: transparent;
   margin: 0;
   font-size: $tinyFontSize;
-  padding-top: $paddingTopBottom;
-  padding-bottom: $paddingTopBottom;
+  padding: $paddingTopBottom $paddingLeftRight;
+  -webkit-border-image: -webkit-linear-gradient(left, #00343C, #025F6E) 1 100%;
+  -moz-border-image: -moz-linear-gradient(left, #00343C, #025F6E) 1 100%;
+  -o-border-image: -o-linear-gradient(left, #00343C, #025F6E) 1 100%;
+  -webkit-border-image: -webkit-linear-gradient(left, #00343C, #025F6E) 1 100%;
+  border-width: 0;
+  border-#{$right}-width: 0.3rem;
+  border-style: solid;
   &:hover {
     i, a, span {
       color: darken($whiteClr, 10%);

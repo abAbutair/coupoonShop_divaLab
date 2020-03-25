@@ -1,3 +1,12 @@
+::-moz-selection { /* Code for Firefox */
+  background-color: lighten($mainClr, 20%);
+  color: #fff;
+}
+
+::selection {
+  background-color: lighten($mainClr, 20%);
+  color: #fff;
+}
 body {
   font-family: $bodyFont;
   font-weight: 400;
@@ -60,7 +69,7 @@ article {
   }
 }
 .link-wrapper {
-  a {
+  a, .view-more{
     font-size: $tinyFontSize;
     font-family: $boldFont;
     &:after {
