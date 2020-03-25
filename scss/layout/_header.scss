@@ -85,7 +85,8 @@
         overflow: hidden;
         @include border-radius(50%);
         margin-right: 0.7rem;
-
+        @extend %d-flex;
+        align-items: center;
         img {
           width: 100%;
         }
@@ -216,7 +217,13 @@
 
     .grid {
       height: 100%;
-
+      &__inner {
+        &--data {
+          &-a {
+            min-height: 35rem;
+          }
+        }
+      }
       h5 {
         font-size: 1.2rem;
 
@@ -229,7 +236,7 @@
 
   .main-nav {
     background-color: #fff;
-    padding: 1.5rem 0;
+    padding: $dropdownMargin2 0;
 
     &.fixed {
       width: 100%;
@@ -269,8 +276,8 @@
   }
 
   .ctm-btn {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: $paddingTopBottom;
+    padding-bottom: $paddingTopBottom;
   }
 }
 

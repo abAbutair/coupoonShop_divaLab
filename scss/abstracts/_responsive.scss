@@ -15,7 +15,302 @@
 
 /*--------------------------------------------------------------------*/
 @media only screen and (max-width: 1366px) {
-/*--------------------------------------------------------------------*/    
+/*--------------------------------------------------------------------*/
+  :root {
+    --h: 1.4;
+    --arth: 1.8rem;
+  }
+  ///////////////////////////////////////////////////////
+  $secPadding: 3rem;
+  $sectionHeading: 5.5rem;
+  $bodyFontSize: 1.4rem;
+  $dropdownMargin2: 1rem; //header bottom
+  $formElementHeight: 3rem;
+  $tinyFontSize: 1.1rem; // placeholder
+  $smallFontSize: 1.2rem;
+  $paddingTopBottom: 0.7rem; //header top
+  $medFontSize: 1.7rem;
+  $iconsFontSize: 2rem;
+  ////////////////////////////////////////////////////////
+
+  .email-sub.section--padding {
+    padding: 4rem 0;
+  }
+  .section--padding {
+    padding: $secPadding 0;
+  }
+  .section-heading {
+    font-size: $sectionHeading;
+    margin-bottom: 2rem;
+    line-height: $sectionHeading;
+  }
+  .heading-follower {
+    line-height: 1.7rem;
+  }
+  .heading-secondary {
+    font-size: $medFontSize;
+  }
+  .heading-footer {
+    font-size: $medFontSize;
+    margin-bottom: 1rem;
+  }
+  article {
+    font-size: $tinyFontSize;
+  }
+  .link-wrapper a, .link-wrapper .view-more {
+    font-size: $tinyFontSize;
+  }
+  .ctm-btn {
+    &--big {
+      padding: 1rem 4rem;
+      font-size: $smallFontSize;
+    }
+  }
+  .top-divider:before {
+    margin: 2.5rem 0;
+  }
+  .offer-boxes {
+    &__child {
+      padding: 1rem;
+      &__data {
+        .heading-secondary {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+  ///////////////////////////////////////////////
+  .hover-dropdown {
+    &__menu {
+      top: calc(100% + #{$dropdownMargin2});
+    }
+  }
+  .header {
+    .header {
+      &__top {
+        .profile-drop {
+          .profile-avatar {
+            width: 1.7rem;
+            height: 1.7rem;
+          }
+        }
+      }
+    }
+    &__bottom  {
+      .med {
+        padding-top: 1.5rem;
+      }
+      .ctm-dropdown {
+        &__header {
+          padding: $paddingTopBottom 0;
+
+          &:before {
+            top: calc(100% + #{$dropdownMargin2} - #{$dropdownArrow}); // - 1rem is for arrow height
+          }
+        }
+        &__menu {
+          top: calc(100% + #{$dropdownMargin2});
+        }
+      }
+      .hover-dropdown {
+        &__header {
+          &:before {
+            top: calc(100% + #{$dropdownMargin2} - #{$dropdownArrow} + #{$paddingTopBottom}); // - 1rem is for arrow height
+          }
+        }
+      }
+    }
+    .main-nav {
+      padding: 0.5rem 0 $dropdownMargin2;
+    }
+    .burger-menu {
+      .open-btn {
+        &__header {
+          font-size: $smallFontSize;
+        }
+        .align-burger{
+          width: 2.3rem;
+          margin-#{$right}: 1rem;
+          span {
+            margin-bottom: 0.4rem;
+          }
+        }
+      }
+    }
+  }
+  .logo-part {
+    width: 75%;
+    img {
+      width: 100%;
+    }
+  }
+  .header__top, .ctm-nav__link, .icon-link {
+    font-size: $tinyFontSize;
+  }
+  .icon-link, .lang-btn, .header .ctm-btn {
+    padding-top: $paddingTopBottom;
+    padding-bottom: $paddingTopBottom;
+  }
+  .ctm-nav {
+    &__link {
+      padding: $paddingTopBottom 0.7rem;
+    }
+    &--big {
+      .ctm-nav {
+        &__link {
+          font-size: $smallFontSize;
+        }
+      }
+    }
+  }
+  .ctm-dropdown__opt {
+    padding: 0.7rem 0.5rem;
+  }
+  .header__bottom .ctm-dropdown__menu>*:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .header__bottom .ctm-dropdown__menu .close-btn {
+    button {
+      line-height: 1.5rem;
+      font-size: 3rem;
+      padding: .4rem;
+    }
+  }
+  .accordion .card:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+  .accordion .card-header {
+    padding: 0.7rem 1rem;
+  }
+  .header__bottom .ctm-dropdown__menu .accordion .card-header h2 {
+    font-size: $medFontSize;
+  }
+  .header__bottom .ctm-dropdown__menu .accordion a {
+    font-size: $smallFontSize;
+  }
+  .links a {
+    font-size: $smallFontSize;
+  }
+  .header__bottom .grid__inner--data-a {
+    min-height: 20rem;
+  }
+
+  .grid__inner {
+    h5 {
+      font-size: $medFontSize;
+    }
+  }
+  .grid__inner--data-c .heading-intro span {
+    font-size: calc(#{$medFontSize} + .6rem);
+  }
+  .grid__inner--data-bg .heading-intro {
+    padding: 0.7rem;
+  }
+    // forms///////////////////////////////////////
+  .input, .select2-container--default .custom-container, .select2-container--default .select2-selection--multiple {
+    height: $formElementHeight;
+  }
+  .input {
+    @include placeHolder {
+      font-size: $tinyFontSize;
+    }
+  }
+  .select2 {
+    &-container {
+      &--default {
+        .custom-container {
+          .select2-selection__rendered {
+            font-size: $tinyFontSize;
+          }
+        }
+        .select2-results {
+          &__option {
+            padding: 0.7rem 0.5rem;
+            font-size: $tinyFontSize;
+          }
+        }
+      }
+    }
+  }
+  .positioned-icn {
+    &__icon {
+      font-size: $smallFontSize;
+    }
+  }
+  .heading-follower {
+    font-size: $medFontSize;
+  }
+
+  //////////////////////////////////
+  .latest-d {
+    padding: 1.5rem 0;
+  }
+  .latest-d__inner__data>*:not(:last-child) {
+    margin-bottom: 0.2rem;
+  }
+  .pricing>* {
+    font-size: $smallFontSize;
+  }
+  .latest-d__inner__data {
+    padding: 0;
+  }
+  .latest-d__inner__bg {
+    width: 12rem;
+    margin-right: 1.2rem;
+    min-height: calc(10rem - 1rem);
+  }
+  .latest-d__inner__data {
+    width: calc(100% - 10rem - 1.2rem);
+  }
+  .carousel .carousel-control-prev, .carousel .carousel-control-next {
+    font-size: 3rem;
+  }
+  .latest-deal #featureSlider .carousel-caption {
+    padding: 1rem;
+  }
+  .slider-name {
+    font-size: $medFontSize;
+    padding: 1rem 3rem;
+  }
+  .latest-deal #featureSlider .carousel-caption p {
+    font-size: $bodyFontSize;
+  }
+  /////////////////////////////////////////
+  .design-sec>*:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  ///////////////////////////////////////
+  .video-demo {
+    margin-bottom: 2rem;
+    .fancy-link {
+      font-size: $medFontSize;
+    }
+  }
+  .img-bio-grid__child__data>*:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+  .img-bio-grid__child__data {
+    padding: 0.7rem;
+  }
+  //////////////////////////////////////////////
+  .email-sub__inner form .ctm-btn {
+    height: 3rem;
+  }
+  .footer {
+    padding: 2rem 0;
+  }
+  .links li:not(:last-of-type) {
+    margin-bottom: 0.5rem;
+  }
+  .footer__bottom>*:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+  .footer__bottom__copyrights p {
+    font-size: $smallFontSize;
+  }
+  .payment-methods li a, .payment-methods li i, .social-links li a, .social-links li i{
+    font-size: $iconsFontSize;
+  }
 }
 
 // Large devices (desktops, less than 1200px)
@@ -34,7 +329,7 @@
 // Small devices (landscape phones, less than 768px)
 /*--------------------------------------------------------------------*/
 @media only screen and (max-width: 767.98px) {
-/*--------------------------------------------------------------------*/    
+/*--------------------------------------------------------------------*/
 }
 
 
@@ -73,17 +368,17 @@
 // Extra small devices (portrait phones, less than 576px)
 /*----------------------------------------------------------------------*/
 @media only screen and (max-width: 575.98px) {
-/*--------------------------------------------------------------------*/    
+/*--------------------------------------------------------------------*/
 
-    
+
 }
 
 
 /*----------------------------------------------------------------------*/
 @media only screen and (max-width: 480px) {
-/*--------------------------------------------------------------------*/    
+/*--------------------------------------------------------------------*/
 
-    
+
 }
 
 

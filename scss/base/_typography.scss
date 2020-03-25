@@ -38,6 +38,7 @@ body {
 }
 .section-heading {
   font-size: $sectionHeading;
+  line-height: $sectionHeading;
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 4rem;
@@ -47,6 +48,7 @@ body {
 .heading-follower {
   text-transform: capitalize;
   font-size: $medFontSize;
+  line-height: $medFontSize;
   display: block;
   margin: 0.5rem 0;
   @include sub-colors;
@@ -63,6 +65,9 @@ article {
     line-height: var(--arth);
     margin-bottom: 0;
     overflow: hidden;
+    &:not(:last-child) {
+      margin-bottom: 1rem
+    }
   }
   &.white {
     color: $whiteClr;
@@ -82,9 +87,4 @@ article {
 }
 .text-line-through{
   text-decoration: line-through;
-}
-article{
-  p{
-    margin-bottom: 1rem; // plz remove margin bottom property
-  }
 }

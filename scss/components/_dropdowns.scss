@@ -1,5 +1,4 @@
-.ctm-dropdown {
-  position: relative;
+.ctm-dropdown, .hover-dropdown {
   &__header {
     position: relative;
     &:before {
@@ -8,12 +7,12 @@
       border-right: $dropdownArrow solid transparent;
       border-bottom: $dropdownArrow solid $secondClr;
       position: absolute;
-      top: calc(100% + #{$dropdownMargin} - #{$dropdownArrow}); // - 1rem is for arrow height
+      top: calc(100% + #{$dropdownMargin2} - #{$dropdownArrow}); // - 1rem is for arrow height
       left: 50%;
       transform: translate(-50%, 0);
       visibility: hidden;
       opacity: 0;
-      @include transition(all, 0.8s);
+      @include transition(all, 0.4s);
     }
   }
   &__menu {
@@ -25,8 +24,38 @@
     border-top: 0.2rem solid $secondClr;
     visibility: hidden;
     opacity: 0;
-    @include transition(all, 0.8s);
+    @include transition(all, 0.4s);
     z-index: 555;
+  }
+}
+.ctm-dropdown {
+  position: relative;
+  &__header {
+    &:before {
+      top: calc(100% + #{$dropdownMargin} - #{$dropdownArrow}); // - 1rem is for arrow height
+    }
+  }
+  &__menu {
+    top: calc(100% + #{$dropdownMargin});
+  }
+  &__opt {
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+    color: $bodyFontClr;
+    a {
+      color: $bodyFontClr;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid $footerHeadings;
+    }
+    &:hover {
+      background-color: rgba($mainClr, 0.1);
+      color: $secondClr;
+      a {
+        color: $secondClr;
+      }
+    }
+
   }
   &.show {
     .ctm-dropdown {
@@ -45,28 +74,30 @@
   }
 }
 
-.ctm-dropdown__opt {
-  padding: 1rem 0.5rem;
-  cursor: pointer;
-  color: $bodyFontClr;
-  a {
-    color: $bodyFontClr;
-  }
-  &:not(:last-child) {
-    border-bottom: 1px solid $footerHeadings;
-  }
-  &:hover {
-    background-color: rgba($mainClr, 0.1);
-    color: $secondClr;
-    a {
-      color: $secondClr;
-    }
-  }
-
-}
 // main nav hover drop down
 .hover-dropdown {
+  &__header {
+    &:after {
+      content: ' ';
+      position: absolute;
+      top: calc(100% + 0.3rem);
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: $secondClr;
+      visibility: hidden;
+      opacity: 0;
+      @include transition(all, 0.4s);
+    }
 
+    &:before {
+      top: calc(100% + #{$dropdownMargin2} - #{$dropdownArrow}); // - 1rem is for arrow height
+    }
+  }
+  &__menu {
+    top: calc(100% + #{$dropdownMargin2});
+    margin: 0 1.5rem;
+  }
   &:hover {
     .hover-dropdown {
       &__header {
@@ -75,40 +106,16 @@
           visibility: visible;
           opacity: 1;
         }
+        &:after {
+          visibility: visible;
+          opacity: 1;
+        }
+
       }
       &__menu {
         visibility: visible;
         opacity: 1;
       }
     }
-  }
-  &__header {
-    position: relative;
-    &:before {
-      content: ' ';
-      border-left: $dropdownArrow solid transparent;
-      border-right: $dropdownArrow solid transparent;
-      border-bottom: $dropdownArrow solid $secondClr;
-      position: absolute;
-      top: calc(100% + #{$dropdownMargin2} - #{$dropdownArrow}); // - 1rem is for arrow height
-      left: 50%;
-      transform: translate(-50%, 0);
-      visibility: hidden;
-      opacity: 0;
-      @include transition(all, 0.8s);
-    }
-  }
-  &__menu {
-    position: absolute;
-    top: calc(100% + #{$dropdownMargin2});
-    left: 0;
-    width: 100%;
-    margin: 0 1.5rem;
-    background-color: $dropdownClr;
-    border-top: 0.2rem solid $secondClr;
-    visibility: hidden;
-    opacity: 0;
-    @include transition(all, 0.8s);
-    z-index: 555;
   }
 }
