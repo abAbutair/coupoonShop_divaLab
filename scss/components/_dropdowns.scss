@@ -48,6 +48,21 @@
 .ctm-dropdown__opt {
   padding: 1rem 0.5rem;
   cursor: pointer;
+  color: $bodyFontClr;
+  a {
+    color: $bodyFontClr;
+  }
+  &:not(:last-child) {
+    border-bottom: 1px solid $footerHeadings;
+  }
+  &:hover {
+    background-color: rgba($mainClr, 0.1);
+    color: $secondClr;
+    a {
+      color: $secondClr;
+    }
+  }
+
 }
 // main nav hover drop down
 .hover-dropdown {

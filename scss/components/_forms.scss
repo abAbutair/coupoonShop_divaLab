@@ -59,25 +59,58 @@ textarea{
 }
 
 // select
-.select2-container {
-  &--default {
-    .custom-container {
-      .select2-selection__rendered {
-        height: 100%;
-        padding: 0;
-        @extend %d-flex;
-        align-items: center;
-        color: $inputFontClr;
-        font-size: $tinyFontSize;
-        text-transform: capitalize;
-      }
-      .select2-selection__arrow {
-        height: 100%;
-        width: .8rem;
-        top: 0;
-        #{$right}: 1rem;
+.select2 {
+  &-container {
+    &--default {
+      .custom-container {
+        .select2-selection__rendered {
+          height: 100%;
+          padding: 0;
+          @extend %d-flex;
+          align-items: center;
+          color: $inputFontClr;
+          font-size: $tinyFontSize;
+          text-transform: capitalize;
+        }
+        .select2-selection__arrow {
+          height: 100%;
+          width: .8rem;
+          top: 0;
+          #{$right}: 1rem;
+        }
       }
     }
+    &--open {
+      .select2-dropdown {
+        &--below {
+          border-radius: 0;
+          border: 0.1rem solid $inputBorder;
+          box-shadow: 0 1.5rem 1.5rem -1.5rem rgba($mainClr,0.1);
+        }
+      }
+    }
+    &--default {
+      .select2-results {
+        &__option {
+          padding: 1rem 0.5rem;
+          text-transform: capitalize;
+          font-size: $smallFontSize;
+          &:not(:last-child) {
+            border-bottom: 1px solid $footerHeadings;
+          }
+          &[aria-selected=true] {
+            background-color: transparent;
+          }
+          &--highlighted[aria-selected] {
+            background-color: rgba($mainClr, 0.1);
+            color: $secondClr;
+          }
+        }
+      }
+    }
+  }
+  &-dropdown {
+    background-color: $dropdownClr;
   }
 }
 

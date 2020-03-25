@@ -2,9 +2,10 @@
  * dropdown
  */
 (function () {
-    let dropdownOpt = document.querySelectorAll('.ctm-dropdown__opt');
+    let hoverDropdown = document.querySelectorAll('.hover-dropdown');
     let dropdownClass = document.querySelectorAll('.ctm-dropdown');
     let dropdownBtn = document.querySelectorAll('.dropdown-button');
+    let dropdownOpt = document.querySelectorAll('.ctm-dropdown__opt');
     let closeBtn = document.querySelectorAll('.close-btn');
 
 // click on body except the drop will close the drop
@@ -47,6 +48,15 @@
     for (let u = 0; u < closeBtn.length; u++) {
         closeBtn[u].addEventListener('click', function () {
             this.closest('.ctm-dropdown').classList.remove('show');
+        });
+    }
+
+// hover-dropdown closes ctm-dropdown
+    for (let k = 0; k < hoverDropdown.length; k++) {
+        hoverDropdown[k].addEventListener('mouseover', function () {
+            for (let l = 0; l < dropdownClass.length; l++) {
+                dropdownClass[l].classList.remove('show');
+            }
         });
     }
 })();
