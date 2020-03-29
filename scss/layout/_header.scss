@@ -1,36 +1,32 @@
+main {
+  @include transition(all, 0.15s);
+}
 .header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
   .med {
-    @include transition(all, 0.2s);
-    .logo-part, .nav-part {
-      @include transition(all, 0.02s)
-    }
+    @include transition(all, 0.02s);
   }
-
   &.fixed {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    box-shadow: 0 3px 10px -2px rgba($offerClr, .1);
+    box-shadow: 0 0.3rem 1rem -0.2rem rgba($offerClr, .1);
     .med {
       padding-top: 0;
       height: 0;
       visibility: hidden;
-      @include transition(all, 0.1s);
+      @include transition(all, 0.15s);
       .logo-part, .nav-part {
         height: 0;
         visibility: hidden;
-        @include transition(all, 0.01s);
       }
-    }
-    .main-nav {
-      box-shadow: 0 0 1rem 0 rgba($mainClr,0.1);
     }
   }
 
   &__top {
     background-color: $mainClr;
     font-size: $tinyFontSize;
+    text-transform: capitalize;
 
     &__inner {
       @extend %d-flex;
@@ -56,15 +52,20 @@
         &:first-child {
           padding-#{$left}: 0;
         }
+        &:nth-child(2) {
+          padding-#{$left}: 0;
+        }
 
         &:last-child {
           padding-#{$right}: 0;
           border: none;
         }
       }
+
     }
 
     .profile-drop {
+      margin-#{$right}: $paddingLeftRight;
       .ctm-btn {
         @extend %d-flex;
         align-items: center;
@@ -100,7 +101,7 @@
     }
 
     // for dropdown
-    .ctm-dropdown {
+    .side-nav {
       &__header {
         display: table;
         padding: $paddingTopBottom 0;
@@ -127,7 +128,7 @@
         width: 130%;
         padding: 1.5rem;
 
-        .close-btn {
+        .close-btn, .close-nav {
           @extend %d-flex;
           justify-content: flex-end;
           margin-bottom: 1.5rem;
@@ -235,6 +236,7 @@
   }
 
   .main-nav {
+
     background-color: #fff;
     padding: $dropdownMargin2 0;
 
@@ -243,7 +245,22 @@
       position: fixed;
     }
   }
-
+  .header__top__left {
+    .burger-menu {
+      margin-#{$right}: $paddingLeftRight;
+      display: none;
+      padding-top: $paddingTopBottom;
+      padding-bottom: $paddingTopBottom;
+      .open-btn {
+        .align-burger {
+          margin: 0;
+          span {
+            background-color: $whiteClr;
+          }
+        }
+      }
+    }
+  }
   .burger-menu {
     .open-btn {
       @extend %d-flex;
@@ -281,14 +298,11 @@
   }
 }
 
-.nav-part {
-  margin-bottom: 1rem;
-}
-
 .lang-btn {
   color: #fff;
   padding-top: $paddingTopBottom;
   padding-bottom: $paddingTopBottom;
+  font-family: $langBtnFont;
   i {
     margin-#{$right}: 0.7rem
   }

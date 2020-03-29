@@ -96,16 +96,24 @@ $('.side-toggle').on('click', function () {
 /* *****************************************************************
                         sticky nav script
 ****************************************************************** */
-window.addEventListener('scroll', function () {
-    let header = document.querySelector(".header");
-    let windowPos = window.scrollY > 0;
-    header.classList.toggle('fixed', windowPos);
-});
-
-
-// intro section height / metro section
 (function () {
-    let introSec = document.querySelector('.intro-sec');
-    let headerHeight = document.querySelector('header').offsetHeight;
-    introSec.style.height = 'calc( ' + '90vh - ' + headerHeight + 'px )';
+    let header = document.querySelector(".header");
+    let header1 = header.offsetHeight;
+    let medHeader = document.querySelector(".med").offsetHeight;
+    let header2 = header1 - medHeader;
+
+
+    let main = document.querySelector("main");
+    main.style.paddingTop =  header1 + 'px';
+
+    window.addEventListener('scroll', function () {
+        let windowPos = window.scrollY > 0;
+        if (windowPos) {
+            header.classList.add('fixed');
+            main.style.paddingTop =  header2 + 'px';
+        } else {
+            header.classList.remove('fixed');
+            main.style.paddingTop =  header1 + 'px';
+        }
+    });
 })();

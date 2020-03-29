@@ -18,6 +18,7 @@ $bodyFont: 'roboto-reg';
 $boldFont: 'roboto-bold';
 $semiBoldFont: 'roboto-semi';
 $medFont: 'roboto-med';
+$langBtnFont: 'ar-in-en';
 
 /*------ The Switch ------*/
 @if $isRtl == rtl
@@ -34,10 +35,12 @@ $medFont: 'roboto-med';
     $chevron-right:"\f053";
 
     //font family ------
-    $bodyFont: 'messiri-reg';
-    $boldFont: 'messiri-bold';
-    $semiBoldFont: 'messiri-semi';
-    $medFont: 'messiri-med';
+    $bodyFont: 'cairo-reg';
+    $boldFont: 'cairo-bold';
+    $semiBoldFont: 'cairo-semi';
+    $medFont: 'cairo-med';
+    $langBtnFont: 'en-in-ar';
+
 
 }
 @else {
@@ -58,4 +61,5 @@ $medFont: 'roboto-med';
     $boldFont: 'roboto-bold';
     $semiBoldFont: 'roboto-semi';
     $medFont: 'roboto-med';
+    $langBtnFont: 'ar-in-en';
 }

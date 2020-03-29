@@ -19,26 +19,36 @@
   src: url('../fonts/ltr/Roboto-Regular.ttf');
   font-style: normal;
 }
+@font-face {
+  font-family: 'ar-in-en';
+  src: url('../fonts/ltr/Cairo-Regular.ttf');
+  font-style: normal;
+}
 
 ////////////////////////////////////////////////////////////
 // RTL fonts - AR
 @font-face {
-  font-family: 'messiri-bold';
-  src: url('../fonts/rtl/ElMessiri-Bold.ttf');
+  font-family: 'cairo-bold';
+  src: url('../fonts/rtl/Cairo-Bold.ttf');
   font-style: normal;
 }
 @font-face {
-  font-family: 'messiri-med';
-  src: url('../fonts/rtl/ElMessiri-Medium.ttf');
+  font-family: 'cairo-med';
+  src: url('../fonts/rtl/Cairo-Regular.ttf');
   font-style: normal;
 }
 @font-face {
-  font-family: 'messiri-reg';
-  src: url('../fonts/rtl/ElMessiri-Regular.ttf');
+  font-family: 'cairo-reg';
+  src: url('../fonts/rtl/Cairo-Regular.ttf');
   font-style: normal;
 }
 @font-face {
-  font-family: 'messiri-semi';
-  src: url('../fonts/rtl/ElMessiri-SemiBold.ttf');
+  font-family: 'cairo-semi';
+  src: url('../fonts/rtl/Cairo-SemiBold.ttf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'en-in-ar';
+  src: url('../fonts/ltr/Roboto-Regular.ttf');
   font-style: normal;
 }

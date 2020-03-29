@@ -98,11 +98,11 @@
 
   &__inner {
     @extend %d-flex;
-    padding-left: 1.5rem;
+    padding-#{$left}: 1.5rem;
 
     &__bg {
       width: 14rem;
-      margin-right: 1.5rem;
+      margin-#{$right}: 1.5rem;
       @extend %covered_bg;
       min-height: calc(14rem - 1rem);
     }

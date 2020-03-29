@@ -73,6 +73,7 @@ textarea{
           height: 100%;
           width: .8rem;
           top: 0;
+          #{$left}: auto;
           #{$right}: 1rem;
         }
       }

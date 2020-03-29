@@ -78,10 +78,8 @@ article {
     font-size: $tinyFontSize;
     font-family: $boldFont;
     &:after {
-      content: '\f101';
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      margin-#{$left}: 0.25rem;
+      @extend %double-angel;
+      margin-#{$left}: 0.5rem;
     }
   }
 }
