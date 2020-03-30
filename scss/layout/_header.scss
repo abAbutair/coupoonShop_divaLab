@@ -6,13 +6,14 @@ main {
   position: fixed;
   top: 0;
   z-index: 10;
+  background-color: $whiteClr;
   .med {
     @include transition(all, 0.02s);
   }
   &.fixed {
     box-shadow: 0 0.3rem 1rem -0.2rem rgba($offerClr, .1);
     .med {
-      padding-top: 0;
+      padding: 0;
       height: 0;
       visibility: hidden;
       @include transition(all, 0.15s);
@@ -61,7 +62,42 @@ main {
           border: none;
         }
       }
-
+      .search-overlay {
+        &__menu {
+          position: fixed;
+          background-color: rgba($mainClr, 0.9);
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 99999;
+          @extend %d-flex;
+          align-items: center;
+          justify-content: center;
+          @include translate(100%, 0);
+          visibility: hidden;
+          transition: all 0.3s;
+          &.o-fixed {
+            @include translate(0, 0);
+            visibility: visible;
+          }
+        }
+        .form {
+          width: 90%;
+        }
+        .close-overlay {
+          position: absolute;
+          top: 2rem;
+          right: 2rem;
+          button {
+            color: $whiteClr;
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 2rem;
+            padding: 1rem;
+          }
+        }
+      }
     }
 
     .profile-drop {
@@ -123,6 +159,9 @@ main {
             font-size: $smallFontSize;
           }
         }
+        .log-out, .account-lang {
+          display: none;
+        }
 
         top: calc(100% + #{$dropdownMargin2});
         width: 130%;
@@ -147,7 +186,9 @@ main {
             border: none;
             background-color: $whiteClr;
           }
-
+          .side-link {
+            display: none;
+          }
           .card-header {
             border: none;
             background-color: transparent;
@@ -246,6 +287,9 @@ main {
     }
   }
   .header__top__left {
+    .search-overlay {
+      display: none;
+    }
     .burger-menu {
       margin-#{$right}: $paddingLeftRight;
       display: none;

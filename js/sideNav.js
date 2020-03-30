@@ -10,24 +10,32 @@
     let menuClass = document.querySelectorAll('.side-nav__menu');
 
 
+    let tab_window = window.matchMedia("(min-width: 992px)");
+    if (tab_window.matches) {
 // click on body except the drop will close the drop
-    document.addEventListener("click", function(event) {
-        // If user clicks inside the element, do nothing
-        if (event.target.closest(".side-nav")) return;
+        document.addEventListener("click", function(event) {
+            // If user clicks inside the element, do nothing
+            if (event.target.closest(".side-nav")) return;
 
-        // If user clicks outside the element, hide it!
-        for (let h = 0; h < headerClass.length; h++) {
-            headerClass[h].classList.remove('visible');
-        }
-        for (let h = 0; h < menuClass.length; h++) {
-            menuClass[h].classList.remove('visible');
-        }
-    });
+            // If user clicks outside the element, hide it!
+            for (let h = 0; h < headerClass.length; h++) {
+                headerClass[h].classList.remove('visible');
+            }
+            for (let h = 0; h < menuClass.length; h++) {
+                menuClass[h].classList.remove('visible');
+            }
+        });
+    }
+
+
 
 // click on the dropdown btn will open the dropdown and close other dropdown
     for (let g = 0; g < dropdownBtn.length; g++) {
         dropdownBtn[g].addEventListener("click", function () {
             let btnID = this.id;
+            let overlayMenu = document.querySelector(".search-overlay__menu");
+            overlayMenu.classList.remove('o-fixed');
+
             for (let h = 0; h < menuClass.length; h++) {
                 let menuAtr = menuClass[h].getAttribute('aria-labelledby');
                 console.log(menuAtr);

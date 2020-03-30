@@ -1,5 +1,18 @@
 // Diva-Lab @2020 Main Script
 ////////////////////////////////////////
+// menu swipe open
+$(function() {
+    $("body").swipe( {
+        //Generic swipe handler for all directions
+        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+            $("#sideCollapse").toggleClass('visible');
+            $(".search-overlay__menu").removeClass('o-fixed');
+            console.log('22222');
+        }
+    });
+    //Set some options later
+    $("body").swipe( {fingers:1} );
+});
 
 
 // CSS vh(viewport height) reset
@@ -110,10 +123,61 @@ $('.side-toggle').on('click', function () {
         let windowPos = window.scrollY > 0;
         if (windowPos) {
             header.classList.add('fixed');
-            main.style.paddingTop =  header2 + 'px';
+            let tab_window = window.matchMedia("(min-width: 992px)");
+            if (tab_window.matches) {
+                main.style.paddingTop =  header2 + 'px';
+            }
+
         } else {
             header.classList.remove('fixed');
             main.style.paddingTop =  header1 + 'px';
         }
     });
 })();
+
+
+/* *****************************************************************
+                       search overlay
+****************************************************************** */
+
+
+
+(function () {
+    let overlayBtn = document.querySelector(".search-overlay__btn");
+    let overlayClose = document.querySelector(".close-overlay");
+    let overlayMenu = document.querySelector(".search-overlay__menu");
+    let sideMenu = document.querySelector(".header__bottom .side-nav__menu");
+    // let navBtn = document.querySelector("#openNav");
+
+    let topHeader = document.querySelector(".header__top").offsetHeight;
+
+    // function disabledBtn() {
+    //     if (overlayMenu.classList.contains('o-fixed')) {
+    //         navBtn.setAttribute('disabled', "");
+    //     } else {
+    //         navBtn.removeAttribute('disabled');
+    //     }
+    // }
+
+    overlayMenu.style.top =  topHeader + 'px';
+    overlayMenu.style.height = 'calc( 100% - ' + topHeader + 'px )';
+
+    let tab_window = window.matchMedia("(max-width: 992px)");
+    if (tab_window.matches) {
+        sideMenu.style.top =  topHeader + 'px';
+        sideMenu.style.height = 'calc( 100% - ' + topHeader + 'px )';
+    }
+
+
+    overlayBtn.addEventListener('click', function () {
+        overlayMenu.classList.toggle('o-fixed');
+        sideMenu.classList.remove('visible');
+        // disabledBtn();
+    });
+    overlayClose.addEventListener('click', function () {
+        overlayMenu.classList.remove('o-fixed');
+        // disabledBtn();
+    });
+})();
+
+
