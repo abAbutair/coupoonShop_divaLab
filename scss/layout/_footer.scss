@@ -19,6 +19,9 @@
         height: $formElementHeight;
         padding: 0 4rem;
         align-items: center;
+        i.far {
+          display: none;
+        }
       }
     }
   }

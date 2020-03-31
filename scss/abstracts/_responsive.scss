@@ -82,7 +82,7 @@
       }
     }
   }
-  ///////////////////////////////////////////////
+  /////////////////////////header//////////////////////
   .hover-dropdown {
     &__menu {
       top: calc(100% + #{$dropdownMargin2});
@@ -208,6 +208,27 @@
     min-height: 20rem;
   }
 
+  ////////////////////////footer//////////////////////
+  .email-sub__inner form .ctm-btn {
+    height: 3rem;
+  }
+  .footer {
+    padding: 2rem 0;
+  }
+  .links li:not(:last-of-type) {
+    margin-bottom: 0.5rem;
+  }
+  .footer__bottom > *:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+  .footer__bottom__copyrights p {
+    font-size: $smallFontSize;
+  }
+  .payment-methods li a, .payment-methods li i, .social-links li a, .social-links li i {
+    font-size: $iconsFontSize;
+  }
+
+  //////////////////////////////////////////////
   .grid__inner {
     h5 {
       font-size: $medFontSize;
@@ -307,25 +328,6 @@
   .img-bio-grid__child__data {
     padding: 0.7rem;
   }
-  //////////////////////////////////////////////
-  .email-sub__inner form .ctm-btn {
-    height: 3rem;
-  }
-  .footer {
-    padding: 2rem 0;
-  }
-  .links li:not(:last-of-type) {
-    margin-bottom: 0.5rem;
-  }
-  .footer__bottom > *:not(:last-child) {
-    margin-bottom: 1.5rem;
-  }
-  .footer__bottom__copyrights p {
-    font-size: $smallFontSize;
-  }
-  .payment-methods li a, .payment-methods li i, .social-links li a, .social-links li i {
-    font-size: $iconsFontSize;
-  }
 }
 
 
@@ -359,6 +361,7 @@
   //.header__bottom .container, .side-nav {
   //  position: unset;
   //}
+  ////////////////header///////////////
   .header {
     &.fixed {
       .med {
@@ -563,6 +566,75 @@
   }
   .lang-btn {
     display: none;
+  }
+  ////////////////footer///////////////
+  footer {
+    background: linear-gradient(to top, #000F12, #004C59);
+    .email-sub {
+      background-image: none !important;
+    }
+  }
+  .email-sub {
+    &.section--padding {
+      padding: 2rem 0;
+    }
+
+    &__inner {
+      background-color: transparent;
+      padding: 0;
+      .heading-primary--main-clr {
+        color: $whiteClr;
+        font-family: $bodyFont;
+      }
+      form {
+        align-items: center;
+        .input {
+          width: calc(100% - 4rem);
+          @include border-radius-all(0.4rem, 0, 0, 0.4rem);
+        }
+
+        .ctm-btn {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 4rem;
+          width: 4rem;
+          padding: 1rem;
+          @include border-radius(0.4rem);
+          i {
+            margin: 0;
+            font-size: 1.8rem;
+          }
+          i.far {
+            display: block;
+          }
+          i.fas {
+            display: none;
+          }
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    background: transparent;
+
+    &__top {
+      display: none;
+    }
+
+    &__bottom {
+      &.top-divider {
+        &:before {
+          display: none;
+        }
+      }
+    }
   }
 
 }
