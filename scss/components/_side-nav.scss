@@ -1,0 +1,62 @@
+.side-nav {
+  position: relative;
+  &__header {
+    position: relative;
+    &:before {
+      content: ' ';
+      border-left: $dropdownArrow solid transparent;
+      border-right: $dropdownArrow solid transparent;
+      border-bottom: $dropdownArrow solid $secondClr;
+      position: absolute;
+      top: calc(100% + #{$dropdownMargin2} - #{$dropdownArrow}); // - 1rem is for arrow height
+      left: 50%;
+      transform: translate(-50%, 0);
+      visibility: hidden;
+      opacity: 0;
+      @include transition(all, 0.4s);
+    }
+  }
+  &__menu {
+    position: absolute;
+    top: calc(100% + #{$dropdownMargin});
+    left: 0;
+    right: 0;
+    background-color: $dropdownClr;
+    border-top: 0.2rem solid $secondClr;
+    visibility: hidden;
+    opacity: 0;
+    @include transition(all, 0.4s);
+    z-index: 555;
+  }
+
+  &__header {
+    &:before {
+      top: calc(100% + #{$dropdownMargin} - #{$dropdownArrow}); // - 1rem is for arrow height
+    }
+    &.visible {
+      &:before {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  &__menu {
+    top: calc(100% + #{$dropdownMargin});
+    &.visible {
+      visibility: visible;
+      opacity: 1;
+      box-shadow:0 3px 10px -2px rgba($offerClr,.7);
+    }
+  }
+}
+//.menu-swipe {
+//  display: block;
+//  width: 50%;
+//  position: fixed;
+//  top: 10%;
+//  bottom: 10%;
+//  #{$right}: 0;
+//  #{$left}: auto;
+//  background-color: red;
+//  z-index: 2000;
+//}
