@@ -31,11 +31,11 @@
                             </button>
                         </div>
                     </nav>
-                    <div class="icon-link">
+                    <a class="icon-link" href="login.html">
                         <i class="fas fa-sign-in-alt"></i>
-                        <a href="login.html">تسجيل الدخول</a>
-                    </div>
-                    <button type="button" class="lang-btn"><i class="fas fa-language"></i>EN</button>
+                        <span>تسجيل الدخول</span>
+                    </a>
+                    <button type="button" class="lang-btn"><i class="fas fa-language"></i><span>EN</span></button>
                     <!--
                     <div class="ctm-dropdown">
                         <div class="ctm-dropdown__header">
@@ -51,11 +51,35 @@
                         </div>
                     </div>
                     -->
+                    <div class="search-overlay">
+                        <div class="search-overlay__header">
+                            <button class="search-overlay__btn icon-link" type="button"><i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="search-overlay__menu">
+                            <div class="close-overlay">
+                                <button type="button">&times;</button>
+                            </div>
+                            <form action="" class="form">
+                                <div class="form__element">
+                                    <select class="states" name="state">
+                                        <option value="dubai">دبي</option>
+                                        <option value="abu dhabi">أبوظبي</option>
+                                        <option value="cairo">القاهرة</option>
+                                    </select>
+                                </div>
+                                <div class="form__element positioned-icn">
+                                    <input type="search" class="input" placeholder="البحث">
+                                    <span class="positioned-icn__icon"><i class="fas fa-search"></i></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                     <nav class="ctm-nav flex-box ctm-nav--small">
-                        <a href="merchants-list.html" class="ctm-nav__link">سوق لشغلك عندنا</a>
-                        <a href="how-it-works.html" class="ctm-nav__link">كيفية التشغيل</a>
-                        <a href="#" class="ctm-nav__link">العروض المتاحة</a>
-                        <a href="sell-with-us.html" class="ctm-nav__link">المحلات</a>
+                        <a href="merchants-list.html" class="ctm-nav__link">المحلات</a>
+                        <a href="how-it-works.html" class="ctm-nav__link">العروض المتاحة</a>
+                        <a href="#" class="ctm-nav__link">كيفية التشغيل</a>
+                        <a href="sell-with-us.html" class="ctm-nav__link">سوق لشغلك عندنا</a>
                     </nav>
                 </div>
                 <div class="header__top__right">
@@ -69,7 +93,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="logo-part">
-                        <a href="index.html" class="logo"><img src="images/logo_ltr.png" alt="Coupon Logo"></a>
+                        <a href="index.html" class="logo"><img src="images/logo.png" alt="Coupon Logo"></a>
                     </div>
                 </div>
                 <div class="col-lg-9">
@@ -80,7 +104,7 @@
                                     <div class="form__element">
                                         <select class="states" name="state">
                                             <option value="dubai">دبي</option>
-                                            <option value="abu dhabi">ابوظبي</option>
+                                            <option value="abu dhabi">أبوظبي</option>
                                             <option value="cairo">القاهرة</option>
                                         </select>
                                     </div>
@@ -116,12 +140,18 @@
                                 <div class="close-nav">
                                     <button type="button">&times;</button>
                                 </div>
+                                <div class="account-lang">
+                                    <a href="#">أهلا أحمد</a>
+                                    <button type="button" class="lang-btn"><i
+                                            class="fas fa-language"></i><span>EN</span></button>
+                                </div>
                                 <div class="accordion" id="h-accordionNav">
                                     <div class="card">
                                         <div class="card-header" id="h-headingOne">
                                             <h2 role="button" data-toggle="collapse" data-target="#h-collapseOne"
                                                 aria-expanded="false"
                                                 aria-controls="h-collapseOne">
+                                                <i class="fas fa-th-list"></i>
                                                 المطاعم
                                             </h2>
                                         </div>
@@ -146,6 +176,7 @@
                                             <h2 role="button" data-toggle="collapse" data-target="#h-collapseTwo"
                                                 aria-expanded="false"
                                                 aria-controls="h-collapseTwo">
+                                                <i class="fas fa-th-list"></i>
                                                 الصحة و الجمال
                                             </h2>
                                         </div>
@@ -169,6 +200,7 @@
                                             <h2 role="button" data-toggle="collapse" data-target="#h-collapseThree"
                                                 aria-expanded="false"
                                                 aria-controls="h-collapseThree">
+                                                <i class="fas fa-th-list"></i>
                                                 الانشطة
                                             </h2>
                                         </div>
@@ -187,6 +219,7 @@
                                             <h2 role="button" data-toggle="collapse" data-target="#h-collapseFour"
                                                 aria-expanded="false"
                                                 aria-controls="h-collapseFour">
+                                                <i class="fas fa-th-list"></i>
                                                 الالكترونيات
                                             </h2>
                                         </div>
@@ -200,9 +233,45 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="card side-link">
+                                        <div class="card-header">
+                                            <a href="#">
+                                                <i class="fas fa-store"></i>
+                                                المحلات
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card side-link">
+                                        <div class="card-header">
+                                            <a href="#">
+                                                <i class="fas fa-question"></i>
+                                                العروض المتاحة
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card side-link">
+                                        <div class="card-header">
+                                            <a href="#">
+                                                <i class="fas fa-percentage"></i>
+                                                كيفية التشغيل
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card side-link">
+                                        <div class="card-header">
+                                            <a href="#">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                سوق لشغلك عندنا
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
+
                                 <div class="link-wrapper">
                                     <a href="categories.html" class="view-more">عرض جميع الفئات</a>
+                                </div>
+                                <div class="log-out">
+                                    <a href="#" class="view-more"><i class="fas fa-sign-out-alt"></i>تسجيل الخروج</a>
                                 </div>
                             </div>
                         </nav>
@@ -320,6 +389,7 @@
     </div>
 </header>
 
+
 <main>
     <section class="intro-sec">
         <div class="grid">
@@ -380,22 +450,25 @@
         </div>
     </section>
     <section class="section section--padding">
-        <h2 class="section-heading section-heading--main-clr"><span class="heading-follower heading-follower--orange">الأكثر ترويجا</span>اخر العروض المتاحة</h2>
+        <h2 class="section-heading section-heading--main-clr"><span class="heading-follower heading-follower--orange">الأكثر ترويجا</span>اخر
+            العروض المتاحة</h2>
         <div class="latest-deal">
             <div class="latest-deal__child1">
                 <div id="featureSlider" class="carousel slide" data-ride="carousel">
                     <h5 class="slider-name">عرض اليوم من كوبون شوب</h5>
                     <div class="carousel-inner">
-                        <a href="offer-details.html" class="carousel-item active" style="background-image: url('media/dummy_3.jpg')">
+                        <a href="offer-details.html" class="carousel-item active"
+                           style="background-image: url('media/dummy_3.jpg')">
                             <div class="carousel-caption d-none d-md-block">
                                 <p>باقات علاج إسترخائي او حمام من صفاء دريمز</p>
-                                <p> الباقات بتبدأ من  <span>245 دينار اماراتي </span></p>
+                                <p> الباقات بتبدأ من <span>245 دينار اماراتي </span></p>
                             </div>
                         </a>
-                        <a href="offer-details.html" class="carousel-item" style="background-image: url('media/LS_target_collabs.jpg')">
+                        <a href="offer-details.html" class="carousel-item"
+                           style="background-image: url('media/LS_target_collabs.jpg')">
                             <div class="carousel-caption d-none d-md-block">
                                 <p>باقات علاج إسترخائي او حمام من صفاء دريمز</p>
-                                <p> الباقات بتبدأ من  <span>245 دينار اماراتي </span></p>
+                                <p> الباقات بتبدأ من <span>245 دينار اماراتي </span></p>
                             </div>
                         </a>
                     </div>
@@ -416,14 +489,17 @@
                                     <div class="latest-d__inner__bg"
                                          style="background-image: url('media/dummy_1.jpg')"></div>
                                     <div class="latest-d__inner__data">
-                                        <h5 class="heading-secondary heading-secondary--main-clr">خياركم من الفيشل في صالون الحور الجميلة</h5>
+                                        <h5 class="heading-secondary heading-secondary--main-clr">خياركم من الفيشل في
+                                            صالون الحور الجميلة</h5>
                                         <div class="pricing">
                                             <span class="pricing__offer">60% تخفيض</span>
                                             <span class="pricing__old">500 دينار</span>
                                             <span class="pricing__new">240 دينار</span>
                                         </div>
                                         <article>
-                                            <p>تمتعي ببشرة صافية ونضرة مع جلسات فيشل من صالون الحور الجميلة لتجميل السيدات – فيشل الذهب، تبييض البشرة، الماسي او فيتامين إي إبتداءً من 99 د. إ.</p>
+                                            <p>تمتعي ببشرة صافية ونضرة مع جلسات فيشل من صالون الحور الجميلة لتجميل
+                                                السيدات – فيشل الذهب، تبييض البشرة، الماسي او فيتامين إي إبتداءً من 99
+                                                د. إ.</p>
                                         </article>
                                         <div class="link-wrapper">
                                             <span class="view-more">مشاهدة التفاصيل</span>
@@ -442,14 +518,17 @@
                                     <div class="latest-d__inner__bg"
                                          style="background-image: url('media/dummy_1.jpg')"></div>
                                     <div class="latest-d__inner__data">
-                                        <h5 class="heading-secondary heading-secondary--main-clr">خياركم من الفيشل في صالون الحور الجميلة</h5>
+                                        <h5 class="heading-secondary heading-secondary--main-clr">خياركم من الفيشل في
+                                            صالون الحور الجميلة</h5>
                                         <div class="pricing">
                                             <span class="pricing__offer">60% تخفيض</span>
                                             <span class="pricing__old">500 دينار</span>
                                             <span class="pricing__new">240 دينار</span>
                                         </div>
                                         <article>
-                                            <p>تمتعي ببشرة صافية ونضرة مع جلسات فيشل من صالون الحور الجميلة لتجميل السيدات – فيشل الذهب، تبييض البشرة، الماسي او فيتامين إي إبتداءً من 99 د. إ.</p>
+                                            <p>تمتعي ببشرة صافية ونضرة مع جلسات فيشل من صالون الحور الجميلة لتجميل
+                                                السيدات – فيشل الذهب، تبييض البشرة، الماسي او فيتامين إي إبتداءً من 99
+                                                د. إ.</p>
                                         </article>
                                         <div class="link-wrapper">
                                             <span class="view-more">مشاهدة التفاصيل</span>
@@ -468,14 +547,17 @@
                                     <div class="latest-d__inner__bg"
                                          style="background-image: url('media/dummy_1.jpg')"></div>
                                     <div class="latest-d__inner__data">
-                                        <h5 class="heading-secondary heading-secondary--main-clr">خياركم من الفيشل في صالون الحور الجميلة</h5>
+                                        <h5 class="heading-secondary heading-secondary--main-clr">خياركم من الفيشل في
+                                            صالون الحور الجميلة</h5>
                                         <div class="pricing">
                                             <span class="pricing__offer">60% تخفيض</span>
                                             <span class="pricing__old">500 دينار</span>
                                             <span class="pricing__new">240 دينار</span>
                                         </div>
                                         <article>
-                                            <p>تمتعي ببشرة صافية ونضرة مع جلسات فيشل من صالون الحور الجميلة لتجميل السيدات – فيشل الذهب، تبييض البشرة، الماسي او فيتامين إي إبتداءً من 99 د. إ.</p>
+                                            <p>تمتعي ببشرة صافية ونضرة مع جلسات فيشل من صالون الحور الجميلة لتجميل
+                                                السيدات – فيشل الذهب، تبييض البشرة، الماسي او فيتامين إي إبتداءً من 99
+                                                د. إ.</p>
                                         </article>
                                         <div class="link-wrapper">
                                             <span class="view-more">مشاهدة التفاصيل</span>
@@ -514,7 +596,7 @@
                                 <div class="img-bio-grid__child__data">
                                     <h5 class="heading-secondary heading-secondary--main-clr">الاشتراك</h5>
                                     <article>
-                                        <p> Lorem ipsum  للمصممين نص لوريم ايبسوم بالعربي عربي انجليزي</p>
+                                        <p> Lorem ipsum للمصممين نص لوريم ايبسوم بالعربي عربي انجليزي</p>
                                     </article>
                                 </div>
                             </div>
@@ -525,7 +607,7 @@
                                 <div class="img-bio-grid__child__data">
                                     <h5 class="heading-secondary heading-secondary--main-clr">اختار العرض المناسب</h5>
                                     <article>
-                                        <p> Lorem ipsum  للمصممين نص لوريم ايبسوم بالعربي عربي انجليزي</p>
+                                        <p> Lorem ipsum للمصممين نص لوريم ايبسوم بالعربي عربي انجليزي</p>
                                     </article>
                                 </div>
                             </div>
@@ -536,7 +618,7 @@
                                 <div class="img-bio-grid__child__data">
                                     <h5 class="heading-secondary heading-secondary--main-clr">إسكان كود و استمتع </h5>
                                     <article>
-                                        <p> Lorem ipsum  للمصممين نص لوريم ايبسوم بالعربي عربي انجليزي</p>
+                                        <p> Lorem ipsum للمصممين نص لوريم ايبسوم بالعربي عربي انجليزي</p>
                                     </article>
                                 </div>
                             </div>
@@ -553,7 +635,7 @@
                                 <div class="offer-boxes__child__data">
                                     <h5 class="heading-secondary heading-secondary--main-clr">عروض جديدة اسبوعية</h5>
                                     <article>
-                                        <p> Lorem ipsum  للمصممين نص لوريم ايبسوم بالعربي عربي انجليزي</p>
+                                        <p> Lorem ipsum للمصممين نص لوريم ايبسوم بالعربي عربي انجليزي</p>
                                     </article>
                                 </div>
                             </div>
@@ -566,7 +648,7 @@
                                 <div class="offer-boxes__child__data">
                                     <h5 class="heading-secondary heading-secondary--main-clr">سهولة اخذ العرض</h5>
                                     <article>
-                                        <p> Lorem ipsum  للمصممين نص لوريم ايبسوم بالعربي عربي انجليزي</p>
+                                        <p> Lorem ipsum للمصممين نص لوريم ايبسوم بالعربي عربي انجليزي</p>
                                     </article>
                                 </div>
                             </div>
@@ -579,7 +661,7 @@
                                 <div class="offer-boxes__child__data">
                                     <h5 class="heading-secondary heading-secondary--main-clr">عروض جديدة اسبوعيا</h5>
                                     <article>
-                                        <p> Lorem ipsum  للمصممين نص لوريم ايبسوم بالعربي عربي انجليزي</p>
+                                        <p> Lorem ipsum للمصممين نص لوريم ايبسوم بالعربي عربي انجليزي</p>
                                     </article>
                                 </div>
                             </div>
@@ -592,7 +674,7 @@
                                 <div class="offer-boxes__child__data">
                                     <h5 class="heading-secondary heading-secondary--main-clr">توفير الفلوس</h5>
                                     <article>
-                                        <p> Lorem ipsum  للمصممين نص لوريم ايبسوم بالعربي عربي انجليزي</p>
+                                        <p> Lorem ipsum للمصممين نص لوريم ايبسوم بالعربي عربي انجليزي</p>
                                     </article>
                                 </div>
                             </div>
@@ -719,20 +801,6 @@
         introSec.style.height = 'calc( ' + '85vh - ' + headerHeight + 'px )';
     })();
 </script>
-<script>
-    // $(function() {
-    //     $("#test").swipe( {
-    //         //Generic swipe handler for all directions
-    //         swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-    //             $(this).text("You swiped " + direction );
-    //         }
-    //     });
-    //
-    //     //Set some options later
-    //     $("#test").swipe( {fingers:2} );
-    // });
-</script>
-
 <script src="js/dropdown.js"></script>
 <script src="js/sideNav.js"></script>
 <script src="js/mainScript.js"></script>

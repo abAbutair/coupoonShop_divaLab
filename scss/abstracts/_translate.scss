@@ -10,8 +10,10 @@ $flex-direction: row;
 // icons -----
 $double-right: "\f101";
 $double-left: "\f100";
-$chevron-left:"\f053";
-$chevron-right:"\f054";
+$chevron-left: "\f053";
+$chevron-right: "\f054";
+$minus: -1;
+$plus: +1;
 
 //font family ------
 $bodyFont: 'roboto-reg';
@@ -21,44 +23,47 @@ $medFont: 'roboto-med';
 $langBtnFont: 'ar-in-en';
 
 /*------ The Switch ------*/
-@if $isRtl == rtl
-{
-    //directions -------
-    $left: right;
-    $right: left;
-    $flex-direction:row-reverse;
+@if $isRtl == rtl {
+  //directions -------
+  $left: right;
+  $right: left;
+  $flex-direction: row-reverse;
 
-    // icons -----
-    $double-right: "\f100";
-    $double-left: "\f101";
-    $chevron-left:"\f054";
-    $chevron-right:"\f053";
-
-    //font family ------
-    $bodyFont: 'cairo-reg';
-    $boldFont: 'cairo-bold';
-    $semiBoldFont: 'cairo-semi';
-    $medFont: 'cairo-med';
-    $langBtnFont: 'en-in-ar';
-
-}
-@else {
-    //directions -------
-    $left: left;
-    $right: right;
-    $flex-direction:row;
-
-    // icons -----
-    $double-right: "\f101";
-    $double-left: "\f100";
-    $chevron-left:"\f053";
-    $chevron-right:"\f054";
+  // icons -----
+  $double-right: "\f100";
+  $double-left: "\f101";
+  $chevron-left: "\f054";
+  $chevron-right: "\f053";
+  $minus: +1;
+  $plus: -1;
 
 
-    //font family ------
-    $bodyFont: 'roboto-reg';
-    $boldFont: 'roboto-bold';
-    $semiBoldFont: 'roboto-semi';
-    $medFont: 'roboto-med';
-    $langBtnFont: 'ar-in-en';
+  //font family ------
+  $bodyFont: 'cairo-reg';
+  $boldFont: 'cairo-bold';
+  $semiBoldFont: 'cairo-semi';
+  $medFont: 'cairo-med';
+  $langBtnFont: 'en-in-ar';
+
+} @else {
+  //directions -------
+  $left: left;
+  $right: right;
+  $flex-direction: row;
+
+  // icons -----
+  $double-right: "\f101";
+  $double-left: "\f100";
+  $chevron-left: "\f053";
+  $chevron-right: "\f054";
+  $minus: -1;
+  $plus: +1;
+
+
+  //font family ------
+  $bodyFont: 'roboto-reg';
+  $boldFont: 'roboto-bold';
+  $semiBoldFont: 'roboto-semi';
+  $medFont: 'roboto-med';
+  $langBtnFont: 'ar-in-en';
 }

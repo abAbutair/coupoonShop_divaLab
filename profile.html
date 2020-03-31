@@ -19,6 +19,17 @@
         <div class="container">
             <div class="header__top__inner">
                 <div class="header__top__left">
+                    <nav class="burger-menu side-nav">
+                        <div class="side-nav__header">
+                            <button class="open-btn side-nav__btn" type="button" id="openNav">
+                                <span class="align-burger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </button>
+                        </div>
+                    </nav>
                     <div class="ctm-dropdown profile-drop" id="dropdown">
                         <div class="ctm-dropdown__header">
                             <button class="ctm-btn icon-link dropdown-button" type="button" id="dropdownButton">
@@ -40,13 +51,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="icon-link">
+                    <a href="#" class="icon-link">
                         <i class="fas fa-qrcode"></i>
-                        <a href="login.html">QW-Code</a>
-                    </div>
-                    <button type="button" class="lang-btn"><i class="fas fa-language"></i> Arabic</button>
+                        <span>QW-Code</span>
+                    </a>
+                    <button type="button" class="lang-btn"><i class="fas fa-language"></i><span>العربية</span></button>
                     <!--
-                    <div class="ctm-dropdown" id="dropdown">
+                    <div class="ctm-dropdown">
                         <div class="ctm-dropdown__header">
                             <button class="ctm-btn icon-link dropdown-button" type="button" id="dropdownButton">
                                 <i class="fas fa-language"></i>
@@ -60,6 +71,29 @@
                         </div>
                     </div>
                     -->
+                    <div class="search-overlay">
+                        <div class="search-overlay__header">
+                            <button class="search-overlay__btn icon-link" type="button"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="search-overlay__menu">
+                            <div class="close-overlay">
+                                <button type="button">&times;</button>
+                            </div>
+                            <form action="" class="form">
+                                <div class="form__element">
+                                    <select class="states" name="state">
+                                        <option value="dubai">Dubai</option>
+                                        <option value="abu dhabi">abu dhabi</option>
+                                        <option value="cairo">cairo</option>
+                                    </select>
+                                </div>
+                                <div class="form__element positioned-icn">
+                                    <input type="search" class="input" placeholder="search">
+                                    <span class="positioned-icn__icon"><i class="fas fa-search"></i></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                     <nav class="ctm-nav flex-box ctm-nav--small">
                         <a href="merchants-list.html" class="ctm-nav__link">stores</a>
                         <a href="how-it-works.html" class="ctm-nav__link">how it works</a>
@@ -68,14 +102,13 @@
                     </nav>
                 </div>
                 <div class="header__top__right">
-                    <a href="plans.html"
-                       class="ctm-btn ctm-btn--small ctm-btn--orange"><strong>change plan</strong></a>
+                    <a href="plans.html" class="ctm-btn ctm-btn--small ctm-btn--orange"><strong>subscribe</strong></a>
                 </div>
             </div>
         </div>
     </div>
     <div class="header__bottom">
-        <div class="container med">
+        <div class="med container">
             <div class="row">
                 <div class="col-lg-3">
                     <div class="logo-part">
@@ -111,9 +144,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
-                        <nav class="burger-menu ctm-dropdown" id="dropdown1">
-                            <div class="ctm-dropdown__header">
-                                <button class="open-btn dropdown-button" type="button" id="openBtn">
+                        <nav class="burger-menu side-nav">
+                            <div class="side-nav__header">
+                                <button class="open-btn side-nav__btn" type="button" id="openNav">
                                 <span class="align-burger">
                                     <span></span>
                                     <span></span>
@@ -122,9 +155,13 @@
                                     <span class="open-btn__header">all categories</span>
                                 </button>
                             </div>
-                            <div class="menu-collapse ctm-dropdown__menu" id="menuCollapse" aria-labelledby="openBtn">
-                                <div class="close-btn">
+                            <div class="side-collapse side-nav__menu" id="sideCollapse" aria-labelledby="openNav">
+                                <div class="close-nav">
                                     <button type="button">&times;</button>
+                                </div>
+                                <div class="account-lang">
+                                    <a href="#">Welcome John Duo</a>
+                                    <button type="button" class="lang-btn"><i class="fas fa-language"></i><span>العربية</span></button>
                                 </div>
                                 <div class="accordion" id="h-accordionNav">
                                     <div class="card">
@@ -132,6 +169,7 @@
                                             <h2 role="button" data-toggle="collapse" data-target="#h-collapseOne"
                                                 aria-expanded="false"
                                                 aria-controls="h-collapseOne">
+                                                <i class="fas fa-th-list"></i>
                                                 Food & Beverages
                                             </h2>
                                         </div>
@@ -156,6 +194,7 @@
                                             <h2 role="button" data-toggle="collapse" data-target="#h-collapseTwo"
                                                 aria-expanded="false"
                                                 aria-controls="h-collapseTwo">
+                                                <i class="fas fa-th-list"></i>
                                                 SPA & Beauty
                                             </h2>
                                         </div>
@@ -177,6 +216,7 @@
                                             <h2 role="button" data-toggle="collapse" data-target="#h-collapseThree"
                                                 aria-expanded="false"
                                                 aria-controls="h-collapseThree">
+                                                <i class="fas fa-th-list"></i>
                                                 Activities
                                             </h2>
                                         </div>
@@ -195,6 +235,7 @@
                                             <h2 role="button" data-toggle="collapse" data-target="#h-collapseFour"
                                                 aria-expanded="false"
                                                 aria-controls="h-collapseFour">
+                                                <i class="fas fa-th-list"></i>
                                                 Health & Fitness
                                             </h2>
                                         </div>
@@ -208,9 +249,44 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="card side-link">
+                                        <div class="card-header">
+                                            <a href="#">
+                                                <i class="fas fa-store"></i>
+                                                stores
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card side-link">
+                                        <div class="card-header">
+                                            <a href="#">
+                                                <i class="fas fa-question"></i>
+                                                how it works
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card side-link">
+                                        <div class="card-header">
+                                            <a href="#">
+                                                <i class="fas fa-percentage"></i>
+                                                craft offers
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card side-link">
+                                        <div class="card-header">
+                                            <a href="#">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                sell with us
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="link-wrapper">
                                     <a href="categories.html" class="view-more">View all categories</a>
+                                </div>
+                                <div class="log-out">
+                                    <a href="#" class="view-more"><i class="fas fa-sign-out-alt"></i> log out</a>
                                 </div>
                             </div>
                         </nav>
@@ -247,13 +323,13 @@
                                                     <div class="grid__item">
                                                         <a href="offer-details.html"
                                                            class="grid__inner grid__inner--data-c"
-                                                           style="background-image: url('media/dummy_2.jpg');color: #65AA8F;">
+                                                           style="background-image: url('media/Microwave_Oven.jpg');color: #65AA8F;">
                                                         </a>
                                                     </div>
                                                     <div class="grid__item">
                                                         <a href="offer-details.html"
                                                            class="grid__inner grid__inner--data-bg"
-                                                           style="background-image: url('media/dummy_2.jpg'); color: #930A10">
+                                                           style="background-image: url('media/coffee_maker_brand_electric_teapot.jpg'); color: #930A10">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -261,7 +337,7 @@
                                                     <div class="grid__item">
                                                         <a href="offer-details.html"
                                                            class="grid__inner grid__inner--data-a"
-                                                           style="background-image: url('media/dummy_2.jpg');color:#A55731">
+                                                           style="background-image: url('media/Gas_Room_Heater.jpg');color:#A55731">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -327,6 +403,7 @@
         </div>
     </div>
 </header>
+
 
 <main>
     <!-- page header -->
@@ -593,6 +670,8 @@
 <script src="node_modules/bootstrap/js/dist/collapse.js"></script>
 
 <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+<script type="text/javascript" src="node_modules/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
+
 <script>
     $(document).ready(function () {
         $('.states').select2({
@@ -607,6 +686,7 @@
 </script>
 
 <script src="js/dropdown.js"></script>
+<script src="js/sideNav.js"></script>
 <script src="js/mainScript.js"></script>
 
 <!-- page custom bootstrap scripts -->
