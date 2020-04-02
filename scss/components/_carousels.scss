@@ -15,7 +15,20 @@
   }
 
 }
-
+.latest-deal__child1 {
+  .responsive-img {
+    display: none;
+    width: 100%;
+    overflow: hidden;
+    @include border-radius(0.4rem);
+    @extend %covered_bg;
+    padding-top: 30%;
+    margin-bottom: 1rem;
+    img {
+      width: 100%;
+    }
+  }
+}
 .slider-name {
   font-size: $medFontSize;
   color: $whiteClr;
@@ -62,7 +75,7 @@
       margin: 0;
       height: calc(#{$carouselBottomShift} / 2);
       align-items: center;
-      z-index: 2;
+      z-index: 1;
       li {
         background-color: $mainClr;
         width: 1rem;
@@ -99,6 +112,14 @@
       @include translate(0, 50%);
       color: $whiteClr;
       text-transform: capitalize;
+      padding: 1rem;
+      &:hover {
+        background-color: darken($secondClr, 3%);
+      }
+      &:after {
+        @extend %long-arrow;
+        margin-#{$left}: 1rem;
+      }
     }
   }
 }

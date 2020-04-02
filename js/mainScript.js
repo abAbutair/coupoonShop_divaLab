@@ -1,6 +1,9 @@
 // Diva-Lab @2020 Main Script
 ////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", function(event) {
+        $('#featureSlider').carousel({
+            interval: false,
+        });
 
 // menu swipe open
     $(function () {
@@ -19,21 +22,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             threshold: 100,
         });
 
-        // $(".menu-swipe").swipe( {
-        //     //Generic swipe handler for all directions
-        //     swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
-        //         $("#sideCollapse").removeClass('visible');
-        //         $(".search-overlay__menu").addClass('o-fixed');
-        //     },
-        //     swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
-        //         $("#sideCollapse").addClass('visible');
-        //         $(".search-overlay__menu").removeClass('o-fixed');
-        //     },
-        //     allowPageScroll:"vertical",
-        //     excludedElements: ".carousel, .menu-swipe"
-        // });
-
-        $(".carousel").swipe({
+        $("#metroSlider").swipe({
             //Generic swipe handler for all directions
             swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
                 if (direction == 'left') $(this).carousel('next');

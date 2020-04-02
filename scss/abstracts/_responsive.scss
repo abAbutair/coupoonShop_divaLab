@@ -353,14 +353,15 @@
   $formElementHeight: 3rem;
   $tinyFontSize: 1.1rem; // placeholder
   $smallFontSize: 1.2rem;
-  $paddingTopBottom: 0.7rem; //header top
+  $paddingTopBottom: 1.8rem; //header top
   $medFontSize: 1.7rem;
   $iconsFontSize: 2rem;
   ////////////////////////////////////////////////////////
 
-  //.header__bottom .container, .side-nav {
-  //  position: unset;
-  //}
+  .ctm-btn {
+    @include border-radius(0.4rem);
+  }
+
   ////////////////header///////////////
   .header {
     &.fixed {
@@ -389,9 +390,14 @@
 
       .burger-menu {
         display: block;
-        //padding-top: $paddingTopBottom;
-        //padding-bottom: $paddingTopBottom;
+        padding-top: $paddingTopBottom;
+        padding-bottom: $paddingTopBottom;
       }
+      .icon-link, .lang-btn, .header .ctm-btn {
+        padding-top: $paddingTopBottom;
+        padding-bottom: $paddingTopBottom;
+      }
+
     }
 
     .header__top .profile-drop {
@@ -645,7 +651,55 @@
       display: block;
     }
   }
-
+  //////////////////////////////////////////////////
+  .latest-deal {
+    &__child1 {
+      position: static;
+      width: 100%;
+      .carousel-inner {
+        &:after {
+          display: none;
+        }
+      }
+      .carousel-item {
+        background-image: none !important;
+        position: static;
+        float: none;
+        display: block;
+        padding: 3rem;
+        box-shadow: 0 0 4rem -2rem rgba(#000, 0.5);
+        margin: 4rem 0;
+      }
+      #featureSlider .carousel-caption {
+        position: static;
+        display: block;
+        text-align: start;
+        padding: 0;
+        .caption-label {
+          margin-bottom: 3rem;
+          font-size: $medFontSize;
+        }
+      }
+      .carousel-control-prev, .carousel-control-next {
+        display: none;
+      }
+      .responsive-img {
+        display: block;
+      }
+    }
+    &__child2, .slider-name {
+      display: none;
+    }
+  }
+  /////////////////////////////////////////////////
+  .img-bio-grid__child {
+    box-shadow: 0 0 4rem -2rem rgba(#000, 0.5);
+    margin: 2rem 0;
+    @include border-radius(0.4rem);
+  }
+  .offer-boxes__child {
+    margin-bottom: 2rem;
+  }
 }
 
 

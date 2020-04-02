@@ -61,6 +61,9 @@
 %double-angel{
     @include fontAwesome("Font Awesome 5 Free",$double-right,null,900,null); // plz replace all arrows to this (becouse of arabic)
 }
+%long-arrow{
+    @include fontAwesome("Font Awesome 5 Free",$long-arrow-right,null,900,null);
+}
 %content-nav{
     color:$bodyFontClr;
     margin-top: 2rem;
