@@ -35,6 +35,12 @@
   $medFontSize: 1.7rem;
   $iconsFontSize: 2rem;
   ////////////////////////////////////////////////////////
+  .breadcrumb li {
+    font-size: $bodyFontSize;
+  }
+  .page-heading {
+    font-size: 8rem;
+  }
 }
 
 
@@ -64,7 +70,18 @@
   $medFontSize: 1.7rem;
   $iconsFontSize: 2rem;
   ////////////////////////////////////////////////////////
-
+  .text-block {
+    [class^="col-"] {
+     margin-bottom: 1.5rem;
+    }
+  }
+  .page-header {
+    padding: 1rem;
+  }
+  .page-heading {
+    font-size: 6rem;
+  }
+  //////////////////////////////////////
 }
 
 
@@ -123,6 +140,9 @@
   $medFontSize: 1.7rem;
   $iconsFontSize: 2rem;
   ////////////////////////////////////////////////////////
+  .page-heading {
+    font-size: 5rem;
+  }
 
 }
 
@@ -139,10 +159,9 @@
 /*----------------------------------------------------------------------*/
 @media only screen and (max-width: 360px) {
   /*--------------------------------------------------------------------*/
-  $sectionHeading: 2.5rem;
   ///////////////////////////////////
-  .section-heading {
-    font-size: $sectionHeading;
+  .page-heading {
+    font-size: 4rem;
   }
-  //////////////////////////////////
+
 }

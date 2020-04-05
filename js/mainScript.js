@@ -1,9 +1,6 @@
 // Diva-Lab @2020 Main Script
 ////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", function(event) {
-        $('#featureSlider').carousel({
-            interval: false,
-        });
 
 // menu swipe open
     $(function () {

@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
                 for (let h = 0; h < menuClass.length; h++) {
                     let menuAtr = menuClass[h].getAttribute('aria-labelledby');
-                    console.log(menuAtr);
                     if (menuAtr === btnID) {
                         menuClass[h].classList.toggle('visible');
                         this.closest('.side-nav__header').classList.toggle('visible');
