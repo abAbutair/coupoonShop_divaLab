@@ -21,3 +21,40 @@
     max-width: 1600px;
   }
 }
+////////////////////////////////////////////////////
+/*--------------------------------------------------------------------*/
+@media only screen and (min-width: 576px) {
+  /*--------------------------------------------------------------------*/
+  .latest-deal .carousel-inner {
+    max-width: 540px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/*--------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+  /*--------------------------------------------------------------------*/
+  .latest-deal .carousel-inner {
+    max-width: 720px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/*--------------------------------------------------------------------*/
+@media only screen and (min-width: 992px) {
+  /*--------------------------------------------------------------------*/
+  .latest-deal .carousel-inner {
+    max-width: 960px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

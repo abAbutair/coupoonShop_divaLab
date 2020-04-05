@@ -895,7 +895,7 @@
         let tab_window = window.matchMedia("(min-width: 576px)");
         if (desktop_window.matches) {
             introSec.style.height = 'calc( ' + '85vh - ' + headerHeight + 'px )';
-        } else if (tab_window) {
+        } else if (tab_window.matches) {
             introSec.style.height = 'calc( ' + '60vh - ' + headerHeight + 'px )';
         } else {
             introSec.style.height = 'calc( ' + '50vh - ' + headerHeight + 'px )';

@@ -86,10 +86,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
     })();
 
-// // toggle sidebar
-// $('.side-toggle').on('click', function () {
-//     $(this).closest('aside').toggleClass('opened')
-// });
 
 // divide one list to multi columns
     (function ($) {
