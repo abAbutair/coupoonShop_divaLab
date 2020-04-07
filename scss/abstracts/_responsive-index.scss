@@ -351,6 +351,9 @@
 /*------------------------------------------------------------------*/
 @media only screen and (max-width: 1199.98px) {
   /*------------------------------------------------------------------*/
+  .slider-name {
+    padding: 1rem 1.5rem;
+  }
 }
 
 // Medium devices (tablets, less than 992px)
@@ -378,6 +381,16 @@
     @include border-radius(0.4rem);
   }
 
+  .accordion {
+    .card-header {
+      h2 {
+        font-size: $medFontSize;
+      }
+    }
+  }
+  .accordion a, .masonry-grid-item a {
+    font-size: $bodyFontSize;
+  }
   ////////////////header///////////////
   .header {
     &.fixed {
@@ -441,6 +454,7 @@
     transition: all 0.3s;
     background-color: $whiteClr;
     padding: 0;
+    overflow-y: auto;
 
     &.visible {
       @include translate(0, 0);
@@ -534,10 +548,12 @@
 
     .log-out {
       display: block;
-      position: absolute;
-      bottom: 3rem;
+      position: relative;
+      bottom: -25%;
       left: 3rem;
       right: 3rem;
+      width: calc(100% - 6rem);
+      margin-bottom: 3rem;
 
       i {
         margin-#{$right}: 1rem;

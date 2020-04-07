@@ -48,6 +48,9 @@
 /*------------------------------------------------------------------*/
 @media only screen and (max-width: 1199.98px) {
   /*------------------------------------------------------------------*/
+  .masonry-grid-item {
+    width: 50%;
+  }
 }
 
 // Medium devices (tablets, less than 992px)
@@ -89,6 +92,46 @@
 /*--------------------------------------------------------------------*/
 @media only screen and (max-width: 767.98px) {
   /*--------------------------------------------------------------------*/
+  .masonry-grid-item {
+    width: 100%;
+  }
+  .offers-container {
+    .offer {
+      a{
+        width: 100%;
+      }
+      &:before {
+        background-color: transparent;
+        box-shadow: none;
+      }
+    }
+    [class^="col-"] {
+      &:nth-child(odd) {
+        .offer {
+          &:before{
+            background-color: $dropdownClr;
+            width: calc(100% + 3rem);
+            height: calc(100% + 3rem);
+            top: -1.5rem;
+            left: -1.5rem;
+            box-shadow:0 3px 10px -2px rgba($offerClr,.7);
+          }
+          .preview{
+            filter: saturate(1.4);
+          }
+          a{width: 100%}
+        }
+      }
+    }
+  }
+  .section-intro {
+    width: 100%;
+    min-width: auto;
+  }
+  .emojis {
+    font-size: 10rem;
+    padding-bottom: 2rem;
+  }
 }
 
 
@@ -103,6 +146,9 @@
 /*--------------------------------------------------------------------*/
 @media only screen and (max-height: 768px) {
   /*--------------------------------------------------------------------*/
+  .emojis {
+    font-size: 8rem;
+  }
 }
 
 
@@ -150,8 +196,9 @@
 /*----------------------------------------------------------------------*/
 @media only screen and (max-width: 480px) {
   /*--------------------------------------------------------------------*/
-
-
+  .emojis {
+    font-size: 5rem;
+  }
 }
 
 
@@ -161,7 +208,7 @@
   /*--------------------------------------------------------------------*/
   ///////////////////////////////////
   .page-heading {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
 }

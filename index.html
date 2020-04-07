@@ -892,9 +892,14 @@
         let headerHeight = document.querySelector('header').offsetHeight;
 
         let desktop_window = window.matchMedia("(min-width: 992px)");
+        let iPad_window = window.matchMedia("(max-height: 1300px)");
         let tab_window = window.matchMedia("(min-width: 576px)");
         if (desktop_window.matches) {
-            introSec.style.height = 'calc( ' + '85vh - ' + headerHeight + 'px )';
+            if(iPad_window.matches) {
+                introSec.style.height = 'calc( ' + '85vh - ' + headerHeight + 'px )';
+            } else {
+                introSec.style.height = 'calc( ' + '50vh - ' + headerHeight + 'px )';
+            }
         } else if (tab_window.matches) {
             introSec.style.height = 'calc( ' + '60vh - ' + headerHeight + 'px )';
         } else {

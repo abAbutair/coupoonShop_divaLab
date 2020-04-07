@@ -51,6 +51,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
         return siblings;
     };
 
+
+// toggle sidebar
+    (function () {
+        $('.side-toggle').on('click', function () {
+            $(this).closest('aside').toggleClass('opened')
+        });
+        document.addEventListener("click", function(event) {
+            let asideClass = document.querySelectorAll('aside.collapsible');
+
+            // If user clicks inside the element, do nothing
+            if (event.target.closest("aside.collapsible")) return;
+
+            // If user clicks outside the element, hide it!
+            for (let h = 0; h < asideClass.length; h++) {
+                asideClass[h].classList.remove('opened');
+            }
+        });
+    })();
+
 // intro section metro function
     (function () {
         let metroGrd = document.querySelectorAll('.grid');
