@@ -24,23 +24,48 @@
                     <h3 class="heading-follower heading-follower--main-clr">Create an account</h3>
                     <p>Setup a new account in a minute.</p>
                     <div class="form-group name">
-                        <input type="text" class="input" placeholder="first name">
-                        <input type="text" class="input" placeholder="last name">
-                        <i class="far fa-user"></i>
+                        <div class="form__element validated">
+                            <input type="text" class="input" placeholder="first name">
+                            <div class="validated-tooltip">
+                                Please provide a valid
+                            </div>
+                        </div>
+                        <div class="form__element validated">
+                            <input type="text" class="input" placeholder="last name">
+                            <span class="positioned-icn__icon"><i class="far fa-user"></i></span>
+                            <div class="validated-tooltip">
+                                Please provide a valid
+                            </div>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="input" placeholder="E-mail Address">
-                        <i class="far fa-envelope"></i>
+                        <div class="form__element validated">
+                            <input type="email" class="input" placeholder="E-mail Address">
+                            <span class="positioned-icn__icon"><i class="far fa-envelope"></i></span>
+                            <div class="validated-tooltip">
+                                Please provide a valid
+                            </div>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="input" placeholder="password">
-                        <i class="fas fa-unlock-alt"></i>
+                        <div class="form__element validated">
+                            <input type="password" class="input" placeholder="password">
+                            <span class="positioned-icn__icon"><i class="fas fa-unlock-alt"></i></span>
+                            <div class="validated-tooltip">
+                                Please provide a valid
+                            </div>
+                        </div>
                     </div>
                     <div class="form-options">
-                        <label class="checkbox " for="remember-me">
-                            <input type="checkbox" id="remember-me">
-                            <span>Remember Me</span>
-                        </label>
+                        <div class="form__element validated">
+                            <label class="checkbox " for="remember-me">
+                                <input type="checkbox" id="remember-me">
+                                <span>Remember Me</span>
+                            </label>
+                            <div class="validated-tooltip">
+                                Please provide a valid
+                            </div>
+                        </div>
                         <a href="#">Forgot password?</a>
                     </div>
                     <button type="submit" class="ctm-btn ctm-btn--small ctm-btn--orange">login</button>

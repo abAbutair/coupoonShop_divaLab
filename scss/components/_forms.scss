@@ -138,3 +138,62 @@ textarea{
     }
   }
 }
+
+.form-single {
+  margin: 3rem 0;
+  .form__element {
+    display: inline-block;
+    width: auto;
+  }
+}
+//-----------validate--
+
+.form {
+  &__element {
+    position: relative;
+    width: 100%;
+    .validated-tooltip {
+      opacity: 0;
+      position: absolute;
+      #{$left}: auto;
+      #{$right}: 0;
+      top: 100%;
+      font-size: 1.1rem;
+      color: $secondClr;
+      margin-top: .5rem;
+      z-index: 5;
+      background: #fff;
+      padding: .2rem .4rem;
+      border: .1rem solid $secondClr;
+      @include border-radius(.4rem);
+      &:before {
+        content: ' ';
+        border-left: .5rem solid transparent;
+        border-right: .5rem solid transparent;
+        border-bottom: .5rem solid #F85F20;
+        position: absolute;
+        top: -.5rem;
+        #{$left}: 5%;
+      }
+    }
+  }
+}
+.form__element.validated {
+  .validated-tooltip {
+    @include transition(all, 0.2s);
+    opacity: 1;
+  }
+
+  .input, textarea, .custom-container {
+    @include transition(all, 0.2s);
+    border-#{$left}: 1rem solid $secondClr;
+  }
+  .checkbox {
+    color: $secondClr;
+    span {
+      &:before {
+        color: $secondClr;
+      }
+    }
+  }
+}

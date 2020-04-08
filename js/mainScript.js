@@ -1,36 +1,6 @@
 // Diva-Lab @2020 Main Script
 ////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", function(event) {
-
-// menu swipe open
-    $(function () {
-        $("body").swipe({
-            //Generic swipe handler for all directions
-            swipeRight: function (event, direction, distance, duration, fingerCount, fingerData) {
-                $("#sideCollapse").addClass('visible');
-                $(".search-overlay__menu").removeClass('o-fixed');
-            },
-            swipeLeft: function (event, direction, distance, duration, fingerCount, fingerData) {
-                $("#sideCollapse").removeClass('visible');
-                $(".search-overlay__menu").removeClass('o-fixed');
-            },
-            allowPageScroll: "vertical",
-            excludedElements: ".carousel, .menu-swipe",
-            threshold: 100,
-        });
-
-        $("#metroSlider").swipe({
-            //Generic swipe handler for all directions
-            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
-                if (direction == 'left') $(this).carousel('next');
-                if (direction == 'right') $(this).carousel('prev');
-            },
-            allowPageScroll: "vertical",
-            threshold: 10,
-        });
-    });
-
-
 // CSS vh(viewport height) reset
     let jvh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--jvh', `${jvh}px`);
@@ -207,5 +177,32 @@ document.addEventListener("DOMContentLoaded", function(event) {
         });
     })();
 
+    // menu swipe open
+    $(function () {
+        $("body").swipe({
+            //Generic swipe handler for all directions
+            swipeRight: function (event, direction, distance, duration, fingerCount, fingerData) {
+                $("#sideCollapse").addClass('visible');
+                $(".search-overlay__menu").removeClass('o-fixed');
+            },
+            swipeLeft: function (event, direction, distance, duration, fingerCount, fingerData) {
+                $("#sideCollapse").removeClass('visible');
+                $(".search-overlay__menu").removeClass('o-fixed');
+            },
+            allowPageScroll: "vertical",
+            excludedElements: ".carousel, .menu-swipe, form, input, textarea, select, button, fieldset, label, datalist, output, legend, optgroup",
+            threshold: 100,
+        });
+
+        $("#metroSlider").swipe({
+            //Generic swipe handler for all directions
+            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+                if (direction == 'left') $(this).carousel('next');
+                if (direction == 'right') $(this).carousel('prev');
+            },
+            allowPageScroll: "vertical",
+            threshold: 10,
+        });
+    });
 });
 

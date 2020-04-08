@@ -421,7 +421,6 @@
 }
 .agree{
   display: block;
-  margin: 3rem 0;
   color: $offerClr;
 }
 
@@ -587,16 +586,17 @@
     position: relative;
     &:first-of-type{margin-top: 3.5rem}
     &.name{
-      display: block;
-      .input{width: calc(50% - 4px)}
+      display: flex;
+      justify-content: space-between;
+      .form__element{width: calc(50% - 4px)}
     }
-    i{
-      color: $offerClr;
-      font-size: 1.8rem;
-      line-height: 4rem;
-      position: absolute;
-      #{$right}:1.5rem
-    }
+    //i{
+    //  color: $offerClr;
+    //  font-size: 1.8rem;
+    //  line-height: 4rem;
+    //  position: absolute;
+    //  #{$right}:1.5rem
+    //}
   }
   .input{
     background-color: #fff;
@@ -609,6 +609,9 @@
     margin-bottom: 2.5rem;
     display: flex;
     justify-content: space-between;
+    .form__element {
+      width: auto;
+    }
     label{
       font-size: 1.4rem;
       color: $offerClr;
