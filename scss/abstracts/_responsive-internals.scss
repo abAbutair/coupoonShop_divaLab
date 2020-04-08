@@ -1,4 +1,3 @@
-
 /*-*************************************************************************************************-*/
 /* only  microsoft browser */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -41,6 +40,21 @@
   .page-heading {
     font-size: 8rem;
   }
+  .section-intro {
+    font-size: $bodyFontSize;
+  }
+  .plans {
+    .card {
+      padding: 2rem 1.5rem 5.5rem;
+      margin-top: 1.5rem;
+      >p, .ctm-btn {
+        font-size: $smallFontSize;
+      }
+    }
+  }
+  .subscription-fees {
+    font-size: 5rem;
+  }
 }
 
 
@@ -75,7 +89,7 @@
   ////////////////////////////////////////////////////////
   .text-block {
     [class^="col-"] {
-     margin-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
     }
   }
   .page-header {
@@ -85,6 +99,32 @@
     font-size: 6rem;
   }
   //////////////////////////////////////
+  .merchant-details {
+    margin-bottom: 8rem;
+  }
+  .offers-container {
+    .offer {
+      a {
+        width: 100%;
+      }
+
+      &:before {
+        background-color: transparent;
+        box-shadow: none;
+      }
+    }
+  }
+  .merchant-container {
+    .merchant {
+      &:before {
+        width: calc(100% + 2rem) !important;
+        height: calc(100% + 2rem) !important;
+        top: -1rem !important;
+        left: -1rem !important;
+        box-shadow: 0 3px 10px -2px rgba(159,159,159,0.7) !important;
+      }
+    }
+  }
 }
 
 
@@ -95,31 +135,27 @@
   .masonry-grid-item {
     width: 100%;
   }
+
   .offers-container {
-    .offer {
-      a{
-        width: 100%;
-      }
-      &:before {
-        background-color: transparent;
-        box-shadow: none;
-      }
-    }
     [class^="col-"] {
       &:nth-child(odd) {
         .offer {
-          &:before{
+          &:before {
             background-color: $dropdownClr;
             width: calc(100% + 3rem);
             height: calc(100% + 3rem);
             top: -1.5rem;
             left: -1.5rem;
-            box-shadow:0 3px 10px -2px rgba($offerClr,.7);
+            box-shadow: 0 3px 10px -2px rgba($offerClr, .7);
           }
-          .preview{
+
+          .preview {
             filter: saturate(1.4);
           }
-          a{width: 100%}
+
+          a {
+            width: 100%
+          }
         }
       }
     }
@@ -131,6 +167,10 @@
   .emojis {
     font-size: 10rem;
     padding-bottom: 2rem;
+  }
+  ///////////////////////
+  .two-col-list {
+    column-count: auto;
   }
 }
 
