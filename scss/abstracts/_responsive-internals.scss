@@ -34,6 +34,9 @@
   $medFontSize: 1.7rem;
   $iconsFontSize: 2rem;
   ////////////////////////////////////////////////////////
+  p {
+    font-size: $bodyFontSize;
+  }
   .breadcrumb li {
     font-size: $bodyFontSize;
   }
@@ -54,6 +57,14 @@
   }
   .subscription-fees {
     font-size: 5rem;
+  }
+  /////////////////////////
+  .offer-gallery .carousel-item {
+    padding-top: 40%;
+  }
+  .preview {
+
+    padding-top: 40.66%;
   }
 }
 
@@ -125,6 +136,21 @@
       }
     }
   }
+  /////////////////////////
+  .offer-gallery .carousel-item {
+    padding-top: 50%;
+  }
+  .preview {
+
+    padding-top: 66.66%;
+  }
+  .profile-pic {
+    width: 12rem;
+    height: 12rem;
+    @include border-radius(50%);
+    overflow: hidden;
+    margin: 2rem auto;
+  }
 }
 
 
@@ -171,6 +197,25 @@
   ///////////////////////
   .two-col-list {
     column-count: auto;
+  }
+  .tab-link {
+    padding: .8rem 1rem;
+    font-size: 1.3rem;
+  }
+  .table th, .table td {
+    font-size: 1.4rem;
+  }
+  .tab-content .subscribtion-info {
+    flex-flow: column;
+    >img {
+      width: 12rem;
+      margin: 1.5rem auto;
+    }
+    >.row {
+     > * {
+       margin-bottom: 1.5rem;
+     }
+    }
   }
 }
 
@@ -229,7 +274,25 @@
   .page-heading {
     font-size: 5rem;
   }
-
+  .star-rating {
+    font-size: 0.99em;
+  }
+  .offer-header {
+    flex-flow: column;
+  }
+  .offer-main-info {
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+  }
+  .price-info {
+    padding: 2rem 0;
+  }
+  .text-block {
+    padding: 1.5rem 1rem;
+  }
+  .list {
+    margin: 1rem 0;
+  }
 }
 
 
@@ -238,6 +301,16 @@
   /*--------------------------------------------------------------------*/
   .emojis {
     font-size: 5rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  .tab-link {
+    padding: .8rem;
+    font-size: 1.1rem;
+  }
+  .table th, .table td {
+    font-size: 1.2rem;
   }
 }
 
