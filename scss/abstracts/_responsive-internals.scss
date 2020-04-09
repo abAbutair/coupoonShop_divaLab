@@ -63,9 +63,12 @@
     padding-top: 40%;
   }
   .preview {
-
     padding-top: 40.66%;
   }
+  .error-page {
+    background-position: 115% 50%;
+  }
+
 }
 
 
@@ -75,6 +78,17 @@
   /*------------------------------------------------------------------*/
   .masonry-grid-item {
     width: 50%;
+  }
+  .error-page {
+    background-position: 150% 50%;
+  }
+}
+// Large devices (desktops, less than 1120px)
+/*------------------------------------------------------------------*/
+@media only screen and (max-width: 1119.98px) {
+  /*------------------------------------------------------------------*/
+  .error-page {
+    background-position: 185% 50%;
   }
 }
 
@@ -151,7 +165,35 @@
     overflow: hidden;
     margin: 2rem auto;
   }
+  ////////////////////////////////////
+  .fullPage {
+    &:before {
+      display: none;
+    }
+    background-image: none !important;
+    background-color: $dropdownClr;
+    .content {
+      padding-right: 15px;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+    .form-group.name {
+      flex-flow: column;
+      .form__element {
+        width: 100%;
+        &:not(:last-child) {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+    .form-options {
+      label, a {
+        font-size: 1.2rem;
+      }
+    }
+  }
 }
+
 
 
 // Small devices (landscape phones, less than 768px)
@@ -215,6 +257,15 @@
      > * {
        margin-bottom: 1.5rem;
      }
+    }
+  }
+  .thanks {
+    width: 100%;
+  }
+  .error-page .content {
+    justify-content: flex-start;
+    > * {
+      margin-bottom: 5rem;
     }
   }
 }
@@ -323,5 +374,11 @@
   .page-heading {
     font-size: 3rem;
   }
-
+  .fullPage {
+    .form-options {
+      label, a {
+        font-size: 1.1rem;
+      }
+    }
+  }
 }
