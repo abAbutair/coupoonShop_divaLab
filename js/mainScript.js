@@ -1,6 +1,7 @@
 // Diva-Lab @2020 Main Script
 ////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", function(event) {
+
 // CSS vh(viewport height) reset
     let jvh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--jvh', `${jvh}px`);
@@ -194,15 +195,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
             threshold: 100,
         });
 
-        $("#metroSlider").swipe({
-            //Generic swipe handler for all directions
-            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
-                if (direction == 'left') $(this).carousel('next');
-                if (direction == 'right') $(this).carousel('prev');
-            },
-            allowPageScroll: "vertical",
-            threshold: 10,
-        });
+        let tab_window = window.matchMedia("(max-width: 992px)");
+        if (tab_window.matches) {
+            $(".carousel").swipe({
+                //Generic swipe handler for all directions
+                swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+                    if (direction == 'left') $(this).carousel('next');
+                    if (direction == 'right') $(this).carousel('prev');
+                },
+                allowPageScroll: "vertical",
+                threshold: 10,
+            });
+        }
+
     });
 });
 

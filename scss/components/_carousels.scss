@@ -17,16 +17,8 @@
 }
 .latest-deal__child1 {
   .responsive-img {
-    display: none;
-    width: 100%;
-    overflow: hidden;
-    @include border-radius(0.4rem);
     @extend %covered_bg;
-    padding-top: 30%;
-    margin-bottom: 1rem;
-    img {
-      width: 100%;
-    }
+    display: none;
   }
 }
 .slider-name {

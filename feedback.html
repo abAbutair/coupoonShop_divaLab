@@ -16,7 +16,7 @@
 <body>
 <!-- HEADER BEFORE LOGIN -->
 <header class="header">
-    <div class="header__top t-capitalize">
+    <div class="header__top">
         <div class="container">
             <div class="header__top__inner">
                 <div class="header__top__left">
@@ -53,7 +53,8 @@
                     -->
                     <div class="search-overlay">
                         <div class="search-overlay__header">
-                            <button class="search-overlay__btn icon-link" type="button"><i class="fas fa-search"></i></button>
+                            <button class="search-overlay__btn icon-link" type="button"><i class="fas fa-search"></i>
+                            </button>
                         </div>
                         <div class="search-overlay__menu">
                             <div class="close-overlay">
@@ -100,18 +101,24 @@
                         <form action="" class="form">
                             <div class="row">
                                 <div class="col-lg-3">
-                                    <div class="form__element">
+                                    <div class="form__element validated">
                                         <select class="states" name="state">
                                             <option value="dubai">Dubai</option>
                                             <option value="abu dhabi">abu dhabi</option>
                                             <option value="cairo">cairo</option>
                                         </select>
+                                        <div class="validated-tooltip">
+                                            Please provide a valid
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-9">
-                                    <div class="form__element positioned-icn">
-                                        <input type="search" class="input" placeholder="search">
-                                        <span class="positioned-icn__icon"><i class="fas fa-search"></i></span>
+                                    <div class="form__element positioned-icn validated">
+                                        <input type="search" class="input" placeholder="search" name="search">
+                                        <span class="positioned-icn__icon"><button type="submit" class="submit-icn"><i class="fas fa-search"></i></button></span>
+                                        <div class="validated-tooltip">
+                                            Please provide a valid
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -141,7 +148,8 @@
                                 </div>
                                 <div class="account-lang">
                                     <a href="#">Welcome John Duo</a>
-                                    <button type="button" class="lang-btn"><i class="fas fa-language"></i><span>العربية</span></button>
+                                    <button type="button" class="lang-btn"><i
+                                            class="fas fa-language"></i><span>العربية</span></button>
                                 </div>
                                 <div class="accordion" id="h-accordionNav">
                                     <div class="card">

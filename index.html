@@ -114,8 +114,8 @@
                                 </div>
                                 <div class="col-lg-9">
                                     <div class="form__element positioned-icn validated">
-                                        <input type="search" class="input" placeholder="search" name="search" required>
-                                        <span class="positioned-icn__icon"><i class="fas fa-search"></i></span>
+                                        <input type="search" class="input" placeholder="search" name="search">
+                                        <span class="positioned-icn__icon"><button type="submit" class="submit-icn"><i class="fas fa-search"></i></button></span>
                                         <div class="validated-tooltip">
                                             Please provide a valid
                                         </div>
@@ -659,11 +659,13 @@
     </section>
     <section class="section section--padding design-sec background-holder background-holder--overlay1"
              style="background-image: url('images/design_sec.jpg')">
-        <h2 class="section-heading">Design your Offer</h2>
-        <article class="white">
-            <p>We know you are special, ask your preferred merchant for a one</p>
-        </article>
-        <button type="button" class="ctm-btn ctm-btn--big ctm-btn--white" location.href="">Get your offer now</button>
+        <div class="container">
+            <h2 class="section-heading">Design your Offer</h2>
+            <article class="white">
+                <p>We know you are special, ask your preferred merchant for a one</p>
+            </article>
+            <button type="button" class="ctm-btn ctm-btn--big ctm-btn--white" location.href="">Get your offer now</button>
+        </div>
     </section>
     <section class="section section--padding">
         <h2 class="section-heading section-heading--main-clr">How to enjoy offers</h2>
@@ -914,13 +916,6 @@
             introSec.style.height = 'calc( ' + '50vh - ' + headerHeight + 'px )';
         }
     })();
-</script>
-<script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-        $('#featureSlider').carousel({
-            interval: false,
-        });
-    });
 </script>
 
 <script src="js/dropdown.js"></script>

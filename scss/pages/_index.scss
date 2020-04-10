@@ -7,12 +7,14 @@
 .design-sec {
   text-align: center;
 
-  > * {
-    position: relative;
-    z-index: 1;
+  .container {
+    > * {
+      position: relative;
+      z-index: 1;
 
-    &:not(:last-child) {
-      margin-bottom: 4rem;
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
     }
   }
 }

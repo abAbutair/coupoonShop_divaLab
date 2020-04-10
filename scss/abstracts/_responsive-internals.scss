@@ -176,6 +176,10 @@
       padding-right: 15px;
       padding-top: 4rem;
       padding-bottom: 4rem;
+      height: auto;
+      > * {
+        margin-bottom: 4rem;
+      }
     }
     .form-group.name {
       flex-flow: column;
@@ -192,6 +196,7 @@
       }
     }
   }
+
 }
 
 
@@ -204,30 +209,30 @@
     width: 100%;
   }
 
-  .offers-container {
-    [class^="col-"] {
-      &:nth-child(odd) {
-        .offer {
-          &:before {
-            background-color: $dropdownClr;
-            width: calc(100% + 3rem);
-            height: calc(100% + 3rem);
-            top: -1.5rem;
-            left: -1.5rem;
-            box-shadow: 0 3px 10px -2px rgba($offerClr, .7);
-          }
-
-          .preview {
-            filter: saturate(1.4);
-          }
-
-          a {
-            width: 100%
-          }
-        }
-      }
-    }
-  }
+  //.offers-container {
+  //  [class^="col-"] {
+  //    &:nth-child(odd) {
+  //      .offer {
+  //        &:before {
+  //          background-color: $dropdownClr;
+  //          width: calc(100% + 3rem);
+  //          height: calc(100% + 3rem);
+  //          top: -1.5rem;
+  //          left: -1.5rem;
+  //          box-shadow: 0 3px 10px -2px rgba($offerClr, .7);
+  //        }
+  //
+  //        .preview {
+  //          filter: saturate(1.4);
+  //        }
+  //
+  //        a {
+  //          width: 100%
+  //        }
+  //      }
+  //    }
+  //  }
+  //}
   .section-intro {
     width: 100%;
     min-width: auto;

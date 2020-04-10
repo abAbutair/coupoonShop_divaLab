@@ -327,7 +327,7 @@
     font-size: $bodyFontSize;
   }
   /////////////////////////////////////////
-  .design-sec > *:not(:last-child) {
+  .design-sec .container > *:not(:last-child) {
     margin-bottom: 2rem;
   }
   ///////////////////////////////////////
@@ -689,20 +689,22 @@
       position: static;
       width: 100%;
       .carousel-inner {
+        padding: 3rem;
         &:after {
           display: none;
         }
       }
 
       .carousel-item {
+        box-shadow: 0 0 3rem -1rem rgba(#000, 0.3);
         background-image: none !important;
         float: none;
         display: block;
         padding: 3rem;
-        box-shadow: 0 0 3rem -2rem rgba(#000, 0.3);
-        margin: 3rem 0 calc(5.4rem + 3rem); // 5.4rem for absolute .responsive-move
-        &:last-of-type {
-          margin: 3rem 0 calc(5.4rem + 6rem); // 5.4rem for absolute .responsive-move
+        @include translate(0, 0);
+        @include border-radius(0.9rem);
+        &:not(:last-child) {
+          margin-bottom: 3rem;
         }
       }
       #featureSlider .carousel-caption {
@@ -720,18 +722,20 @@
       }
       .responsive-img {
         display: block;
+        width: 100%;
+        overflow: hidden;
+        @include border-radius-all(0.9rem, 0.9rem, 0 , 0);
+        padding-top: 45%;
+        margin-bottom: 1rem;
+        img {
+          width: 100%;
+        }
       }
       .responsive-move {
-        position: absolute;
-        top: 100%;
-        width: auto;
-        left: 50%;
-        right: auto;
-        @include translate(-50%, 0);
         padding: 20px;
         background-color: #f8f8f8;
         line-height: 1.4rem;
-        box-shadow: 0 1.5rem 5rem 0.5rem rgba(0,0,0,0.2);
+        //box-shadow: 0 1.5rem 5rem 0.5rem rgba(0,0,0,0.2);
         @include border-radius-all(0, 0, 0.9rem, 0.9rem);
         text-align: center;
       }
@@ -836,8 +840,10 @@
 /*----------------------------------------------------------------------*/
 @media only screen and (max-width: 480px) {
   /*--------------------------------------------------------------------*/
-
-
+  /////////////////////////////
+  .latest-deal__child1 .carousel-inner {
+    padding: 0;
+  }
 }
 
 
