@@ -429,6 +429,11 @@
   margin-bottom: 3rem;
   img{width: 100%;}
 }
+.upload-div {
+  .upload-icn {
+    display: none;
+  }
+}
 .upload-pic{
   font-weight: bold;
   color: $mainClr;
@@ -546,6 +551,9 @@
   }
   > .heading-follower{margin-bottom: 3rem}
 }
+.oops-res {
+  display: none;
+}
 
 // full screen pages (login, registeration, 404 ...)
 .fullPage{
@@ -642,4 +650,11 @@
   background-position: center $right;
   background-repeat: no-repeat;
   .content{height: 100vh}
+}
+
+////////////////////////
+.details-header {
+  .form__element.validated .custom-container {
+    height: 100%;
+  }
 }

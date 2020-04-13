@@ -151,7 +151,7 @@
       background-color: rgba($whiteTxt, 0.8);
       article {
         p {
-          max-height: calc(var(--arth) * 1);
+          //max-height: calc(var(--arth) * 1);
           white-space: pre-wrap;
         }
       }

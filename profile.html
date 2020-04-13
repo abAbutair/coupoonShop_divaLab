@@ -424,12 +424,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-2 col-lg-3">
-                    <div class="profile-pic"><img src="media/recent_req.jpg" alt=""></div>
+                    <div class="upload-div">
+                        <div class="profile-pic"><img src="media/recent_req.jpg" alt=""></div>
+                        <label class="upload-pic" for="uploadPic">
+                            <input type="file" name="" id="uploadPic" class="file-upload">
+                            <span class="upload-span">Change Photo</span>
+                            <span class="upload-icn"><i class="far fa-edit"></i></span>
+                        </label>
+                    </div>
                     <p class="username-4mob">John Doe</p>
-                    <label class="upload-pic" for="uploadPic">
-                        <input type="file" name="" id="uploadPic" class="file-upload">
-                        <span>Change Photo</span>
-                    </label>
                 </div>
                 <div class="col-xl-10 col-lg-9">
                     <p class="username-4desktop heading-follower heading-follower--main-clr">John Doe</p>
@@ -506,6 +509,14 @@
                                 </div>
                                 <button type="submit" class="ctm-btn ctm-btn--small ctm-btn--orange">save</button>
                                 <button type="button" class="ctm-btn ctm-btn--small ctm-btn--mainclr">cancel</button>
+
+                                <!-- Form Validation => m-error&m-correct is active class -->
+                                <div class="form-validation">
+                                    <p>some fields are required</p>
+                                </div>
+                                <div class="form-validation">
+                                    <p>great</p>
+                                </div>
                             </form>
                         </div>
                         <div class="tab-pane fade" id="nav-saving" role="tabpanel" aria-labelledby="nav-profile-tab">

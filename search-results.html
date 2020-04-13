@@ -406,7 +406,7 @@
 
 
     <!-- start page content -->
-    <section class="section--padding ">
+    <section class="section--padding">
         <div class="container">
             <div class="row">
                 <aside class="col-xxl-3 col-lg-4 collapsible">
@@ -434,6 +434,7 @@
                             </label>
                         </div>
                     </div>
+                    <button class="side-toggle" type="button"></button>
                 </aside>
                 <div class="col-xxl-9 col-lg-8 ">
                     <div class="row details-header">
@@ -441,16 +442,18 @@
                             <span class="details-header-content">Search Result: <strong>20 offers</strong></span>
                         </div>
                         <div class="col-xxl-4 col-lg-5 col-sm-6">
-                            <div class="form__element validated">
-                                <select class="states" name="state">
-                                    <option value="dubai">Dubai</option>
-                                    <option value="abu dhabi">abu dhabi</option>
-                                    <option value="cairo">cairo</option>
-                                </select>
-                                <div class="validated-tooltip">
-                                    Please provide a valid
+                            <form action="">
+                                <div class="form__element validated">
+                                    <select class="states" name="state">
+                                        <option value="dubai">Dubai</option>
+                                        <option value="abu dhabi">abu dhabi</option>
+                                        <option value="cairo">cairo</option>
+                                    </select>
+                                    <div class="validated-tooltip">
+                                        Please provide a valid
+                                    </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                     <div class="row offers-container">

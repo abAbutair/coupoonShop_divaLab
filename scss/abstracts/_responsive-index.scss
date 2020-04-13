@@ -754,6 +754,23 @@
   .offer-boxes__child {
     margin-bottom: 2rem;
   }
+  /////////////////////////////////////////
+  .header__top__left .search-overlay .close-overlay button {
+    color: $bodyFontClr;
+  }
+  .header__top__left .search-overlay__menu.o-fixed {
+    background-color: $inputBorder;
+  }
+  .header__top__left .search-overlay .form {
+    .form__element {
+      margin-bottom: 2.5rem;
+    }
+    .input, .select2-container--default .custom-container, .select2-container--default .select2-selection--multiple {
+      border: .1rem solid #004C59;
+      height: 4rem;
+    }
+  }
+
 }
 
 

@@ -197,3 +197,35 @@ textarea{
     }
   }
 }
+
+.form-validation {
+  width: 100%;
+  padding: 0 1.5rem;
+  margin: 0;
+  color: $whiteClr;
+  font-size: $smallFontSize;
+  text-transform: capitalize;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  @include transition(all, 0.2s);
+  &.m-error {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    background: $secondClr;
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
+  &.m-correct {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    background: $mainClr;
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
+  p {
+    margin: 0;
+  }
+}
