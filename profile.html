@@ -511,11 +511,13 @@
                                 <button type="button" class="ctm-btn ctm-btn--small ctm-btn--mainclr">cancel</button>
 
                                 <!-- Form Validation => m-error&m-correct is active class -->
-                                <div class="form-validation">
-                                    <p>some fields are required</p>
+                                <div class="form-validation m-error">
+                                    <p><i class="fas fa-exclamation-circle"></i><span>some fields are required</span></p>
+                                    <button type="button" class="close-error">&times;</button>
                                 </div>
-                                <div class="form-validation">
-                                    <p>great</p>
+                                <div class="form-validation m-correct">
+                                    <p><i class="fas fa-check-circle"></i><span>great</span></p>
+                                    <button type="button" class="close-error">&times;</button>
                                 </div>
                             </form>
                         </div>

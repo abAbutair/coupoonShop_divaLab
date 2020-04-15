@@ -209,5 +209,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
 
     });
+
+    // form validation error close button
+    (function () {
+        let closeError = document.querySelectorAll('.close-error');
+        for (let k = 0; k < closeError.length; k++) {
+            closeError[k].addEventListener('click', function () {
+                this.closest('.form-validation').classList.remove('m-error', 'm-correct');
+            });
+        }
+    })();
 });
 

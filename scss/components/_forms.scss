@@ -200,32 +200,57 @@ textarea{
 
 .form-validation {
   width: 100%;
-  padding: 0 1.5rem;
-  margin: 0;
-  color: $whiteClr;
+  color: $bodyFontClr;
   font-size: $smallFontSize;
   text-transform: capitalize;
+  padding: 0;
+  margin: 0;
   height: 0;
   visibility: hidden;
   opacity: 0;
   @include transition(all, 0.2s);
+  @extend %d-flex;
+  justify-content: space-between;
+  align-items: center;
   &.m-error {
     height: auto;
     visibility: visible;
+    padding: .6rem 1.5rem;
+    margin: 2rem 0 1rem;
     opacity: 1;
-    background: $secondClr;
-    padding: 1.5rem;
-    margin: 2rem 0;
+    background: #faebd7;
+    border: 1px solid #ff9200;
+    i, .close-error {
+      color: #ff9200;
+    }
   }
   &.m-correct {
     height: auto;
     visibility: visible;
+    padding: .6rem 1.5rem;
+    margin: 2rem 0 1rem;
     opacity: 1;
-    background: $mainClr;
-    padding: 1.5rem;
-    margin: 2rem 0;
+    background: #d1dfe1;
+    border: 1px solid #64b6c1;
+    i, .close-error {
+      color: #64b6c1;
+    }
   }
   p {
     margin: 0;
+    @extend %d-flex;
+    justify-content: space-between;
+    align-items: center;
+    i {
+      font-size: $medFontSize;
+      margin-#{$right}: 1rem;
+    }
+  }
+  .close-error {
+    font-size: $iconsFontSize;
+    line-height: $iconsFontSize;
+    font-weight: bold;
+    width: auto;
+    padding: 0 .5rem;
   }
 }
