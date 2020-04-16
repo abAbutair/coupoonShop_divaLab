@@ -225,6 +225,15 @@ main {
     }
 
     .hover-dropdown {
+      &--link {
+        .hover-dropdown {
+          &__header {
+            &:before {
+              display: none;
+            }
+          }
+        }
+      }
       &__header {
         &:before {
           top: calc(100% + #{$dropdownMargin2} - #{$dropdownArrow} + #{$paddingTopBottom}); // - 1rem is for arrow height
