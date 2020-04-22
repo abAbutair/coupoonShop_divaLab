@@ -180,20 +180,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     // menu swipe open
     $(function () {
-        $("body").swipe({
-            //Generic swipe handler for all directions
-            swipeRight: function (event, direction, distance, duration, fingerCount, fingerData) {
-                $("#sideCollapse").addClass('visible');
-                $(".search-overlay__menu").removeClass('o-fixed');
-            },
-            swipeLeft: function (event, direction, distance, duration, fingerCount, fingerData) {
-                $("#sideCollapse").removeClass('visible');
-                $(".search-overlay__menu").removeClass('o-fixed');
-            },
-            allowPageScroll: "vertical",
-            excludedElements: ".carousel, .menu-swipe, form, input, textarea, select, button, fieldset, label, datalist, output, legend, optgroup",
-            threshold: 100,
-        });
+        // $("body").swipe({
+        //     //Generic swipe handler for all directions
+        //     swipeRight: function (event, direction, distance, duration, fingerCount, fingerData) {
+        //         $("#sideCollapse").addClass('visible');
+        //         $(".search-overlay__menu").removeClass('o-fixed');
+        //     },
+        //     swipeLeft: function (event, direction, distance, duration, fingerCount, fingerData) {
+        //         $("#sideCollapse").removeClass('visible');
+        //         $(".search-overlay__menu").removeClass('o-fixed');
+        //     },
+        //     allowPageScroll: "vertical",
+        //     excludedElements: ".carousel, .menu-swipe, .select2-selection, .select2-dropdown, .custom-container, .custom-dropdown, form, input, textarea, select, button, fieldset, label, datalist, output, legend, optgroup",
+        //     threshold: 100,
+        // });
 
         let tab_window = window.matchMedia("(max-width: 992px)");
         if (tab_window.matches) {

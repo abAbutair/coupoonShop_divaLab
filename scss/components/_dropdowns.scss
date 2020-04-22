@@ -26,6 +26,7 @@
     opacity: 0;
     @include transition(all, 0.4s);
     z-index: 555;
+    min-width: 10rem;
   }
 }
 
