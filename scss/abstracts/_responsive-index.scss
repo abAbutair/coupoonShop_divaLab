@@ -701,6 +701,7 @@
         float: none;
         display: block;
         padding: 3rem;
+        margin-right: 0;
         @include translate(0, 0);
         @include border-radius(0.9rem);
         &:not(:last-child) {
