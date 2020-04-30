@@ -52,6 +52,9 @@ textarea{
     top: 50%;
     @include translate(0, -50%);
     font-size: $smallFontSize;
+    button {
+      padding: 0 1rem;
+    }
   }
 }
 

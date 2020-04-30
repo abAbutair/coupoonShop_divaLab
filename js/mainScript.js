@@ -207,7 +207,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 threshold: 10,
             });
         }
-
     });
 
     // form validation error close button

@@ -90,7 +90,7 @@
                                 </div>
                                 <div class="form__element positioned-icn">
                                     <input type="search" class="input" placeholder="search">
-                                    <span class="positioned-icn__icon"><i class="fas fa-search"></i></span>
+                                    <span class="positioned-icn__icon"><button type="submit" class="submit-icn"><i class="fas fa-search"></i></button></span>
                                 </div>
                             </form>
                         </div>
@@ -132,7 +132,7 @@
                                 <div class="col-lg-9">
                                     <div class="form__element positioned-icn">
                                         <input type="search" class="input" placeholder="search">
-                                        <span class="positioned-icn__icon"><i class="fas fa-search"></i></span>
+                                        <span class="positioned-icn__icon"><button type="submit" class="submit-icn"><i class="fas fa-search"></i></button></span>
                                     </div>
                                 </div>
                             </div>
@@ -593,8 +593,7 @@
                                                 onclick="location.href='plans.html'">change
                                             plan
                                         </button>
-                                        <button type="button" class="ctm-btn ctm-btn--small ctm-btn--mainclr"
-                                                onclick="location.href='feedback.html'">end
+                                        <button type="button" class="ctm-btn ctm-btn--small ctm-btn--mainclr" data-toggle="modal" data-target="#exampleModal">end
                                             subscribtion
                                         </button>
                                     </div>
@@ -696,6 +695,21 @@
     </div>
 </footer>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="heading-primary heading-primary--main-clr">Are you sure you want to end your subscription?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="ctm-btn ctm-btn--small ctm-btn--orange" data-dismiss="modal">cancel</button>
+                <button type="button" class="ctm-btn ctm-btn--small ctm-btn--mainclr">Yes, I'm sure!</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- core scripts -->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/popper.js/dist/popper.js"></script>
@@ -725,6 +739,7 @@
 
 <!-- page custom bootstrap scripts -->
 <script src="node_modules/bootstrap/js/dist/tab.js"></script>
+<script src="node_modules/bootstrap/js/dist/modal.js"></script>
 
 <!-- page custom scripts -->
 <script>
